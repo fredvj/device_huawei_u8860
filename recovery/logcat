@@ -1,0 +1,9 @@
+#!/sbin/sh
+echo "***"
+echo "*** Huawei Honor - ClockworkMod Recovery ***
+echo "***"
+echo "*** Recovery does not support logcat!"
+echo "*** However, \"adb shell\" is supported"
+echo "***"
+exit 0
+

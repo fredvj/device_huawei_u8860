@@ -1,0 +1,70 @@
+on early-init
+    start ueventd
+
+# Let's keep charging if USB is connected
+
+on boot-pause
+    exec /sbin/charge
+
+on init
+
+sysclktz 1
+
+    export PATH /sbin
+    export ANDROID_ROOT /system
+    export ANDROID_DATA /data
+    export EXTERNAL_STORAGE /sdcard
+
+# Backup times are in UTC - check if recovery supports timezones
+    export TZ Europe/Berlin
+
+    export HOME /
+
+    symlink /system/etc /etc
+
+    mkdir /boot
+    mkdir /sdcard
+    mkdir /sd-ext
+    mkdir /datadata
+    mkdir /emmc
+    mkdir /system
+    mkdir /data
+    mkdir /cache
+    mount /tmp /tmp tmpfs
+
+on boot
+
+    ifup lo
+    hostname localhost
+    domainname localdomain
+
+    class_start default
+
+service ueventd /sbin/ueventd
+    critical
+
+service recovery /sbin/recovery
+
+service adbd /sbin/adbd recovery
+
+on property:service.adb.enable=1
+    write /sys/class/android_usb/android0/iSerial CWM-U8860
+    start adbd
+
+on property:service.adb.enable=0
+    stop adbd
+
+on property:service.adb.root=1
+    write /sys/class/android_usb/android0/enable 0
+    restart adbd
+    write /sys/class/android_usb/android0/enable 1
+
+on property:sys.usb.config=adb
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 12d1
+    write /sys/class/android_usb/android0/idProduct 1038
+    write /sys/class/android_usb/android0/functions $sys.usb.config
+    write /sys/class/android_usb/android0/enable 1
+    start adbd
+    setprop sys.usb.state $sys.usb.config
+

@@ -1,0 +1,7 @@
+#
+# system.prop for u8860
+#
+sys.usb.config=adb
+service.adb.enable=1
+service.adb.root=1
+
