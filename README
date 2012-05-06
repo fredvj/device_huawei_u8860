@@ -1,3 +1,9 @@
 Device configuration for the Huawei U8860 (aka Honor)
 
 2012-05-06	Basic configuration for recovery
+
+TODO (recovery only):
+	- Strange reboot after ~ 2 minutes (try using stock kernel)
+	- Add correct paritions & sizes
+	- Fix key mappings
+	- ADB (USB)
