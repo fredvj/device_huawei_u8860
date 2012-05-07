@@ -4,4 +4,4 @@
 sys.usb.config=adb
 persist.service.adb.enable=1
 persist.service.adb.root=1
-
+ro.cwm.forbid_format=/boot,/cust
