@@ -1,9 +1,8 @@
 Device configuration for the Huawei U8860 (aka Honor)
 
 2012-05-06	Basic configuration for recovery
+2012-05-07	ADB and key mappings okay with 2.6.35 kernel
 
 TODO (recovery only):
-	- Strange reboot after ~ 2 minutes (try using stock kernel)
+	- Strange reboot after ~ 2 minutes
 	- Add correct paritions & sizes
-	- Fix key mappings
-	- ADB (USB)
