@@ -20,7 +20,7 @@
 #include "common.h"
 #include "extendedcommands.h"
 
-char* MENU_HEADERS[] = { "Use Volume + Home Keys * U8860 2012/05/06 rev 1",
+char* MENU_HEADERS[] = { "Use Volume + Pwr. Btn. * U8860 2012/05/07 rev 2",
                          NULL };
 
 char* MENU_ITEMS[] = { "reboot system now",
@@ -70,6 +70,7 @@ int device_handle_key(int key_code, int visible) {
             case KEY_BACKSPACE:
             case KEY_BACK:
 	    case KEY_POWER:
+	    case 330:
 		if(ui_get_showing_back_button()) return SELECT_ITEM;
                 if(!get_allow_toggle_display()) return GO_BACK;
 		break;
