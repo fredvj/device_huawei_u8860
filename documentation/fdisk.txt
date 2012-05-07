@@ -1,0 +1,24 @@
+Disk /dev/block/mmcblk0: 3959 MB, 3959422976 bytes
+1 heads, 16 sectors/track, 483328 cylinders
+Units = cylinders of 16 * 512 = 8192 bytes
+
+              Device Boot      Start         End      Blocks  Id System
+/dev/block/mmcblk0p1               1       30721      245760   b Win95 FAT32
+Partition 1 does not end on cylinder boundary
+/dev/block/mmcblk0p2   *       30721       30783         500  4d Unknown
+Partition 2 does not end on cylinder boundary
+/dev/block/mmcblk0p3           30783       31158        3000  46 Unknown
+Partition 3 does not end on cylinder boundary
+/dev/block/mmcblk0p4           31158      483328     3617363+  5 Extended
+Partition 4 does not end on cylinder boundary
+/dev/block/mmcblk0p5           31233       32768       12288  6a Unknown
+/dev/block/mmcblk0p6           32769       49408      133120  4c Unknown
+/dev/block/mmcblk0p7           49665       49920        2048  6d Unknown
+/dev/block/mmcblk0p8           50177       50560        3072  58 Unknown
+/dev/block/mmcblk0p9           50689       51563        7000  50 Unknown
+/dev/block/mmcblk0p10          51713       52096        3072  4a Unknown
+/dev/block/mmcblk0p11          52225       52608        3072  4b Unknown
+/dev/block/mmcblk0p12          52737      101888      393216  83 Linux
+/dev/block/mmcblk0p13         101889      216576      917504  83 Linux
+/dev/block/mmcblk0p14         216577      483328     2134016  6b Unknown
+
