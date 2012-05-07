@@ -3,13 +3,13 @@
 # mount point   fstype          device                  [device2]
 
 /boot		vfat		/dev/block/mmcblk0p1
-/fat		vfat		/dev/block/mmcblk0p1
+/cust		vfat		/dev/block/mmcblk0p1
+/recovery       vfat            /dev/block/mmcblk0p1
+
 /cache		ext4		/dev/block/mmcblk0p6
-/data_pseudo	ext4		/dev/block/mmcblk0p13
-/misc		emmc		/dev/block/mmcblk0p7
-/recovery	vfat		/dev/block/mmcblk0p1
-/HWUserData	vfat		/dev/block/mmcblk0p14
-/system		ext4		/dev/block/mmcblk0p12
+/system         ext4            /dev/block/mmcblk0p12
+/data		ext4		/dev/block/mmcblk0p13
+/emmc		vfat		/dev/block/mmcblk0p14
 /sdcard		vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1
 /sd-ext		ext4		/dev/block/mmcblk1p2
 
