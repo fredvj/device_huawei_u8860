@@ -3,8 +3,8 @@ on early-init
 
 # Let's keep charging if USB is connected
 
-on boot-pause
-    exec /sbin/charge
+# on boot-pause
+#     exec /sbin/charge
 
 on init
 
@@ -37,7 +37,7 @@ sysclktz 1
 
     mount /tmp /tmp tmpfs
 
-    write /sys/devices/platform/pmic-leds/leds/button-backlight/brightness 1
+    write /sys/devices/platform/pmic-leds/leds/button-backlight/brightness 50
 
 on boot
 
