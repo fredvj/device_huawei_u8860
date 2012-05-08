@@ -1,0 +1,37 @@
+Disk /dev/block/mmcblk0: 3959 MB, 3959422976 bytes
+1 heads, 16 sectors/track, 483328 cylinders
+Units = cylinders of 16 * 512 = 8192 bytes
+
+              Device Boot      Start         End      Blocks  Id System
+/dev/block/mmcblk0p1               1       30721      245760   b Win95 FAT32
+30720 * 8192 := 251658240, 245760 KB, 240 MB
+/dev/block/mmcblk0p2   *       30721       30783         500  4d QNX4.x
+30 * 8192 := 245760, 240 KB
+/dev/block/mmcblk0p3           30783       31158        3000  46 Unknown
+375 * 8192 := 3072000, 3000 KB
+/dev/block/mmcblk0p4           31158      483328     3617363+  5 Extended
+452170 * 8192 := 3704176640, 3617360 KB
+
+---
+
+/dev/block/mmcblk0p5           31233       32768       12288  6a Unknown
+1535 * 8192 := 12574720, 12280 KB, ~ 12 MB
+/dev/block/mmcblk0p6           32769       49408      133120  4c Unknown
+16639 * 8192 := 136306688, 133112 KB, ~ 130 MB
+/dev/block/mmcblk0p7           49665       49920        2048  6d Unknown
+255 * 8192 := 2088960, 2040 KB, ~ 2 MB
+/dev/block/mmcblk0p8           50177       50560        3072  58 Unknown
+383 * 8192 := 3137536, 3064 KB, ~ 3 MB
+/dev/block/mmcblk0p9           50689       51563        7000  50 OnTrack DM
+874 * 8192 := 7159808, 6992 KB, ~ 6.8 MB
+/dev/block/mmcblk0p10          51713       52096        3072  4a Unknown
+383 * 8192 := 3137536, 3064 KB, ~ 3 MB
+/dev/block/mmcblk0p11          52225       52608        3072  4b Unknown
+383 * 8192 := 3137536, 3064 KB, ~ 3 MB
+/dev/block/mmcblk0p12          52737      101888      393216  83 Linux
+49151 * 8192 := 402644992, 393208 KB, ~ 384 MB
+/dev/block/mmcblk0p13         101889      216576      917504  83 Linux
+114687 * 8192 := 939515904, 917496 KB, ~ 896 MB
+/dev/block/mmcblk0p14         216577      483328     2134016  6b Unknown
+266751 * 8192 := 2185224192, 2134008 KB, ~ 2084 MB
+
