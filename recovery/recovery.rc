@@ -54,6 +54,8 @@ service recovery /sbin/recovery
 
 service adbd /sbin/adbd recovery
 
+service rmt_storage /sbin/rmt_storage
+
 on property:persist.service.adb.enable=1
     start adbd
 
@@ -69,3 +71,8 @@ on property:sys.usb.config=adb
     start adbd
     setprop sys.usb.state $sys.usb.config
 
+service offmode_check /sbin/offmode_check
+    oneshot
+
+service offmode_charge /sbin/offmode_charge
+    disabled
