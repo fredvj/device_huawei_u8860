@@ -48,7 +48,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_USES_MMCUTILS := true
 
 TARGET_PREBUILT_KERNEL := device/huawei/u8860/kernel
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/huawei/u8860/recovery/u8860_recovery_ui.c
+# BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/huawei/u8860/recovery/u8860_recovery_ui.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/u8860/recovery/graphics.c
 TARGET_RECOVERY_INITRC := device/huawei/u8860/recovery/recovery.rc
 
