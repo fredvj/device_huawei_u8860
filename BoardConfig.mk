@@ -52,6 +52,7 @@ TARGET_PREBUILT_KERNEL := device/huawei/u8860/kernel
 BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/u8860/recovery/graphics.c
 TARGET_RECOVERY_INITRC := device/huawei/u8860/recovery/recovery.rc
 
-#BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_HAS_NO_SELECT_BUTTON := true
+
 # Use this flag if the board has a ext4 partition larger than 2gb
 #BOARD_HAS_LARGE_FILESYSTEM := true
