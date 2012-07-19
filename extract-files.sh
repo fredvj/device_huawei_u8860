@@ -42,6 +42,7 @@ adb pull /system/etc/firmware/yamato_pm4.fw $TARGETDIR
 adb pull /system/etc/wifi/wpa_supplicant.conf $TARGETDIR
 
 adb pull /system/lib/liboemcamera.so $TARGETDIR
+
 adb pull /system/lib/libril-qc-1.so $TARGETDIR
 adb pull /system/lib/libril-qc-qmi-1.so $TARGETDIR
 adb pull /system/lib/libril-qcril-hook-oem.so $TARGETDIR
@@ -87,28 +88,54 @@ adb pull /system/lib/modules/reset_modem.ko $TARGETDIR
 adb pull /system/lib/modules/sch_dsmark.ko $TARGETDIR
 adb pull /system/lib/modules/scsi_wait_scan.ko $TARGETDIR
 
+adb pull /system/usr/icu/icudt46l.dat $TARGETDIR
 
-adb pull /system/lib/libsecril-client.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsecril-client.so
-adb pull /system/vendor/bin/pvrsrvinit ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/pvrsrvinit
-adb pull /system/vendor/etc/sirfgps.conf ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/sirfgps.conf
-adb pull /system/vendor/firmware/bcm4330.hcd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/bcm4330.hcd
-adb pull /system/vendor/firmware/ducati-m3.bin ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/ducati-m3.bin
-adb pull /system/vendor/firmware/libpn544_fw.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libpn544_fw.so
-adb pull /system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libEGL_POWERVR_SGX540_120.so
-adb pull /system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libGLESv1_CM_POWERVR_SGX540_120.so
-adb pull /system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libGLESv2_POWERVR_SGX540_120.so
-adb pull /system/vendor/lib/hw/gps.omap4.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/gps.omap4.so
-adb pull /system/vendor/lib/hw/gralloc.omap4.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/gralloc.omap4.so
-adb pull /system/vendor/lib/libglslcompiler.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libglslcompiler.so
-adb pull /system/vendor/lib/libIMGegl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libIMGegl.so
-adb pull /system/vendor/lib/libinvensense_mpl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libinvensense_mpl.so
-adb pull /system/vendor/lib/libpvr2d.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libpvr2d.so
-adb pull /system/vendor/lib/libpvrANDROID_WSEGL.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libpvrANDROID_WSEGL.so
-adb pull /system/vendor/lib/libPVRScopeServices.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libPVRScopeServices.so
-adb pull /system/vendor/lib/libsec-ril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsec-ril.so
-adb pull /system/vendor/lib/libsrv_init.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsrv_init.so
-adb pull /system/vendor/lib/libsrv_um.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libsrv_um.so
-adb pull /system/vendor/lib/libusc.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary/libusc.so
+adb pull /system/usr/idc/qwerty.idc $TARGETDIR
+adb pull /system/usr/idc/qwerty2.idc $TARGETDIR
+
+adb pull /system/usr/keychars/Generic.kcm $TARGETDIR
+adb pull /system/usr/keychars/Virtual.kcm $TARGETDIR
+adb pull /system/usr/keychars/qwerty.kcm $TARGETDIR
+adb pull /system/usr/keychars/qwerty2.kcm $TARGETDIR
+
+adb pull /system/usr/keylayout/7k_handset.kl $TARGETDIR
+adb pull /system/usr/keylayout/AVRCP.kl $TARGETDIR
+adb pull /system/usr/keylayout/Generic.kl $TARGETDIR
+adb pull /system/usr/keylayout/Vendor_045e_Product_028e.kl $TARGETDIR
+adb pull /system/usr/keylayout/Vendor_046d_Product_c216.kl $TARGETDIR
+adb pull /system/usr/keylayout/Vendor_046d_Product_c294.kl $TARGETDIR
+adb pull /system/usr/keylayout/Vendor_046d_Product_c299.kl $TARGETDIR
+adb pull /system/usr/keylayout/Vendor_046d_Product_c532.kl $TARGETDIR
+adb pull /system/usr/keylayout/Vendor_054c_Product_0268.kl $TARGETDIR
+adb pull /system/usr/keylayout/Vendor_05ac_Product_0239.kl $TARGETDIR
+adb pull /system/usr/keylayout/Vendor_22b8_Product_093d.kl $TARGETDIR
+adb pull /system/usr/keylayout/msm_tma300_ts.kl $TARGETDIR
+adb pull /system/usr/keylayout/qwerty.kl $TARGETDIR
+adb pull /system/usr/keylayout/surf_keypad.kl $TARGETDIR
+adb pull /system/usr/keylayout/touchscreen-keypad.kl $TARGETDIR
+
+adb pull /system/wifi/bcm_loadecho.sh $TARGETDIR
+adb pull /system/wifi/bcm_loadecho_4330.sh $TARGETDIR
+adb pull /system/wifi/bcm_loadipf.sh $TARGETDIR
+adb pull /system/wifi/bcm_loadipf_4330.sh $TARGETDIR
+adb pull /system/wifi/connectap.sh $TARGETDIR
+adb pull /system/wifi/connectap_4330.sh $TARGETDIR
+adb pull /system/wifi/firmware.bin $TARGETDIR
+adb pull /system/wifi/firmware_apsta.bin $TARGETDIR
+adb pull /system/wifi/firmware_both.bin $TARGETDIR
+adb pull /system/wifi/firmware_test.bin $TARGETDIR
+adb pull /system/wifi/fw_4330_b2.bin $TARGETDIR
+adb pull /system/wifi/fw_4330_b2_test.bin $TARGETDIR
+adb pull /system/wifi/iwconfig $TARGETDIR
+adb pull /system/wifi/iwlist $TARGETDIR
+adb pull /system/wifi/iwpriv $TARGETDIR
+adb pull /system/wifi/nvram.txt $TARGETDIR
+adb pull /system/wifi/nvram_4330.txt $TARGETDIR
+adb pull /system/wifi/nvram_4330_MSM8255_U8680.txt $TARGETDIR
+adb pull /system/wifi/nvram_4330_MSM8255_U8730.txt $TARGETDIR
+adb pull /system/wifi/nvram_MSM8255_U8800-PRO.txt $TARGETDIR
+adb pull /system/wifi/nvram_MSM8255_U8820.txt $TARGETDIR
+adb pull /system/wifi/udp_server $TARGETDIR
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/$DEVICE/device-vendor-blobs.mk
 # Copyright (C) 2012 The Android Open Source Project
@@ -127,16 +154,16 @@ adb pull /system/vendor/lib/libusc.so ../../../vendor/$MANUFACTURER/$DEVICE/prop
 
 # This file is generated by device/__MANUFACTURER__/__DEVICE__/extract-files.sh - DO NOT EDIT
 
-# Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES := \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
-
 # All the blobs necessary for u8860
-PRODUCT_COPY_FILES += \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libsecril-client.so:system/lib/libsecril-client.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libusc.so:system/vendor/lib/libusc.so
 
+PRODUCT_COPY_FILES += \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/egl.cfg:system/lib/egl/egl.cfg \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libGLES_android.so:system/lib/egl/libGLES_android.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so
 
 EOF
 
