@@ -19,9 +19,14 @@ MANUFACTURER=huawei
 TARGETDIR=../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 
 mkdir -p $TARGETDIR
+
+echo
+echo Target directory is: $TARGETDIR
+echo
+echo
+
 adb pull /system/cdrom/autorun.iso $TARGETDIR
 
-adb pull /system/etc/dbus.conf $TARGETDIR
 adb pull /system/etc/gps.conf $TARGETDIR
 adb pull /system/etc/vold.fstab $TARGETDIR
 
