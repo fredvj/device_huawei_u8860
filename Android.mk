@@ -1,6 +1,6 @@
-LOCAL_PATH := $(my-dir)
+LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),u8860)
-#	include $(call all-named-subdir-makefiles, recovery libaudio libril libcamera libgralloc libcopybit libsensors liblights)
-	include $(call all-named-subdir-makefiles, recovery)
+ifeq ($(TARGET_BOOTLOADER_BOARD_NAME),u8860)
+include $(call all-makesfile-under,$(LOCAL_PATH))
+# include $(call all-named-subdir-makefiles, recovery)
 endif

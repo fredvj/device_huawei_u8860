@@ -1,58 +1,27 @@
-USE_CAMERA_STUB := true
+# Copyright (C) 2012 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
-# inherit from the proprietary version
+# BoardConfig.mk
+#
+# Product-specific compile-time definitions.
+#
+
+# Make touchscreen work
+BOARD_USE_LEGACY_TOUCHSCREEN := true
+
+# Use the non-open-source parts, if they're present
 -include vendor/huawei/u8860/BoardConfigVendor.mk
 
-TARGET_NO_BOOTLOADER := true
-TARGET_NO_RADIOIMAGE := true
-TARGET_BOARD_PLATFORM := msm7x30
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_BOOTLOADER_BOARD_NAME := u8860
-TARGET_OTA_ASSERT_DEVICE := u8860,U8860,honor,Honor
-
-BOARD_KERNEL_CMDLINE := console=ttyDCC0 androidboot.hardware=huawei
-BOARD_KERNEL_BASE := 0x00208000
-BOARD_KERNEL_PAGESIZE := 4096
-
-BOARD_HAS_DOWNLOAD_MODE := true
-
-BOARD_USES_QCOM_HARDWARE := true
-BOARD_USES_QCOM_LIBS := true
-BOARD_USES_QCOM_LIBRPC := true
-
-BOARD_HAS_SDCARD_INTERNAL := true
-BOARD_HAS_LARGE_FILESYSTEM := true
-TARGET_USERIMAGES_USE_EXT4 := true
-BOARD_BOOT_DEVICE := /dev/block/mmcblk0p1
-BOARD_DATA_DEVICE := /dev/block/mmcblk0p13
-BOARD_DATA_FILESYSTEM := ext4
-BOARD_SYSTEM_DEVICE := /dev/block/mmcblk0p12
-BOARD_SYSTEM_FILESYSTEM := ext4
-BOARD_CACHE_DEVICE := /dev/block/mmcblk0p6
-BOARD_CACHE_FILESYSTEM := ext4
-BOARD_HAS_NO_MISC_PARTITION := true
-BOARD_RECOVERY_DEVICE := /dev/block/mmcblk0p1
-BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk0p14
-BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p1
-
-# Fix this up by examining fdisk /dev/block/mmcblk0 on a running device
-BOARD_BOOTIMAGE_PARTITION_SIZE     := 5242880
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 7864320
-BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 545259520
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 1447034880
-BOARD_CACHEIMAGE_PARTITION_SIZE    := 104857600
-BOARD_FLASH_BLOCK_SIZE := 4096
-
-BOARD_USES_MMCUTILS := true
-
-TARGET_PREBUILT_KERNEL := device/huawei/u8860/kernel
-# BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/huawei/u8860/recovery/u8860_recovery_ui.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/u8860/recovery/graphics.c
-TARGET_RECOVERY_INITRC := device/huawei/u8860/recovery/recovery.rc
-
-BOARD_HAS_NO_SELECT_BUTTON := true
-
-# Use this flag if the board has a ext4 partition larger than 2gb
-#BOARD_HAS_LARGE_FILESYSTEM := true
+# Use the parts that are common between all tass
+include device/huawei/u8860/BoardConfigCommon.mk

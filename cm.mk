@@ -1,19 +1,28 @@
-# Release name
-PRODUCT_RELEASE_NAME := HURZ
+# First, set the baseband technology
+$(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/huawei/u8860/device_u8860.mk)
+
+# Include Qualcomm open source features
+$(call inherit-product, vednor/qcom/opensource/omx/mm-core/Android.mk)
+$(call inherit-product, vednor/qcom/opensource/omx/mm-video/Android.mk)
+
 
 #
 # Setup device specific product configuration.
 #
 PRODUCT_NAME := cm_u8860
-PRODUCT_BRAND := huawei
+
+# Release name
+PRODUCT_RELEASE_NAME := HuaweiHonor
+PRODUCT_VERSION_DEVICE_SPECIFIC := u8860
+
+# Versioning
+-include vendor/cm/config/common_versions.mk
+
 PRODUCT_DEVICE := u8860
-PRODUCT_MODEL := U8860
-PRODUCT_MANUFACTURER := Huawei
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=u8860 BUILD_ID=2012-05 BUILD_FINGERPRINT=u8860:4.0.4/2012-05/release-keys PRIVATE_BUILD_DESC="Add desc. here"
 
