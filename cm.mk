@@ -8,8 +8,8 @@ $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 $(call inherit-product, device/huawei/u8860/device_u8860.mk)
 
 # Include Qualcomm open source features
-$(call inherit-product, vednor/qcom/opensource/omx/mm-core/Android.mk)
-$(call inherit-product, vednor/qcom/opensource/omx/mm-video/Android.mk)
+$(call inherit-product, vendor/qcom/opensource/omx/mm-core/Android.mk)
+$(call inherit-product, vendor/qcom/opensource/omx/mm-video/Android.mk)
 
 
 #
