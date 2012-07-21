@@ -1,9 +1,82 @@
+# Adreno 205 files
+
+lib/libC2D2.so
+lib/libOpenVG.so
+lib/libgsl.so
+lib/libsc-a2xx.so
+
+lib/egl/eglsubAndroid.so
+lib/egl/libGLESv1_CM_adreno200.so
+lib/egl/libq3dtools_adreno200.so
+lib/egl/libEGL_adreno200.so
+lib/egl/libGLESv2_adreno200.so
+
+# Radio Interface Layer (RIL)
+
+lib/libril.so
+lib/libril-qc-1.so
+lib/libril-qc-qmi-1.so
+lib/libril-qcril-hook-oem.so
+
+lib/libauth.so
+lib/libcm.so
+lib/libdiag.so
+lib/libdl.so
+lib/libdsm.so
+lib/libdss.so
+lib/libgsdi_exp.so
+lib/libgstk_exp.so
+lib/libmmgsdilib.so
+lib/libnv.so
+lib/liboem_rapi.so
+lib/liboncrpc.so
+lib/libpbmlib.so
+lib/libqmi.so
+lib/libqueue.so
+lib/libuim.so
+lib/libwms.so
+lib/libwmsts.so
+lib/libdsi_netctrl.so
+lib/libdsutils.so
+lib/libidl.so
+lib/libnetmgr.so
+lib/libqdp.so
+
+bin/port-bridge
+bin/qmuxd
+bin/netmgrd
+
+# Camera
+
+lib/liboemcamera.so
+lib/libmmjpeg.so
+lib/libmmipl.so
+lib/libcamera_client.so
+lib/libgemini.so
+lib/libfacelock_jni.so
+lib/libfilterfw.so
+lib/libfilterpack_facedetect.so
+lib/libfilterpack_imageproc.so
+lib/libflint_engine_jni_api.so
+
+# USB storage ISO image with drivers
+
 cdrom/autorun.iso
 
+# Other libraries and proprietary binaries
+
+lib/libaudioalsa.so
 etc/gps.conf
 etc/vold.fstab
+bin/akmd8962
+bin/akmd8975
+bin/charge
+
+# Original DHCP config
 
 etc/dhcpcd/dhcpcd.conf
+
+# Firmware files
 
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
@@ -18,22 +91,6 @@ etc/firmware/yamato_pfp.fw
 etc/firmware/yamato_pm4.fw
 
 etc/wifi/wpa_supplicant.conf
-
-lib/liboemcamera.so
-
-lib/libaudioalsa.so
-
-lib/libril-qc-1.so
-lib/libril-qc-qmi-1.so
-lib/libril-qcril-hook-oem.so
-
-lib/egl/egl.cfg
-lib/egl/eglsubAndroid.so
-lib/egl/libEGL_adreno200.so
-lib/egl/libGLES_android.so
-lib/egl/libGLESv1_CM_adreno200.so
-lib/egl/libGLESv2_adreno200.so
-lib/egl/libq3dtools_adreno200.so
 
 lib/hw/audio.primary.msm7k.so
 lib/hw/audio_policy.msm7k.so
