@@ -21,6 +21,8 @@ etc/wifi/wpa_supplicant.conf
 
 lib/liboemcamera.so
 
+lib/libaudioalsa.so
+
 lib/libril-qc-1.so
 lib/libril-qc-qmi-1.so
 lib/libril-qcril-hook-oem.so
