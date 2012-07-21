@@ -1,3 +1,11 @@
+# Product specific compile-time definitions
+
+LOCAL_PATH := $(call my-dir)
+
+COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DTARGET7x30 -DTARGET_MSM7x30 -DREFRESH_RATE=60
+
+TARGET_SPECIFIC_HEADER_PATH += device/huawei/u8860/include
+
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
@@ -5,6 +13,7 @@ USE_CAMERA_STUB := true
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
+
 TARGET_BOARD_PLATFORM := msm7x30
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
