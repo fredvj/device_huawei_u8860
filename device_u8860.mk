@@ -1,8 +1,10 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+# Small language pack only
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
+# proprietary side of the device
 $(call inherit-product-if-exists, vendor/huawei/u8860/u8860-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u8860/overlay
