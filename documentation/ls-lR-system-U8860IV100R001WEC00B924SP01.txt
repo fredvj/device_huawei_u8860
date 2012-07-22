@@ -1,0 +1,1435 @@
+
+/system:
+drwxr-xr-x root     root              2012-06-14 06:26 app
+drwxr-xr-x root     shell             2012-06-14 06:26 bin
+-rw-r--r-- root     root        13710 2012-06-14 06:26 build.prop
+drwxr-xr-x root     root              2012-06-14 06:26 cdrom
+drwxr-xr-x root     root              2012-06-14 06:26 etc
+drwxr-xr-x root     root              2012-06-14 06:26 fonts
+drwxr-xr-x root     root              2012-06-14 06:26 framework
+drwxr-xr-x root     root              2012-06-14 06:26 lib
+drwx------ root     root              2012-06-14 06:26 lost+found
+drwxr-xr-x root     root              2012-06-14 06:26 media
+drwxr-xr-x root     root              2012-06-14 06:26 tts
+drwxr-xr-x root     root              2012-06-14 06:26 usr
+drwxr-xr-x root     shell             2012-06-14 06:26 vendor
+drwxr-xr-x root     root              2012-06-14 06:26 wifi
+drwxr-xr-x root     shell             2012-06-14 06:26 xbin
+
+/system/app:
+-rw-r--r-- root     root       181429 2012-06-14 06:26 ApkBatchInstall.apk
+-rw-r--r-- root     root        32483 2012-06-14 06:26 ApplicationsProvider.apk
+-rw-r--r-- root     root       124704 2012-06-14 06:26 BackupRestoreConfirmation.apk
+-rw-r--r-- root     root       963311 2012-06-14 06:26 Bluetooth.apk
+-rw-r--r-- root     root       316419 2012-06-14 06:26 BluetoothServices.apk
+-rw-r--r-- root     root      2774791 2012-06-14 06:26 Browser.apk
+-rw-r--r-- root     root       174999 2012-06-14 06:26 Calculator.apk
+-rw-r--r-- root     root      1676292 2012-06-14 06:26 Calendar.apk
+-rw-r--r-- root     root       516072 2012-06-14 06:26 CalendarProvider.apk
+-rw-r--r-- root     root       144172 2012-06-14 06:26 CertInstaller.apk
+-rw-r--r-- root     root      5156757 2012-06-14 06:26 Contacts.apk
+-rw-r--r-- root     root        39425 2012-06-14 06:26 ContactsExt.apk
+-rw-r--r-- root     root       649725 2012-06-14 06:26 ContactsProvider.apk
+-rw-r--r-- root     root        17047 2012-06-14 06:26 DefaultContainerService.apk
+-rw-r--r-- root     root       657800 2012-06-14 06:26 DeskClock.apk
+-rw-r--r-- root     root       349091 2012-06-14 06:26 DownloadProvider.apk
+-rw-r--r-- root     root       188238 2012-06-14 06:26 DownloadProviderUi.apk
+-rw-r--r-- root     root        33919 2012-06-14 06:26 DrmProvider.apk
+-rw-r--r-- root     root       481113 2012-06-14 06:26 DutchPack.apk
+-rw-r--r-- root     root      3330272 2012-06-14 06:26 Email.apk
+-rw-r--r-- root     root       671085 2012-06-14 06:26 Exchange.apk
+-rw-r--r-- root     root       908272 2012-06-14 06:26 FaceLock.apk
+-rw-r--r-- root     root       269799 2012-06-14 06:26 FrenchPack.apk
+-rw-r--r-- root     root      6451185 2012-06-14 06:26 GMS_Maps.apk
+-rw-r--r-- root     root      2625764 2012-06-14 06:26 Gallery2.apk
+-rw-r--r-- root     root      1543907 2012-06-14 06:26 GenieWidget.apk
+-rw-r--r-- root     root       414057 2012-06-14 06:26 GermanPack.apk
+-rw-r--r-- root     root      2831089 2012-06-14 06:26 Gmail.apk
+-rw-r--r-- root     root        84634 2012-06-14 06:26 GoogleBackupTransport.apk
+-rw-r--r-- root     root       143869 2012-06-14 06:26 GoogleCalendarSyncAdapter.apk
+-rw-r--r-- root     root       160045 2012-06-14 06:26 GoogleContactsSyncAdapter.apk
+-rw-r--r-- root     root       253635 2012-06-14 06:26 GoogleFeedback.apk
+-rw-r--r-- root     root      4192858 2012-06-14 06:26 GoogleLoginService.apk
+-rw-r--r-- root     root        97987 2012-06-14 06:26 GooglePartnerSetup.apk
+-rw-r--r-- root     root       739712 2012-06-14 06:26 GoogleQuickSearchBox.apk
+-rw-r--r-- root     root      2925172 2012-06-14 06:26 GoogleServicesFramework.apk
+-rw-r--r-- root     root        15899 2012-06-14 06:26 HTMLViewer.apk
+-rw-r--r-- root     root      2560316 2012-06-14 06:26 HuaweiSecurityGuard.apk
+-rw-r--r-- root     root       195197 2012-06-14 06:26 HwBluetoothImport.apk
+-rw-r--r-- root     root      2894206 2012-06-14 06:26 HwCamera.apk
+-rw-r--r-- root     root     14758063 2012-06-14 06:26 HwDLNA.apk
+-rw-r--r-- root     root      3756582 2012-06-14 06:26 HwFileManager.apk
+-rw-r--r-- root     root      1680052 2012-06-14 06:26 HwFlashlight.apk
+-rw-r--r-- root     root      6495537 2012-06-14 06:26 HwIME.apk
+-rw-r--r-- root     root      1850519 2012-06-14 06:26 HwLauncher5_NormalPlus.apk
+-rw-r--r-- root     root       531665 2012-06-14 06:26 HwOUC.apk
+-rw-r--r-- root     root       373356 2012-06-14 06:26 HwWiFiHotspot.apk
+-rw-r--r-- root     root       301972 2012-06-14 06:26 ItalianPack.apk
+-rw-r--r-- root     root        65632 2012-06-14 06:26 KeyChain.apk
+-rw-r--r-- root     root      6157718 2012-06-14 06:26 LatinImeGoogle.apk
+-rw-r--r-- root     root      2767705 2012-06-14 06:26 LiveWallpapers.apk
+-rw-r--r-- root     root       244108 2012-06-14 06:26 LiveWallpapersPicker.apk
+-rw-r--r-- root     root      1303264 2012-06-14 06:26 MMITest_II.apk
+-rw-r--r-- root     root        16159 2012-06-14 06:26 MMITest_record.apk
+-rw-r--r-- root     root        13351 2012-06-14 06:26 MarketUpdater.apk
+-rw-r--r-- root     root      2786979 2012-06-14 06:26 MediaCenter.apk
+-rw-r--r-- root     root        79479 2012-06-14 06:26 MediaProvider.apk
+-rw-r--r-- root     root       500443 2012-06-14 06:26 MediaUploader.apk
+-rw-r--r-- root     root      2537028 2012-06-14 06:26 Mms.apk
+-rw-r--r-- root     root      5330672 2012-06-14 06:26 Music2.apk
+-rw-r--r-- root     root       247660 2012-06-14 06:26 MyCalendar.apk
+-rw-r--r-- root     root      2081506 2012-06-14 06:26 MyEmail.apk
+-rw-r--r-- root     root       270429 2012-06-14 06:26 NetworkLocation.apk
+-rw-r--r-- root     root       233724 2012-06-14 06:26 NotePad.apk
+-rw-r--r-- root     root       281396 2012-06-14 06:26 OMACP.apk
+-rw-r--r-- root     root       243637 2012-06-14 06:26 PackageInstaller.apk
+-rw-r--r-- root     root      3952342 2012-06-14 06:26 Phone.apk
+-rw-r--r-- root     root      3784499 2012-06-14 06:26 Phonesky.apk
+-rw-r--r-- root     root        29933 2012-06-14 06:26 PicoTts.apk
+-rw-r--r-- root     root      8914073 2012-06-14 06:26 PlusOne.apk
+-rw-r--r-- root     root       314571 2012-06-14 06:26 PortuguesePack.apk
+-rw-r--r-- root     root         3986 2012-06-14 06:26 PrivInit.apk
+-rw-r--r-- root     root        93317 2012-06-14 06:26 ProjectMenuAct.apk
+-rw-r--r-- root     root       262274 2012-06-14 06:26 Protips.apk
+-rw-r--r-- root     root     22211489 2012-06-14 06:26 Settings.apk
+-rw-r--r-- root     root        56926 2012-06-14 06:26 SettingsProvider.apk
+-rw-r--r-- root     root      2594772 2012-06-14 06:26 SetupWizard.apk
+-rw-r--r-- root     root         4668 2012-06-14 06:26 SharedStorageBackup.apk
+-rw-r--r-- root     root       269576 2012-06-14 06:26 SpanishPack.apk
+-rw-r--r-- root     root       101584 2012-06-14 06:26 Stk.apk
+-rw-r--r-- root     root       288315 2012-06-14 06:26 Street.apk
+-rw-r--r-- root     root      1791170 2012-06-14 06:26 SystemUI.apk
+-rw-r--r-- root     root      2233593 2012-06-14 06:26 Talk.apk
+-rw-r--r-- root     root        66373 2012-06-14 06:26 TelephonyProvider.apk
+-rw-r--r-- root     root       711256 2012-06-14 06:26 ToolBox.apk
+-rw-r--r-- root     root       365571 2012-06-14 06:26 TurkishPack.apk
+-rw-r--r-- root     root        15511 2012-06-14 06:26 UserDictionaryProvider.apk
+-rw-r--r-- root     root       197717 2012-06-14 06:26 VisualizationWallpapers.apk
+-rw-r--r-- root     root       147740 2012-06-14 06:26 VoiceDialer.apk
+-rw-r--r-- root     root      2415460 2012-06-14 06:26 VoiceSearch.apk
+-rw-r--r-- root     root        61688 2012-06-14 06:26 VpnDialogs.apk
+-rw-r--r-- root     root         7138 2012-06-14 06:26 WAPPushManager.apk
+-rw-r--r-- root     root        14691 2012-06-14 06:26 Wiper.apk
+-rw-r--r-- root     root      3813173 2012-06-14 06:26 YouTube.apk
+
+/system/bin:
+-rwxr-xr-x root     shell       19392 2012-06-14 06:26 ATFWD-daemon
+-rwxr-xr-x root     shell       97084 2012-06-14 06:26 adb
+-rwxr-xr-x root     shell       34636 2012-06-14 06:26 akmd8962
+-rwxr-xr-x root     shell       30404 2012-06-14 06:26 akmd8975
+-rwxr-xr-x root     shell         191 2012-06-14 06:26 am
+-rwxr-xr-x root     shell        5584 2012-06-14 06:26 amploader
+-rwxr-xr-x root     shell        9848 2012-06-14 06:26 app_process
+-rwxr-xr-x root     shell       49996 2012-06-14 06:26 applypatch
+-rwxr-xr-x root     shell        5280 2012-06-14 06:26 bluetoothd
+-rwxr-xr-x root     shell         199 2012-06-14 06:26 bmgr
+-rwxr-xr-x root     shell       23284 2012-06-14 06:26 bootanimation
+-rwxr-xr-x root     shell       23276 2012-06-14 06:26 bootanimationex
+-rwxr-xr-x root     shell       10268 2012-06-14 06:26 brcm_patchram_plus
+-rwxr-xr-x root     shell       33516 2012-06-14 06:26 bridgemgrd
+-rwxr-xr-x root     shell     2842784 2012-06-14 06:26 btld
+-rwxr-xr-x root     shell        9924 2012-06-14 06:26 btnvtool
+-rwxr-xr-x root     shell         156 2012-06-14 06:26 bu
+-rwxr-xr-x root     shell        5620 2012-06-14 06:26 bugreport
+-rwxr-xr-x root     shell        5420 2012-06-14 06:26 callife
+lrwxr-xr-x root     shell             2012-06-14 06:26 cat -> toolbox
+-rwxr-xr-x root     shell       18064 2012-06-14 06:26 ccid_daemon
+-rwxr-xr-x root     shell      149976 2012-06-14 06:26 charge
+lrwxr-xr-x root     shell             2012-06-14 06:26 chmod -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 chown -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 cmp -> toolbox
+-rwxr-xr-x root     shell      626232 2012-06-14 06:26 cnd
+-rwxr-xr-x root     shell      124704 2012-06-14 06:26 compassd
+-rwxr-xr-x root     shell       58088 2012-06-14 06:26 curl
+-rwxr-xr-x root     shell       14748 2012-06-14 06:26 cust
+-rwxr-xr-x root     shell        5628 2012-06-14 06:26 dalvikvm
+lrwxr-xr-x root     shell             2012-06-14 06:26 date -> toolbox
+-rwxr-xr-x root     shell      134080 2012-06-14 06:26 dbus-daemon
+lrwxr-xr-x root     shell             2012-06-14 06:26 dd -> toolbox
+-rwxr-xr-x root     shell       26512 2012-06-14 06:26 debuggerd
+-rwxr-xr-x root     shell        9864 2012-06-14 06:26 dexopt
+lrwxr-xr-x root     shell             2012-06-14 06:26 df -> toolbox
+-rwxr-xr-x root     shell       61480 2012-06-14 06:26 dhcpcd
+-rwxr-xr-x root     shell      102056 2012-06-14 06:26 dhd
+-rwxr-xr-x root     system       9916 2012-06-14 06:26 diag_mdlog
+-rwxr-xr-x root     shell        5620 2012-06-14 06:26 diag_uart_log
+lrwxr-xr-x root     shell             2012-06-14 06:26 dmesg -> toolbox
+-rwxr-xr-x root     shell      104800 2012-06-14 06:26 dnsmasq
+-rwxr-xr-x root     shell       45436 2012-06-14 06:26 drmserver
+-rwxr-xr-x root     shell       52420 2012-06-14 06:26 ds_fmc_appd
+-rwxr-xr-x root     shell       42816 2012-06-14 06:26 dumpstate
+-rwxr-xr-x root     shell        9876 2012-06-14 06:26 dumpsys
+-rwxr-xr-x root     shell       22372 2012-06-14 06:26 dun-server
+-rwxr-xr-x root     shell      119768 2012-06-14 06:26 e2fsck
+-rwxr-xr-x root     shell       10036 2012-06-14 06:26 filebackup
+-rwxr-xr-x root     shell       14156 2012-06-14 06:26 fmconfig
+-rwxr-xr-x root     shell       26808 2012-06-14 06:26 fsck_msdos
+-rwxr-xr-x root     shell       39184 2012-06-14 06:26 ftmdaemon
+lrwxr-xr-x root     shell             2012-06-14 06:26 getevent -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 getprop -> toolbox
+-rwxr-xr-x root     shell        9768 2012-06-14 06:26 gzip
+-rwxr-xr-x root     shell        5748 2012-06-14 06:26 hci_dev_state
+-rwxr-xr-x root     shell       84700 2012-06-14 06:26 hci_qcomm_init
+-rwxr-xr-x root     shell       27676 2012-06-14 06:26 hciattach
+lrwxr-xr-x root     shell             2012-06-14 06:26 hd -> toolbox
+-rwxr-xr-x root     shell       15344 2012-06-14 06:26 hdmid
+-rwxr-xr-x root     shell      249144 2012-06-14 06:26 hostapd
+-rwxr-xr-x root     shell       22476 2012-06-14 06:26 hostapd_cli
+-rwxr-xr-x root     shell        9816 2012-06-14 06:26 hw_scsi_switch
+lrwxr-xr-x root     shell             2012-06-14 06:26 id -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 ifconfig -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 iftop -> toolbox
+-rwxr-xr-x root     shell         194 2012-06-14 06:26 ime
+-rwxr-xr-x root     shell         201 2012-06-14 06:26 input
+lrwxr-xr-x root     shell             2012-06-14 06:26 insmod -> toolbox
+-rwxr-xr-x root     shell       22552 2012-06-14 06:26 installd
+lrwxr-xr-x root     shell             2012-06-14 06:26 ioctl -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 ionice -> toolbox
+-rwxr-xr-x root     shell      137768 2012-06-14 06:26 ip
+-rwxr-xr-x root     shell      179168 2012-06-14 06:26 ip6tables
+-rwxr-xr-x root     shell       36128 2012-06-14 06:26 iperf
+-rwxr-x--- root     system     184852 2012-06-14 06:26 iptables
+-rwxr-xr-x root     shell       10236 2012-06-14 06:26 keystore
+lrwxr-xr-x root     shell             2012-06-14 06:26 kill -> toolbox
+-rwxr-xr-x root     shell        9832 2012-06-14 06:26 kmsgcat
+-rwxr-xr-x root     shell       39592 2012-06-14 06:26 linker
+lrwxr-xr-x root     shell             2012-06-14 06:26 ln -> toolbox
+-rwxr-xr-x root     shell       18344 2012-06-14 06:26 load_oemlogo
+-rwxr-xr-x root     shell       44548 2012-06-14 06:26 loc_api_app
+lrwxr-xr-x root     shell             2012-06-14 06:26 log -> toolbox
+-rwxr-xr-x root     shell       14016 2012-06-14 06:26 logcat
+-rwxr-xr-x root     shell        9828 2012-06-14 06:26 logwrapper
+lrwxr-xr-x root     shell             2012-06-14 06:26 ls -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 lsmod -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 lsof -> toolbox
+-rwxr-xr-x root     shell        5572 2012-06-14 06:26 make_ext4fs
+-rwxr-xr-x root     shell        5560 2012-06-14 06:26 mediaserver
+lrwxr-xr-x root     shell             2012-06-14 06:26 mkdir -> toolbox
+-rwxr-xr-x root     shell      151964 2012-06-14 06:26 mksh
+-rwxr-xr-x root     shell       17552 2012-06-14 06:26 mm-abl-daemon
+-rwxr-xr-x root     shell       22356 2012-06-14 06:26 mm-adec-omxQcelpHw-test
+-rwxr-xr-x root     shell       22388 2012-06-14 06:26 mm-adec-omxaac-test
+-rwxr-xr-x root     shell       26452 2012-06-14 06:26 mm-adec-omxadpcm-test
+-rwxr-xr-x root     shell       26468 2012-06-14 06:26 mm-adec-omxamr-test
+-rwxr-xr-x root     shell       22400 2012-06-14 06:26 mm-adec-omxamrwb-test
+-rwxr-xr-x root     shell       34592 2012-06-14 06:26 mm-adec-omxmp3-test
+-rwxr-xr-x root     shell       26476 2012-06-14 06:26 mm-adec-omxvam-test
+-rwxr-xr-x root     shell       26504 2012-06-14 06:26 mm-adec-omxwma-test
+-rwxr-xr-x root     shell       18216 2012-06-14 06:26 mm-aenc-omxaac-test
+-rwxr-xr-x root     shell       14060 2012-06-14 06:26 mm-aenc-omxamr-test
+-rwxr-xr-x root     shell       22552 2012-06-14 06:26 mm-aenc-omxevrc-test
+-rwxr-xr-x root     shell       22552 2012-06-14 06:26 mm-aenc-omxqcelp13-test
+-rwxr-xr-x root     shell        5476 2012-06-14 06:26 mm-audio-alsa-test
+-rwxr-xr-x root     shell       16064 2012-06-14 06:26 mm-audio-ctrl-test
+-rwxr-xr-x root     shell        5592 2012-06-14 06:26 mm-audio-mvs-test
+-rwxr-xr-x root     shell      167228 2012-06-14 06:26 mm-audio-native-test
+-rwxr-xr-x root     shell        5824 2012-06-14 06:26 mm-audio-voem_if-test
+-rwxr-xr-x root     shell       22268 2012-06-14 06:26 mm-jpeg-dec-test
+-rwxr-xr-x root     shell       22300 2012-06-14 06:26 mm-jpeg-enc-test
+-rwxr-xr-x root     shell       26420 2012-06-14 06:26 mm-jps-enc-test
+-rwxr-xr-x root     shell       22344 2012-06-14 06:26 mm-mpo-enc-test
+-rwxr-xr-x root     shell        9788 2012-06-14 06:26 mm-omx-devmgr
+-rwxr-xr-x root     shell        5516 2012-06-14 06:26 mm-qcamera-daemon
+-rwxr-xr-x root     shell       62388 2012-06-14 06:26 mm-qcamera-test
+-rwxr-xr-x root     shell       10720 2012-06-14 06:26 mm-qcamera-testsuite-client
+-rwxr-xr-x root     shell       34796 2012-06-14 06:26 mm-vdec-omx-test
+-rwxr-xr-x root     shell       30536 2012-06-14 06:26 mm-venc-omx-test720p
+-rwxr-xr-x root     shell       13816 2012-06-14 06:26 mm-video-driver-test
+-rwxr-xr-x root     shell       13736 2012-06-14 06:26 mm-video-encdrv-test
+-rwxr-xr-x root     shell        9868 2012-06-14 06:26 modempre
+-rwxr-xr-x root     shell         217 2012-06-14 06:26 monkey
+lrwxr-xr-x root     shell             2012-06-14 06:26 mount -> toolbox
+-rwxr-xr-x root     shell       18384 2012-06-14 06:26 mtpd
+lrwxr-xr-x root     shell             2012-06-14 06:26 mv -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 nandread -> toolbox
+-rwxr-xr-x root     shell        5616 2012-06-14 06:26 ndc
+-rwxr-s--- root     inet         5756 2012-06-14 06:26 netcfg
+-rwxr-xr-x root     shell       64588 2012-06-14 06:26 netd
+-rwxr-xr-x root     shell      104504 2012-06-14 06:26 netmgrd
+lrwxr-xr-x root     shell             2012-06-14 06:26 netstat -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 newfs_msdos -> toolbox
+-rwxr-xr-x root     shell        5536 2012-06-14 06:26 nfc_check
+-rwxr-xr-x root     shell        5580 2012-06-14 06:26 nl_listener
+lrwxr-xr-x root     shell             2012-06-14 06:26 notify -> toolbox
+-rwxr-xr-x root     shell        5688 2012-06-14 06:26 oem_rpc_svc
+-rwxr-xr-x root     shell        5436 2012-06-14 06:26 oeminfo_test
+-rwxr-xr-x root     shell       32704 2012-06-14 06:26 omx_tests
+-rwxr-xr-x root     shell       18756 2012-06-14 06:26 pand
+-rwxr-sr-x root     net_raw     26700 2012-06-14 06:26 ping
+-rwxr-xr-x root     shell         191 2012-06-14 06:26 pm
+-rwxr-xr-x root     shell       18156 2012-06-14 06:26 port-bridge
+-rwxr-xr-x root     shell      135524 2012-06-14 06:26 pppd
+lrwxr-xr-x root     shell             2012-06-14 06:26 printenv -> toolbox
+-rwxr-xr-x root     shell       18448 2012-06-14 06:26 profiler_daemon
+lrwxr-xr-x root     shell             2012-06-14 06:26 ps -> toolbox
+-rwxr-xr-x root     shell       88472 2012-06-14 06:26 qmiproxy
+-rwxr-xr-x root     shell       35816 2012-06-14 06:26 qmuxd
+-rwxr-xr-x root     shell      166964 2012-06-14 06:26 racoon
+-rwxr-xr-x root     shell       30428 2012-06-14 06:26 radish
+lrwxr-xr-x root     shell             2012-06-14 06:26 reboot -> toolbox
+-rwxr-xr-x root     shell      295064 2012-06-14 06:26 recovery
+lrwxr-xr-x root     shell             2012-06-14 06:26 renice -> toolbox
+-rwxr-xr-x root     shell        9916 2012-06-14 06:26 rild
+lrwxr-xr-x root     shell             2012-06-14 06:26 rm -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 rmdir -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 rmmod -> toolbox
+-rwxr-xr-x root     shell        5656 2012-06-14 06:26 rmt_oeminfo
+-rwxr-xr-x root     shell       10284 2012-06-14 06:26 rmt_storage
+lrwxr-xr-x root     shell             2012-06-14 06:26 route -> toolbox
+-rwsr-s--- root     shell       64004 2012-06-14 06:26 run-as
+-rwxr-xr-x root     shell       26696 2012-06-14 06:26 sapd
+-rwxr-xr-x root     shell        5456 2012-06-14 06:26 schedtest
+lrwxr-xr-x root     shell             2012-06-14 06:26 schedtop -> toolbox
+-rwxr-xr-x root     shell        5688 2012-06-14 06:26 screencap
+-rwxr-xr-x root     shell       34748 2012-06-14 06:26 screenshot
+-rwxr-xr-x root     shell       13996 2012-06-14 06:26 sdcard
+-rwxr-xr-x root     shell       42484 2012-06-14 06:26 sdptool
+lrwxr-xr-x root     shell             2012-06-14 06:26 sendevent -> toolbox
+-rwxr-xr-x root     shell        5512 2012-06-14 06:26 sensorservice
+-rwxr-xr-x root     shell        9920 2012-06-14 06:26 service
+-rwxr-xr-x root     shell       10056 2012-06-14 06:26 servicemanager
+lrwxr-xr-x root     shell             2012-06-14 06:26 setconsole -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 setprop -> toolbox
+-rwxr-xr-x root     shell        5648 2012-06-14 06:26 setup_fs
+lrwxr-xr-x root     shell             2012-06-14 06:26 sh -> mksh
+-rwxr-xr-x root     shell       23272 2012-06-14 06:26 shutdownanimation
+-rwxr-xr-x root     shell        9660 2012-06-14 06:26 simg2img
+lrwxr-xr-x root     shell             2012-06-14 06:26 sleep -> toolbox
+-rwxr-xr-x root     shell        9900 2012-06-14 06:26 sleeplogcat
+lrwxr-xr-x root     shell             2012-06-14 06:26 smd -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 start -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 stop -> toolbox
+-rwxr-xr-x root     shell        5512 2012-06-14 06:26 surfaceflinger
+-rwxr-xr-x root     shell         192 2012-06-14 06:26 svc
+lrwxr-xr-x root     shell             2012-06-14 06:26 sync -> toolbox
+-rwxr-xr-x root     shell        5488 2012-06-14 06:26 system_server
+-rwxr-x--- root     system      72232 2012-06-14 06:26 tc
+-rwxr-xr-x root     shell       35096 2012-06-14 06:26 test_diag
+-rwxr-xr-x root     shell       14412 2012-06-14 06:26 test_gemini
+-rwxr-xr-x root     shell       18340 2012-06-14 06:26 thermald
+-rwxr-xr-x root     shell       99072 2012-06-14 06:26 toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 top -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 touch -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 umount -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 uptime -> toolbox
+-rwxr-xr-x root     shell        5500 2012-06-14 06:26 usbhub
+-rwxr-xr-x root     shell        5588 2012-06-14 06:26 usbhub_init
+-rwxr-xr-x root     shell       31656 2012-06-14 06:26 v4l2-qcamera-app
+-rwxr-xr-x root     shell        5620 2012-06-14 06:26 vdc
+lrwxr-xr-x root     shell             2012-06-14 06:26 vmstat -> toolbox
+-rwxr-xr-x root     shell       68428 2012-06-14 06:26 vold
+lrwxr-xr-x root     shell             2012-06-14 06:26 watchprops -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 wipe -> toolbox
+lrwxr-xr-x root     shell             2012-06-14 06:26 wiperiface -> wiperiface_v01.so
+-rwxr-xr-x root     shell        9912 2012-06-14 06:26 wiperiface_v01
+-rwxr-xr-x root     shell      224544 2012-06-14 06:26 wl
+-rwxr-xr-x root     shell      408520 2012-06-14 06:26 wl_4330
+-rwxr-xr-x root     shell        9764 2012-06-14 06:26 wlan_detect
+-rwxr-xr-x root     shell       52720 2012-06-14 06:26 wpa_cli
+-rwxr-xr-x root     shell      616196 2012-06-14 06:26 wpa_supplicant
+-rwxr-xr-x root     shell        5512 2012-06-14 06:26 write_NV_114
+
+/system/cdrom:
+-rw-r--r-- root     root      8128512 2012-06-14 06:26 autorun.iso
+
+/system/etc:
+-rw-r--r-- root     root       119038 2012-06-14 06:26 NOTICE.html.gz
+-rw-r--r-- root     root         2259 2012-06-14 06:26 OperatorPolicy.xml
+-rw-r--r-- root     root         4070 2012-06-14 06:26 QoSPolicy.xml
+-rw-r--r-- root     root          870 2012-06-14 06:26 UserPolicy.xml
+-rw-r--r-- root     root       550369 2012-06-14 06:26 apns-conf.xml
+-rw-r--r-- root     root         3860 2012-06-14 06:26 audio_effects.conf
+drwxr-xr-x root     root              2012-06-14 06:26 bluetooth
+-r--r----- bluetooth bluetooth      935 2012-06-14 06:26 dbus.conf
+drwxr-xr-x root     root              2012-06-14 06:26 dhcpcd
+-rw-r--r-- root     root        12863 2012-06-14 06:26 event-log-tags
+-rw-r--r-- root     root         2022 2012-06-14 06:26 external_sd.fstab
+-rw-r--r-- root     root         2689 2012-06-14 06:26 fallback_fonts.xml
+drwxr-xr-x root     root              2012-06-14 06:26 firmware
+-rw-r--r-- root     root        59458 2012-06-14 06:26 globalAutoAdapt-conf.xml
+-rw-r--r-- root     root         2431 2012-06-14 06:26 gps.conf
+-rw-r--r-- root     root           25 2012-06-14 06:26 hosts
+-r-xr-x--- root     shell        1755 2012-06-14 06:26 init.goldfish.sh
+-rw-r--r-- root     root         4564 2012-06-14 06:26 init.qcom.bt.sh
+-rw-r--r-- root     root         2672 2012-06-14 06:26 init.qcom.coex.sh
+-rw-r--r-- root     root         3071 2012-06-14 06:26 init.qcom.fm.sh
+-rw-r--r-- root     root         9620 2012-06-14 06:26 init.qcom.post_boot.sh
+-rwxrwxrwx system   system       2985 2012-06-14 06:26 init.qcom.sdio.sh
+-rw-r--r-- root     root         7528 2012-06-14 06:26 init.qcom.wifi.sh
+-rw-r--r-- root     root         2022 2012-06-14 06:26 internal_sd.fstab
+-rw-r--r-- root     root         1804 2012-06-14 06:26 loc_parameter.ini
+-rw-r--r-- root     root        17528 2012-06-14 06:26 media_profiles.xml
+-rw-r--r-- root     root          730 2012-06-14 06:26 mkshrc
+drwxr-xr-x root     root              2012-06-14 06:26 permissions
+drwxr-xr-x root     root              2012-06-14 06:26 ppp
+drwxr-xr-x root     root              2012-06-14 06:26 security
+-rw-r--r-- root     root         2595 2012-06-14 06:26 system_fonts.xml
+-rw-r--r-- root     root          207 2012-06-14 06:26 thermald.conf
+drwxr-xr-x root     root              2012-06-14 06:26 updatecmds
+-rw-r--r-- root     root         1671 2012-06-14 06:26 vold.fstab
+drwxr-xr-x root     root              2012-06-14 06:26 wifi
+-rw-r--r-- root     root          719 2012-06-14 06:26 wiperconfig.xml
+
+/system/etc/bluetooth:
+-rw-r--r-- root     root        17886 2012-06-14 06:26 BCM4329B1_HW.hcd
+-rw-r--r-- root     root        52045 2012-06-14 06:26 BCM4330.hcd
+-rw-r--r-- root     root        52045 2012-06-14 06:26 BCM4330B1_002.001.003.0688.0689.hcd
+-r--r----- bluetooth bluetooth     1760 2012-06-14 06:26 audio.conf
+-rw-r----- system   system       1582 2012-06-14 06:26 auto_pairing.conf
+-r--r--r-- net_bt   net_bt        401 2012-06-14 06:26 blacklist.conf
+-rw-r--r-- root     root         2924 2012-06-14 06:26 did.conf
+-rw-r--r-- root     root         3013 2012-06-14 06:26 init.bcm.bt.sh
+-rw-r--r-- root     root         2097 2012-06-14 06:26 init.bcm.chip_off.sh
+-rw-r--r-- root     root         2029 2012-06-14 06:26 init.bcm.chip_on.sh
+-r--r----- bluetooth bluetooth      262 2012-06-14 06:26 input.conf
+-r--r----- bluetooth bluetooth     3059 2012-06-14 06:26 main.conf
+-r--r----- bluetooth bluetooth      168 2012-06-14 06:26 network.conf
+
+/system/etc/dhcpcd:
+drwxr-xr-x root     root              2012-06-14 06:26 dhcpcd-hooks
+-r-xr-x--- dhcp     shell        1009 2012-06-14 06:26 dhcpcd-run-hooks
+-rw-r--r-- root     root          189 2012-06-14 06:26 dhcpcd.conf
+
+/system/etc/dhcpcd/dhcpcd-hooks:
+-rw-r--r-- root     root          705 2012-06-14 06:26 20-dns.conf
+-rw-r--r-- root     root          808 2012-06-14 06:26 95-configured
+
+/system/etc/firmware:
+-rw-r--r-- root     root        72020 2012-06-14 06:26 cyttsp_7630_fluid.hex
+-rw-r--r-- root     root         1156 2012-06-14 06:26 leia_pfp_470.fw
+-rw-r--r-- root     root         9220 2012-06-14 06:26 leia_pm4_470.fw
+-rw-r--r-- root     root         9000 2012-06-14 06:26 vidc_720p_command_control.fw
+-rw-r--r-- root     root        23256 2012-06-14 06:26 vidc_720p_h263_dec_mc.fw
+-rw-r--r-- root     root        45336 2012-06-14 06:26 vidc_720p_h264_dec_mc.fw
+-rw-r--r-- root     root        37776 2012-06-14 06:26 vidc_720p_h264_enc_mc.fw
+-rw-r--r-- root     root        32488 2012-06-14 06:26 vidc_720p_mp4_dec_mc.fw
+-rw-r--r-- root     root        35244 2012-06-14 06:26 vidc_720p_mp4_enc_mc.fw
+-rw-r--r-- root     root        43176 2012-06-14 06:26 vidc_720p_vc1_dec_mc.fw
+-rw-r--r-- root     root         1156 2012-06-14 06:26 yamato_pfp.fw
+-rw-r--r-- root     root         9220 2012-06-14 06:26 yamato_pm4.fw
+
+/system/etc/permissions:
+-rw-r--r-- root     root          858 2012-06-14 06:26 android.hardware.bluetooth.xml
+-rw-r--r-- root     root          880 2012-06-14 06:26 android.hardware.camera.autofocus.xml
+-rw-r--r-- root     root         1001 2012-06-14 06:26 android.hardware.camera.flash-autofocus.xml
+-rw-r--r-- root     root          826 2012-06-14 06:26 android.hardware.camera.front.xml
+-rw-r--r-- root     root          826 2012-06-14 06:26 android.hardware.camera.xml
+-rw-r--r-- root     root          998 2012-06-14 06:26 android.hardware.location.gps.xml
+-rw-r--r-- root     root         1005 2012-06-14 06:26 android.hardware.location.xml
+-rw-r--r-- root     root          854 2012-06-14 06:26 android.hardware.microphone.xml
+-rw-r--r-- root     root          813 2012-06-14 06:26 android.hardware.screen.landscape.xml
+-rw-r--r-- root     root          812 2012-06-14 06:26 android.hardware.screen.portrait.xml
+-rw-r--r-- root     root          877 2012-06-14 06:26 android.hardware.sensor.accelerometer.xml
+-rw-r--r-- root     root          857 2012-06-14 06:26 android.hardware.sensor.compass.xml
+-rw-r--r-- root     root          806 2012-06-14 06:26 android.hardware.sensor.gyroscope.xml
+-rw-r--r-- root     root          816 2012-06-14 06:26 android.hardware.sensor.light.xml
+-rw-r--r-- root     root          815 2012-06-14 06:26 android.hardware.sensor.proximity.xml
+-rw-r--r-- root     root          937 2012-06-14 06:26 android.hardware.telephony.gsm.xml
+-rw-r--r-- root     root         1035 2012-06-14 06:26 android.hardware.touchscreen.multitouch.xml
+-rw-r--r-- root     root          859 2012-06-14 06:26 android.hardware.touchscreen.xml
+-rw-r--r-- root     root          975 2012-06-14 06:26 android.hardware.usb.accessory.xml
+-rw-r--r-- root     root          885 2012-06-14 06:26 android.hardware.wifi.xml
+-rw-r--r-- root     root         1050 2012-06-14 06:26 android.software.live_wallpaper.xml
+-rw-r--r-- root     root          165 2012-06-14 06:26 cneapiclient.xml
+-rw-r--r-- root     root          828 2012-06-14 06:26 com.android.location.provider.xml
+-rw-r--r-- root     root          169 2012-06-14 06:26 com.broadcom.bt.le.xml
+-rw-r--r-- root     root          163 2012-06-14 06:26 com.broadcom.bt.xml
+-rw-r--r-- root     root          816 2012-06-14 06:26 com.google.android.maps.xml
+-rw-r--r-- root     root          835 2012-06-14 06:26 com.google.android.media.effects.xml
+-rw-r--r-- root     root          828 2012-06-14 06:26 com.google.widevine.software.drm.xml
+-rw-r--r-- root     root          839 2012-06-14 06:26 com.qualcomm.location.quipslib.xml
+-rw-r--r-- root     root          848 2012-06-14 06:26 com.qualcomm.location.vzw_library.xml
+-rw-r--r-- root     root         3191 2012-06-14 06:26 handheld_core_hardware.xml
+-rw-r--r-- root     root         9350 2012-06-14 06:26 platform.xml
+-rw-r--r-- root     root          167 2012-06-14 06:26 qcnvitems.xml
+-rw-r--r-- root     root          167 2012-06-14 06:26 qcrilhook.xml
+
+/system/etc/ppp:
+-r-xr-xr-x root     root         5596 2012-06-14 06:26 ip-up-vpn
+
+/system/etc/security:
+drwxr-xr-x root     root              2012-06-14 06:26 cacerts
+-rw-r--r-- root     root         1276 2012-06-14 06:26 otacerts.zip
+
+/system/etc/security/cacerts:
+-rw-r--r-- root     root         4767 2012-06-14 06:26 00673b5b.0
+-rw-r--r-- root     root         4573 2012-06-14 06:26 03e16f6c.0
+-rw-r--r-- root     root         5292 2012-06-14 06:26 08aef7bb.0
+-rw-r--r-- root     root         4540 2012-06-14 06:26 0d188d89.0
+-rw-r--r-- root     root         4614 2012-06-14 06:26 10531352.0
+-rw-r--r-- root     root         4686 2012-06-14 06:26 111e6273.0
+-rw-r--r-- root     root         5027 2012-06-14 06:26 1155c94b.0
+-rw-r--r-- root     root         5345 2012-06-14 06:26 119afc2e.0
+-rw-r--r-- root     root         5844 2012-06-14 06:26 11a09b38.0
+-rw-r--r-- root     root         4300 2012-06-14 06:26 12d55845.0
+-rw-r--r-- root     root         4548 2012-06-14 06:26 17b51fe6.0
+-rw-r--r-- root     root         6251 2012-06-14 06:26 1920cacb.0
+-rw-r--r-- root     root         4890 2012-06-14 06:26 1dac3003.0
+-rw-r--r-- root     root         3603 2012-06-14 06:26 1dbdda5b.0
+-rw-r--r-- root     root         7074 2012-06-14 06:26 1dcd6f4c.0
+-rw-r--r-- root     root         4724 2012-06-14 06:26 1df5ec47.0
+-rw-r--r-- root     root         4332 2012-06-14 06:26 1e8e7201.0
+-rw-r--r-- root     root         8385 2012-06-14 06:26 1eb37bdf.0
+-rw-r--r-- root     root         4712 2012-06-14 06:26 219d9499.0
+-rw-r--r-- root     root         4747 2012-06-14 06:26 23f4c490.0
+-rw-r--r-- root     root         2948 2012-06-14 06:26 27af790d.0
+-rw-r--r-- root     root         5157 2012-06-14 06:26 2afc57aa.0
+-rw-r--r-- root     root         5785 2012-06-14 06:26 2e8714cb.0
+-rw-r--r-- root     root         4699 2012-06-14 06:26 2fa87019.0
+-rw-r--r-- root     root         7290 2012-06-14 06:26 2fb1850a.0
+-rw-r--r-- root     root         8829 2012-06-14 06:26 33815e15.0
+-rw-r--r-- root     root         4637 2012-06-14 06:26 343eb6cb.0
+-rw-r--r-- root     root         4628 2012-06-14 06:26 399e7759.0
+-rw-r--r-- root     root         4706 2012-06-14 06:26 3a3b02ce.0
+-rw-r--r-- root     root         4361 2012-06-14 06:26 3ad48a91.0
+-rw-r--r-- root     root         4892 2012-06-14 06:26 3c58f906.0
+-rw-r--r-- root     root         7412 2012-06-14 06:26 3c860d51.0
+-rw-r--r-- root     root         7350 2012-06-14 06:26 3d441de8.0
+-rw-r--r-- root     root         4778 2012-06-14 06:26 3e7271e8.0
+-rw-r--r-- root     root         5512 2012-06-14 06:26 418595b9.0
+-rw-r--r-- root     root         4817 2012-06-14 06:26 455f1b52.0
+-rw-r--r-- root     root         7432 2012-06-14 06:26 46b2fd3b.0
+-rw-r--r-- root     root         4263 2012-06-14 06:26 48478734.0
+-rw-r--r-- root     root         2687 2012-06-14 06:26 4d654d1d.0
+-rw-r--r-- root     root         4445 2012-06-14 06:26 4e18c148.0
+-rw-r--r-- root     root         5076 2012-06-14 06:26 4fbd6bfa.0
+-rw-r--r-- root     root         4731 2012-06-14 06:26 5021a0a2.0
+-rw-r--r-- root     root         7420 2012-06-14 06:26 5046c355.0
+-rw-r--r-- root     root         5165 2012-06-14 06:26 524d9b43.0
+-rw-r--r-- root     root         4959 2012-06-14 06:26 56b8a0b6.0
+-rw-r--r-- root     root         4433 2012-06-14 06:26 57692373.0
+-rw-r--r-- root     root         4826 2012-06-14 06:26 58a44af1.0
+-rw-r--r-- root     root         3613 2012-06-14 06:26 594f1775.0
+-rw-r--r-- root     root         4804 2012-06-14 06:26 5a3f0ff8.0
+-rw-r--r-- root     root         4678 2012-06-14 06:26 5a5372fc.0
+-rw-r--r-- root     root         6031 2012-06-14 06:26 5cf9d536.0
+-rw-r--r-- root     root         3478 2012-06-14 06:26 5e4e69e7.0
+-rw-r--r-- root     root         4824 2012-06-14 06:26 60afe812.0
+-rw-r--r-- root     root         4690 2012-06-14 06:26 635ccfd5.0
+-rw-r--r-- root     root         4793 2012-06-14 06:26 67495436.0
+-rw-r--r-- root     root         4648 2012-06-14 06:26 69105f4f.0
+-rw-r--r-- root     root         4534 2012-06-14 06:26 6adf0799.0
+-rw-r--r-- root     root         3957 2012-06-14 06:26 6e8bf996.0
+-rw-r--r-- root     root         4484 2012-06-14 06:26 6fcc125d.0
+-rw-r--r-- root     root         4270 2012-06-14 06:26 72f369af.0
+-rw-r--r-- root     root         3105 2012-06-14 06:26 72fa7371.0
+-rw-r--r-- root     root         3147 2012-06-14 06:26 74c26bd0.0
+-rw-r--r-- root     root         4831 2012-06-14 06:26 75680d2e.0
+-rw-r--r-- root     root         2664 2012-06-14 06:26 7651b327.0
+-rw-r--r-- root     root         4949 2012-06-14 06:26 76579174.0
+-rw-r--r-- root     root         4312 2012-06-14 06:26 7999be0d.0
+-rw-r--r-- root     root         5157 2012-06-14 06:26 7a481e66.0
+-rw-r--r-- root     root         7332 2012-06-14 06:26 7a819ef2.0
+-rw-r--r-- root     root         3010 2012-06-14 06:26 7d3cd826.0
+-rw-r--r-- root     root         4524 2012-06-14 06:26 7d453d8f.0
+-rw-r--r-- root     root         4679 2012-06-14 06:26 81b9768f.0
+-rw-r--r-- root     root         4452 2012-06-14 06:26 8470719d.0
+-rw-r--r-- root     root         4634 2012-06-14 06:26 84cba82f.0
+-rw-r--r-- root     root         4571 2012-06-14 06:26 85cde254.0
+-rw-r--r-- root     root         4276 2012-06-14 06:26 86212b19.0
+-rw-r--r-- root     root         7156 2012-06-14 06:26 87753b0d.0
+-rw-r--r-- root     root         4260 2012-06-14 06:26 882de061.0
+-rw-r--r-- root     root         4535 2012-06-14 06:26 895cad1a.0
+-rw-r--r-- root     root         2850 2012-06-14 06:26 89c02a45.0
+-rw-r--r-- root     root         3613 2012-06-14 06:26 8f7b96c4.0
+-rw-r--r-- root     root         7988 2012-06-14 06:26 9339512a.0
+-rw-r--r-- root     root         4511 2012-06-14 06:26 95aff9e3.0
+-rw-r--r-- root     root         4150 2012-06-14 06:26 9685a493.0
+-rw-r--r-- root     root         4405 2012-06-14 06:26 9772ca32.0
+-rw-r--r-- root     root         7209 2012-06-14 06:26 9d6523ce.0
+-rw-r--r-- root     root         4369 2012-06-14 06:26 9dbefe7b.0
+-rw-r--r-- root     root         8370 2012-06-14 06:26 9f533518.0
+-rw-r--r-- root     root         5431 2012-06-14 06:26 a0bc6fbb.0
+-rw-r--r-- root     root         3716 2012-06-14 06:26 a15b3b6b.0
+-rw-r--r-- root     root         4284 2012-06-14 06:26 a3896b44.0
+-rw-r--r-- root     root         4123 2012-06-14 06:26 a7605362.0
+-rw-r--r-- root     root         2865 2012-06-14 06:26 a7d2cf64.0
+-rw-r--r-- root     root         4333 2012-06-14 06:26 ab5346f4.0
+-rw-r--r-- root     root         6145 2012-06-14 06:26 add67345.0
+-rw-r--r-- root     root         4368 2012-06-14 06:26 b0f3e76e.0
+-rw-r--r-- root     root         4355 2012-06-14 06:26 b7db1890.0
+-rw-r--r-- root     root         4515 2012-06-14 06:26 bc3f2570.0
+-rw-r--r-- root     root         3010 2012-06-14 06:26 bcdd5959.0
+-rw-r--r-- root     root         4576 2012-06-14 06:26 bda4cc84.0
+-rw-r--r-- root     root         4688 2012-06-14 06:26 bdacca6f.0
+-rw-r--r-- root     root         5229 2012-06-14 06:26 bf64f35b.0
+-rw-r--r-- root     root         3716 2012-06-14 06:26 c215bc69.0
+-rw-r--r-- root     root         3207 2012-06-14 06:26 c33a80d4.0
+-rw-r--r-- root     root         4524 2012-06-14 06:26 c527e4ab.0
+-rw-r--r-- root     root         4700 2012-06-14 06:26 c7e2a638.0
+-rw-r--r-- root     root         7834 2012-06-14 06:26 c8763593.0
+-rw-r--r-- root     root         2534 2012-06-14 06:26 ccc52f49.0
+-rw-r--r-- root     root         4591 2012-06-14 06:26 cdaebb72.0
+-rw-r--r-- root     root         4680 2012-06-14 06:26 cf701eeb.0
+-rw-r--r-- root     root         7520 2012-06-14 06:26 d16a5865.0
+-rw-r--r-- root     root         5089 2012-06-14 06:26 d537fba6.0
+-rw-r--r-- root     root         4887 2012-06-14 06:26 d64f06f3.0
+-rw-r--r-- root     root         3965 2012-06-14 06:26 d777342d.0
+-rw-r--r-- root     root         4987 2012-06-14 06:26 d8274e24.0
+-rw-r--r-- root     root         6980 2012-06-14 06:26 dbc54cab.0
+-rw-r--r-- root     root         3159 2012-06-14 06:26 ddc328ff.0
+-rw-r--r-- root     root         4280 2012-06-14 06:26 e48193cf.0
+-rw-r--r-- root     root         7505 2012-06-14 06:26 e60bf0c0.0
+-rw-r--r-- root     root         7148 2012-06-14 06:26 e775ed2d.0
+-rw-r--r-- root     root         3117 2012-06-14 06:26 e7b8d656.0
+-rw-r--r-- root     root         4854 2012-06-14 06:26 e8651083.0
+-rw-r--r-- root     root         7412 2012-06-14 06:26 ea169617.0
+-rw-r--r-- root     root         4270 2012-06-14 06:26 eb375c3e.0
+-rw-r--r-- root     root         3105 2012-06-14 06:26 ed049835.0
+-rw-r--r-- root     root         4694 2012-06-14 06:26 ed524cf5.0
+-rw-r--r-- root     root         5411 2012-06-14 06:26 ee7cd6fb.0
+-rw-r--r-- root     root         3010 2012-06-14 06:26 f4996e82.0
+-rw-r--r-- root     root         4672 2012-06-14 06:26 f58a60fe.0
+-rw-r--r-- root     root         7006 2012-06-14 06:26 f61bff45.0
+-rw-r--r-- root     root         7517 2012-06-14 06:26 f80cc7f6.0
+-rw-r--r-- root     root         4603 2012-06-14 06:26 fac084d7.0
+-rw-r--r-- root     root         5219 2012-06-14 06:26 facacbc6.0
+-rw-r--r-- root     root         4686 2012-06-14 06:26 fde84897.0
+-rw-r--r-- root     root         5106 2012-06-14 06:26 ff783690.0
+
+/system/etc/updatecmds:
+-rw-r--r-- root     root          846 2012-06-14 06:26 google_generic_update.txt
+
+/system/etc/wifi:
+-rw-r--r-- root     root           72 2012-06-14 06:26 wpa_supplicant.conf
+
+/system/fonts:
+-rw-r--r-- root     root         4824 2012-06-14 06:26 AndroidClock.ttf
+-rw-r--r-- root     root         4824 2012-06-14 06:26 AndroidClock_Highlight.ttf
+-rw-r--r-- root     root         4824 2012-06-14 06:26 AndroidClock_Solid.ttf
+-rw-r--r-- root     root         6880 2012-06-14 06:26 Clockopia.ttf
+-rw-r--r-- root     root       366760 2012-06-14 06:26 DroidNaskh-Regular.ttf
+lrw-r--r-- root     root              2012-06-14 06:26 DroidSans-Bold.ttf -> Roboto-Bold.ttf
+lrw-r--r-- root     root              2012-06-14 06:26 DroidSans.ttf -> Roboto-Regular.ttf
+-rw-r--r-- root     root        13856 2012-06-14 06:26 DroidSansArmenian.ttf
+-rw-r--r-- root     root       227928 2012-06-14 06:26 DroidSansEthiopic-Regular.ttf
+-rw-r--r-- root     root      5346972 2012-06-14 06:26 DroidSansFallback.ttf
+-rw-r--r-- root     root        21096 2012-06-14 06:26 DroidSansGeorgian.ttf
+-rw-r--r-- root     root        30280 2012-06-14 06:26 DroidSansHebrew-Bold.ttf
+-rw-r--r-- root     root        30024 2012-06-14 06:26 DroidSansHebrew-Regular.ttf
+-rw-r--r-- root     root       119380 2012-06-14 06:26 DroidSansMono.ttf
+-rw-r--r-- root     root        35584 2012-06-14 06:26 DroidSansThai.ttf
+-rw-r--r-- root     root       185228 2012-06-14 06:26 DroidSerif-Bold.ttf
+-rw-r--r-- root     root       190304 2012-06-14 06:26 DroidSerif-BoldItalic.ttf
+-rw-r--r-- root     root       177560 2012-06-14 06:26 DroidSerif-Italic.ttf
+-rw-r--r-- root     root       172916 2012-06-14 06:26 DroidSerif-Regular.ttf
+-rw-r--r-- root     root       139296 2012-06-14 06:26 Lohit-Bengali.ttf
+-rw-r--r-- root     root        64232 2012-06-14 06:26 Lohit-Devanagari.ttf
+-rw-r--r-- root     root        66184 2012-06-14 06:26 Lohit-Tamil.ttf
+-rw-r--r-- root     root        74864 2012-06-14 06:26 Roboto-Bold.ttf
+-rw-r--r-- root     root        75880 2012-06-14 06:26 Roboto-BoldItalic.ttf
+-rw-r--r-- root     root        75612 2012-06-14 06:26 Roboto-Italic.ttf
+-rw-r--r-- root     root        71740 2012-06-14 06:26 Roboto-Regular.ttf
+
+/system/framework:
+-rw-r--r-- root     root        16571 2012-06-14 06:26 am.jar
+-rw-r--r-- root     root       136959 2012-06-14 06:26 android.policy.jar
+-rw-r--r-- root     root        71095 2012-06-14 06:26 android.test.runner.jar
+-rw-r--r-- root     root       549357 2012-06-14 06:26 apache-xml.jar
+-rw-r--r-- root     root         6562 2012-06-14 06:26 bmgr.jar
+-rw-r--r-- root     root       358231 2012-06-14 06:26 bouncycastle.jar
+-rw-r--r-- root     root         5081 2012-06-14 06:26 browsermanagement.jar
+-rw-r--r-- root     root         2473 2012-06-14 06:26 bu.jar
+-rw-r--r-- root     root         1662 2012-06-14 06:26 cneapiclient.jar
+-rw-r--r-- root     root         3216 2012-06-14 06:26 com.android.location.provider.jar
+-rw-r--r-- root     root       232277 2012-06-14 06:26 com.broadcom.bt.jar
+-rw-r--r-- root     root        54209 2012-06-14 06:26 com.broadcom.bt.le.jar
+-rw-r--r-- root     root       156886 2012-06-14 06:26 com.google.android.maps.jar
+-rw-r--r-- root     root        35026 2012-06-14 06:26 com.google.android.media.effects.jar
+-rw-r--r-- root     root          688 2012-06-14 06:26 com.google.widevine.software.drm.jar
+-rw-r--r-- root     root        18971 2012-06-14 06:26 com.qualcomm.location.vzw_library.jar
+-rw-r--r-- root     root        38344 2012-06-14 06:26 com.quicinc.cne.jar
+-rw-r--r-- root     root         9981 2012-06-14 06:26 core-junit.jar
+-rw-r--r-- root     root      1276507 2012-06-14 06:26 core.jar
+-rw-r--r-- root     root       991770 2012-06-14 06:26 ext.jar
+-rw-r--r-- root     root       117046 2012-06-14 06:26 filterfw.jar
+-rw-r--r-- root     root       527937 2012-06-14 06:26 framework-res-hwext.apk
+-rw-r--r-- root     root     13131414 2012-06-14 06:26 framework-res.apk
+-rw-r--r-- root     root      4225508 2012-06-14 06:26 framework.jar
+-rw-r--r-- root     root         3318 2012-06-14 06:26 ime.jar
+-rw-r--r-- root     root         2437 2012-06-14 06:26 input.jar
+-rw-r--r-- root     root        28897 2012-06-14 06:26 javax.obex.jar
+-rw-r--r-- root     root         2152 2012-06-14 06:26 modemwarmup.jar
+-rw-r--r-- root     root        46739 2012-06-14 06:26 monkey.jar
+-rw-r--r-- root     root        10154 2012-06-14 06:26 org.simalliance.openmobileapi.jar
+-rw-r--r-- root     root        13108 2012-06-14 06:26 pm.jar
+-rw-r--r-- root     root        45595 2012-06-14 06:26 qcnvitems.jar
+-rw-r--r-- root     root         5676 2012-06-14 06:26 qcrilhook.jar
+-rw-r--r-- root     root       894730 2012-06-14 06:26 services.jar
+-rw-r--r-- root     root         3783 2012-06-14 06:26 svc.jar
+
+/system/lib:
+drwxr-xr-x root     root              2012-06-14 06:26 bluez-plugin
+drwxr-xr-x root     root              2012-06-14 06:26 drm
+drwxr-xr-x root     root              2012-06-14 06:26 egl
+drwxr-xr-x root     root              2012-06-14 06:26 helix
+drwxr-xr-x root     root              2012-06-14 06:26 hw
+-rw-r--r-- root     root        46896 2012-06-14 06:26 libC2D2.so
+-rw-r--r-- root     root         5656 2012-06-14 06:26 libDiagService.so
+-rw-r--r-- root     root       144564 2012-06-14 06:26 libEGL.so
+-rw-r--r-- root     root         9468 2012-06-14 06:26 libETC1.so
+-rw-r--r-- root     root       186080 2012-06-14 06:26 libFFTEm.so
+-rw-r--r-- root     root        21728 2012-06-14 06:26 libGLESv1_CM.so
+-rw-r--r-- root     root        17632 2012-06-14 06:26 libGLESv2.so
+-rw-r--r-- root     root       128580 2012-06-14 06:26 libGLESv2_dbg.so
+-rw-r--r-- root     root       182031 2012-06-14 06:26 libHWColorPen.so
+-rw-r--r-- root     root         9752 2012-06-14 06:26 libNimsWrap.so
+-rw-r--r-- root     root        63816 2012-06-14 06:26 libOmxAacDec.so
+-rw-r--r-- root     root        26276 2012-06-14 06:26 libOmxAacEnc.so
+-rw-r--r-- root     root        34492 2012-06-14 06:26 libOmxAdpcmDec.so
+-rw-r--r-- root     root        43072 2012-06-14 06:26 libOmxAmrDec.so
+-rw-r--r-- root     root        22432 2012-06-14 06:26 libOmxAmrEnc.so
+-rw-r--r-- root     root        17904 2012-06-14 06:26 libOmxAmrRtpDec.so
+-rw-r--r-- root     root        38696 2012-06-14 06:26 libOmxAmrwbDec.so
+-rw-r--r-- root     root        14340 2012-06-14 06:26 libOmxCore.so
+-rw-r--r-- root     root        93604 2012-06-14 06:26 libOmxEvrcDec.so
+-rw-r--r-- root     root        30376 2012-06-14 06:26 libOmxEvrcEnc.so
+-rw-r--r-- root     root        42796 2012-06-14 06:26 libOmxMp3Dec.so
+-rw-r--r-- root     root        96188 2012-06-14 06:26 libOmxQcelp13Dec.so
+-rw-r--r-- root     root        30376 2012-06-14 06:26 libOmxQcelp13Enc.so
+-rw-r--r-- root     root        38588 2012-06-14 06:26 libOmxQcelpHwDec.so
+-rw-r--r-- root     root        98716 2012-06-14 06:26 libOmxVdec.so
+-rw-r--r-- root     root        78192 2012-06-14 06:26 libOmxVenc.so
+-rw-r--r-- root     root        42740 2012-06-14 06:26 libOmxWmaDec.so
+-rw-r--r-- root     root         5548 2012-06-14 06:26 libOpenMAXAL.so
+-rw-r--r-- root     root         9680 2012-06-14 06:26 libOpenSLES.so
+-rw-r--r-- root     root       251728 2012-06-14 06:26 libOpenVG.so
+-rw-r--r-- root     root         9632 2012-06-14 06:26 libQWiFiSoftApCfg.so
+-rw-r--r-- root     root        13820 2012-06-14 06:26 libQcomUI.so
+-rw-r--r-- root     root       520532 2012-06-14 06:26 libRS.so
+-rw-r--r-- root     root         5432 2012-06-14 06:26 libSR_AudioIn.so
+-rw-r--r-- root     root      1086144 2012-06-14 06:26 libWVphoneAPI.so
+-rw-r--r-- root     root      1192724 2012-06-14 06:26 libWnnEngDic.so
+-rw-r--r-- root     root      1341612 2012-06-14 06:26 libWnnJpnDic.so
+-rw-r--r-- root     root       391388 2012-06-14 06:26 liballjoyn.so
+-rw-r--r-- root     root        61012 2012-06-14 06:26 libandroid.so
+-rw-r--r-- root     root       740952 2012-06-14 06:26 libandroid_runtime.so
+-rw-r--r-- root     root        74224 2012-06-14 06:26 libandroid_servers.so
+-rw-r--r-- root     root         5428 2012-06-14 06:26 libassd.so
+-rw-r--r-- root     root        13808 2012-06-14 06:26 libaudcal.so
+-rw-r--r-- root     root         9568 2012-06-14 06:26 libaudioalsa.so
+-rw-r--r-- root     root        18212 2012-06-14 06:26 libaudioeffect_jni.so
+-rw-r--r-- root     root        13372 2012-06-14 06:26 libaudioeq.so
+-rw-r--r-- root     root       275964 2012-06-14 06:26 libaudioflinger.so
+-rw-r--r-- root     root         9520 2012-06-14 06:26 libauth.so
+-rw-r--r-- root     root       599196 2012-06-14 06:26 libavcodec.so
+-rw-r--r-- root     root       188732 2012-06-14 06:26 libavformat.so
+-rw-r--r-- root     root        38520 2012-06-14 06:26 libavutil.so
+-rw-r--r-- root     root      4346428 2012-06-14 06:26 libbcc.so
+-rw-r--r-- root     root           20 2012-06-14 06:26 libbcc.so.sha1
+-rw-r--r-- root     root       861496 2012-06-14 06:26 libbcinfo.so
+-rw-r--r-- root     root         5424 2012-06-14 06:26 libbcm_fm_power.so
+-rw-r--r-- root     root       166304 2012-06-14 06:26 libbinder.so
+-rw-r--r-- root     root         9592 2012-06-14 06:26 libbluedroid.so
+-rw-r--r-- root     root        74896 2012-06-14 06:26 libbluetooth.so
+-rw-r--r-- root     root       282028 2012-06-14 06:26 libbluetoothd.so
+-rw-r--r-- root     root        17836 2012-06-14 06:26 libbson.so
+-rw-r--r-- root     root        35092 2012-06-14 06:26 libbt.so
+-rw-r--r-- root     root        13764 2012-06-14 06:26 libbtio.so
+-rw-r--r-- root     root       165832 2012-06-14 06:26 libbtsvc.so
+-rw-r--r-- root     root       282408 2012-06-14 06:26 libc.so
+-rw-r--r-- root     root       125684 2012-06-14 06:26 libcamera_client.so
+-rw-r--r-- root     root        55348 2012-06-14 06:26 libcameraservice.so
+-rw-r--r-- root     root         5416 2012-06-14 06:26 libchip_management.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_imx074_default_video.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_imx074_preview.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_imx074_zsl.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9e013_ar.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9e013_default_video.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9e013_preview.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9e013_sunny_ar.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9e013_sunny_default_video.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9e013_sunny_preview.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9e013_sunny_video_hfr.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9e013_video_hfr.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9p017_ar.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9p017_default_video.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_mt9p017_preview.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_s5k4e1_ar.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_s5k4e1_default_video.so
+-rw-r--r-- root     root        42240 2012-06-14 06:26 libchromatix_s5k4e1_preview.so
+-rw-r--r-- root     root      2445456 2012-06-14 06:26 libchromium_net.so
+-rw-r--r-- root     root        93088 2012-06-14 06:26 libclcore.bc
+-rw-r--r-- root     root       235316 2012-06-14 06:26 libcm.so
+-rw-r--r-- root     root        48844 2012-06-14 06:26 libcneapiclient.so
+-rw-r--r-- root     root         5488 2012-06-14 06:26 libcneqmiutils.so
+-rw-r--r-- root     root        30384 2012-06-14 06:26 libcneutils.so
+-rw-r--r-- root     root         5404 2012-06-14 06:26 libcommondefs.so
+-rw-r--r-- root     root        14224 2012-06-14 06:26 libconfigdb.so
+-rw-r--r-- root     root         9476 2012-06-14 06:26 libcontrast.so
+-rw-r--r-- root     root       826212 2012-06-14 06:26 libcrypto.so
+-rw-r--r-- root     root         5420 2012-06-14 06:26 libctest.so
+-rw-r--r-- root     root       125336 2012-06-14 06:26 libcurl.so
+-rw-r--r-- root     root        59740 2012-06-14 06:26 libcutils.so
+-rw-r--r-- root     root       306024 2012-06-14 06:26 libdbus.so
+-rw-r--r-- root     root         5528 2012-06-14 06:26 libdefcontainer_jni.so
+-rw-r--r-- root     root        22752 2012-06-14 06:26 libdiag.so
+-rw-r--r-- root     root        13736 2012-06-14 06:26 libdiskconfig.so
+-rw-r--r-- root     root         5444 2012-06-14 06:26 libdivxdrmdecrypt.so
+-rw-r--r-- root     root         9476 2012-06-14 06:26 libdl.so
+-rw-r--r-- root     root        22260 2012-06-14 06:26 libdnshostprio.so
+-rw-r--r-- root     root        34392 2012-06-14 06:26 libdrm1.so
+-rw-r--r-- root     root        13964 2012-06-14 06:26 libdrm1_jni.so
+-rw-r--r-- root     root        92780 2012-06-14 06:26 libdrmframework.so
+-rw-r--r-- root     root        27312 2012-06-14 06:26 libdrmframework_jni.so
+-rw-r--r-- root     root       116032 2012-06-14 06:26 libdsi_netctrl.so
+-rw-r--r-- root     root        30132 2012-06-14 06:26 libdsm.so
+-rw-r--r-- root     root       116944 2012-06-14 06:26 libdsprofile.so
+-rw-r--r-- root     root        99856 2012-06-14 06:26 libdss.so
+-rw-r--r-- root     root        35436 2012-06-14 06:26 libdsutils.so
+-rw-r--r-- root     root       746392 2012-06-14 06:26 libdvm.so
+-rw-r--r-- root     root         9672 2012-06-14 06:26 libeffects.so
+-rw-r--r-- root     root         9832 2012-06-14 06:26 libemoji.so
+-rw-r--r-- root     root        45140 2012-06-14 06:26 libexif.so
+-rw-r--r-- root     root        80440 2012-06-14 06:26 libexpat.so
+-rw-r--r-- root     root        28536 2012-06-14 06:26 libext2_blkid.so
+-rw-r--r-- root     root         9652 2012-06-14 06:26 libext2_com_err.so
+-rw-r--r-- root     root        18472 2012-06-14 06:26 libext2_e2p.so
+-rw-r--r-- root     root        13968 2012-06-14 06:26 libext2_profile.so
+-rw-r--r-- root     root         9664 2012-06-14 06:26 libext2_uuid.so
+-rw-r--r-- root     root       105316 2012-06-14 06:26 libext2fs.so
+-rw-r--r-- root     root        51820 2012-06-14 06:26 libext4_utils.so
+-rw-r--r-- root     root       914164 2012-06-14 06:26 libfacelock_jni.so
+-rw-r--r-- root     root       109556 2012-06-14 06:26 libfilterfw.so
+-rw-r--r-- root     root       562864 2012-06-14 06:26 libfilterpack_facedetect.so
+-rw-r--r-- root     root         5404 2012-06-14 06:26 libfilterpack_imageproc.so
+-rw-r--r-- root     root         5544 2012-06-14 06:26 libfirmwareupdate.so
+-rw-r--r-- root     root      1103368 2012-06-14 06:26 libflint_engine_jni_api.so
+-rw-r--r-- root     root         5492 2012-06-14 06:26 libfm_hal.so
+-rw-r--r-- root     root         5488 2012-06-14 06:26 libfm_volume.so
+-rw-r--r-- root     root         9560 2012-06-14 06:26 libfm_wan_api.so
+-rw-r--r-- root     root      1798488 2012-06-14 06:26 libfrsdk.so
+-rw-r--r-- root     root        14720 2012-06-14 06:26 libgabi++.so
+-rw-r--r-- root     root      7608988 2012-06-14 06:26 libgcomm_jni.so
+-rw-r--r-- root     root        27120 2012-06-14 06:26 libgemini.so
+-rw-r--r-- root     root         5396 2012-06-14 06:26 libgenlock.so
+-rw-r--r-- root     root       391568 2012-06-14 06:26 libglib.so
+-rw-r--r-- root     root       487640 2012-06-14 06:26 libgps.so
+-rw-r--r-- root     root        14660 2012-06-14 06:26 libgps.utils.so
+-rw-r--r-- root     root        66920 2012-06-14 06:26 libgsdi_exp.so
+-rw-r--r-- root     root        51004 2012-06-14 06:26 libgsl.so
+-rw-r--r-- root     root        62912 2012-06-14 06:26 libgstk_exp.so
+-rw-r--r-- root     root       176912 2012-06-14 06:26 libgui.so
+-rw-r--r-- root     root         5548 2012-06-14 06:26 libhardware.so
+-rw-r--r-- root     root        26428 2012-06-14 06:26 libhardware_legacy.so
+-rw-r--r-- root     root       259948 2012-06-14 06:26 libharfbuzz.so
+-rw-r--r-- root     root        26048 2012-06-14 06:26 libhdr.so
+-rw-r--r-- root     root       571480 2012-06-14 06:26 libhelixplayer.so
+-rw-r--r-- root     root        52520 2012-06-14 06:26 libhw_flashlight.so
+-rw-r--r-- root     root         5476 2012-06-14 06:26 libhwnv.so
+-rw-r--r-- root     root         5444 2012-06-14 06:26 libhwrpc.so
+-rw-r--r-- root     root       142968 2012-06-14 06:26 libhwui.so
+-rw-r--r-- root     root      1195220 2012-06-14 06:26 libicui18n.so
+-rw-r--r-- root     root      1005916 2012-06-14 06:26 libicuuc.so
+-rw-r--r-- root     root         9432 2012-06-14 06:26 libidl.so
+-rw-r--r-- root     root       226868 2012-06-14 06:26 libinput.so
+-rw-r--r-- root     root       168692 2012-06-14 06:26 libinputcore-2.so
+-rw-r--r-- root     root        24032 2012-06-14 06:26 libiprouteutil.so
+-rw-r--r-- root     root       178804 2012-06-14 06:26 libjni_hw_mosaic.so
+-rw-r--r-- root     root      4236828 2012-06-14 06:26 libjni_hwime.so
+-rw-r--r-- root     root        30144 2012-06-14 06:26 libjni_latinime.so
+-rw-r--r-- root     root       178724 2012-06-14 06:26 libjni_mosaic.so
+-rw-r--r-- root     root        67900 2012-06-14 06:26 libjni_pinyinime.so
+-rw-r--r-- root     root         5344 2012-06-14 06:26 libjnigraphics.so
+-rw-r--r-- root     root       219604 2012-06-14 06:26 libjpeg.so
+-rw-r--r-- root     root        25992 2012-06-14 06:26 libloc_adapter.so
+-rw-r--r-- root     root        62120 2012-06-14 06:26 libloc_api-rpc-qc.so
+-rw-r--r-- root     root        76644 2012-06-14 06:26 libloc_eng.so
+-rw-r--r-- root     root        14032 2012-06-14 06:26 libloc_ext.so
+-rw-r--r-- root     root        13820 2012-06-14 06:26 liblog.so
+-rw-r--r-- root     root        87344 2012-06-14 06:26 libm.so
+-rw-r--r-- root     root       440620 2012-06-14 06:26 libmedia.so
+-rw-r--r-- root     root        91552 2012-06-14 06:26 libmedia_jni.so
+-rw-r--r-- root     root       350284 2012-06-14 06:26 libmediaplayerservice.so
+-rw-r--r-- root     root        26640 2012-06-14 06:26 libmemalloc.so
+-rw-r--r-- root     root        22084 2012-06-14 06:26 libmm-abl.so
+-rw-r--r-- root     root         9492 2012-06-14 06:26 libmm-color-convertor.so
+-rw-r--r-- root     root        15060 2012-06-14 06:26 libmm-omxcore.so
+-rw-r--r-- root     root        87648 2012-06-14 06:26 libmmgsdilib.so
+-rw-r--r-- root     root       555868 2012-06-14 06:26 libmmipl.so
+-rw-r--r-- root     root        66344 2012-06-14 06:26 libmmitest.so
+-rw-r--r-- root     root       153048 2012-06-14 06:26 libmmjpeg.so
+-rw-r--r-- root     root        21988 2012-06-14 06:26 libmmjps.so
+-rw-r--r-- root     root        13776 2012-06-14 06:26 libmmmpo.so
+-rw-r--r-- root     root        13792 2012-06-14 06:26 libmmosal.so
+-rw-r--r-- root     root       530320 2012-06-14 06:26 libmmparser.so
+-rw-r--r-- root     root       194256 2012-06-14 06:26 libmmparser_divxdrmlib.so
+-rw-r--r-- root     root        75192 2012-06-14 06:26 libmtp.so
+-rw-r--r-- root     root        34232 2012-06-14 06:26 libmvs.so
+-rw-r--r-- root     root        23595 2012-06-14 06:26 libnaqtodat.so
+-rw-r--r-- root     root       218320 2012-06-14 06:26 libnativehelper.so
+-rw-r--r-- root     root        13756 2012-06-14 06:26 libnetlink.so
+-rw-r--r-- root     root        32652 2012-06-14 06:26 libnetmgr.so
+-rw-r--r-- root     root         9836 2012-06-14 06:26 libnetmonitor.so
+-rw-r--r-- root     root        22020 2012-06-14 06:26 libnetutils.so
+-rw-r--r-- root     root         5372 2012-06-14 06:26 libnfc_ndef.so
+-rw-r--r-- root     root        58824 2012-06-14 06:26 libnv.so
+-rw-r--r-- root     root         9560 2012-06-14 06:26 liboem_rapi.so
+-rw-r--r-- root     root       472656 2012-06-14 06:26 liboemcamera.so
+-rw-r--r-- root     root         9576 2012-06-14 06:26 liboeminfo.so
+-rw-r--r-- root     root         5344 2012-06-14 06:26 liboeminfodata.so
+-rw-r--r-- root     root        97224 2012-06-14 06:26 liboncrpc.so
+-rw-r--r-- root     root        34420 2012-06-14 06:26 liboverlay.so
+-rw-r--r-- root     root        41480 2012-06-14 06:26 libparseprofile.so
+-rw-r--r-- root     root        42460 2012-06-14 06:26 libpbmlib.so
+-rw-r--r-- root     root        71116 2012-06-14 06:26 libpdapi.so
+-rw-r--r-- root     root        17824 2012-06-14 06:26 libpdsm_atl.so
+-rw-r--r-- root     root       291684 2012-06-14 06:26 libpicowrapper.so
+-rw-r--r-- root     root        17756 2012-06-14 06:26 libping_mdm.so
+-rw-r--r-- root     root       112924 2012-06-14 06:26 libpixelflinger.so
+-rw-r--r-- root     root         9520 2012-06-14 06:26 libplayready.so
+-rw-r--r-- root     root        95992 2012-06-14 06:26 libpng.so
+-rw-r--r-- root     root         9672 2012-06-14 06:26 libpower.so
+-rw-r--r-- root     root        14956 2012-06-14 06:26 libpowermanager.so
+-rw-r--r-- root     root        66176 2012-06-14 06:26 libproduct_bt_check.so
+-rw-r--r-- root     root         7696 2012-06-14 06:26 libprofiler_msmadc.so
+-rw-r--r-- root     root        18588 2012-06-14 06:26 libprojectmenu.so
+-rw-r--r-- root     root         9816 2012-06-14 06:26 libqc-opt.so
+-rw-r--r-- root     root        28804 2012-06-14 06:26 libqdi.so
+-rw-r--r-- root     root        29500 2012-06-14 06:26 libqdp.so
+-rw-r--r-- root     root       170052 2012-06-14 06:26 libqmi.so
+-rw-r--r-- root     root        43668 2012-06-14 06:26 libqmiservices.so
+-rw-r--r-- root     root        30900 2012-06-14 06:26 libqsap_sdk.so
+-rw-r--r-- root     root         5320 2012-06-14 06:26 libqueue.so
+-rw-r--r-- root     root        30416 2012-06-14 06:26 libreference-ril.so
+-rw-r--r-- root     root      1482208 2012-06-14 06:26 libril-qc-1.so
+-rw-r--r-- root     root      2679440 2012-06-14 06:26 libril-qc-qmi-1.so
+-rw-r--r-- root     root         5348 2012-06-14 06:26 libril-qcril-hook-oem.so
+-rw-r--r-- root     root        49352 2012-06-14 06:26 libril.so
+-rw-r--r-- root     root        26328 2012-06-14 06:26 librpc.so
+-rw-r--r-- root     root        23448 2012-06-14 06:26 librs_jni.so
+-rw-r--r-- root     root       105424 2012-06-14 06:26 librtp_jni.so
+-rw-r--r-- root     root      1413616 2012-06-14 06:26 libsc-a2xx.so
+-rw-r--r-- root     root         5464 2012-06-14 06:26 libsecure_boot_keybox.so
+-rw-r--r-- root     root        32683 2012-06-14 06:26 libsecurity.so
+-rw-r--r-- root     root        80992 2012-06-14 06:26 libsensorservice.so
+-rw-r--r-- root     root      1227240 2012-06-14 06:26 libskia.so
+-rw-r--r-- root     root       322296 2012-06-14 06:26 libsonivox.so
+-rw-r--r-- root     root        26832 2012-06-14 06:26 libsoundpool.so
+-rw-r--r-- root     root        15388 2012-06-14 06:26 libspeexresampler.so
+-rw-r--r-- root     root       101496 2012-06-14 06:26 libspeexwrapper.so
+-rw-r--r-- root     root       335092 2012-06-14 06:26 libsqlite.so
+-rw-r--r-- root     root        26160 2012-06-14 06:26 libsqlite_jni.so
+-rw-r--r-- root     root       351668 2012-06-14 06:26 libsrec_jni.so
+-rw-r--r-- root     root       182424 2012-06-14 06:26 libsrsprocessing.so
+-rw-r--r-- root     root       187292 2012-06-14 06:26 libssl.so
+-rw-r--r-- root     root      1494372 2012-06-14 06:26 libstagefright.so
+-rw-r--r-- root     root        50672 2012-06-14 06:26 libstagefright_amrnb_common.so
+-rw-r--r-- root     root        21760 2012-06-14 06:26 libstagefright_avc_common.so
+-rw-r--r-- root     root         5332 2012-06-14 06:26 libstagefright_enc_common.so
+-rw-r--r-- root     root        43748 2012-06-14 06:26 libstagefright_foundation.so
+-rw-r--r-- root     root        84180 2012-06-14 06:26 libstagefright_omx.so
+-rw-r--r-- root     root       207084 2012-06-14 06:26 libstagefright_soft_aacdec.so
+-rw-r--r-- root     root        96532 2012-06-14 06:26 libstagefright_soft_amrdec.so
+-rw-r--r-- root     root        14152 2012-06-14 06:26 libstagefright_soft_g711dec.so
+-rw-r--r-- root     root       113004 2012-06-14 06:26 libstagefright_soft_h264dec.so
+-rw-r--r-- root     root        63524 2012-06-14 06:26 libstagefright_soft_mp3dec.so
+-rw-r--r-- root     root        92596 2012-06-14 06:26 libstagefright_soft_mpeg4dec.so
+-rw-r--r-- root     root        18324 2012-06-14 06:26 libstagefright_soft_vorbisdec.so
+-rw-r--r-- root     root       113532 2012-06-14 06:26 libstagefright_soft_vpxdec.so
+-rw-r--r-- root     root         9504 2012-06-14 06:26 libstagefright_yuv.so
+-rw-r--r-- root     root         5580 2012-06-14 06:26 libstagefrighthw.so
+-rw-r--r-- root     root         5448 2012-06-14 06:26 libstdc++.so
+-rw-r--r-- root     root       211104 2012-06-14 06:26 libstlport.so
+-rw-r--r-- root     root       159752 2012-06-14 06:26 libsurfaceflinger.so
+-rw-r--r-- root     root         5188 2012-06-14 06:26 libsurfaceflinger_client.so
+-rw-r--r-- root     root        10040 2012-06-14 06:26 libsystem_server.so
+-rw-r--r-- root     root        18156 2012-06-14 06:26 libsysutils.so
+-rw-r--r-- root     root         9904 2012-06-14 06:26 libtcpfinaggr.so
+-rw-r--r-- root     root         5452 2012-06-14 06:26 libthread_db.so
+-rw-r--r-- root     root         5460 2012-06-14 06:26 libtilerenderer.so
+-rw-r--r-- root     root         9872 2012-06-14 06:26 libttscompat.so
+-rw-r--r-- root     root       195792 2012-06-14 06:26 libttspico.so
+-rw-r--r-- root     root        91352 2012-06-14 06:26 libui.so
+-rw-r--r-- root     root         9528 2012-06-14 06:26 libuim.so
+-rw-r--r-- root     root        22132 2012-06-14 06:26 libulp.so
+-rw-r--r-- root     root        42720 2012-06-14 06:26 libulp2.so
+-rw-r--r-- root     root         9620 2012-06-14 06:26 libusbhost.so
+-rw-r--r-- root     root       190140 2012-06-14 06:26 libutils.so
+-rw-r--r-- root     root      2699400 2012-06-14 06:26 libv8.so
+-rw-r--r-- root     root        30424 2012-06-14 06:26 libvariablespeed.so
+-rw-r--r-- root     root      3968488 2012-06-14 06:26 libvideochat_jni.so
+-rw-r--r-- root     root        87660 2012-06-14 06:26 libvideochat_stabilize.so
+-rw-r--r-- root     root       313624 2012-06-14 06:26 libvideoeditor_jni.so
+-rw-r--r-- root     root       156172 2012-06-14 06:26 libvideoeditorplayer.so
+-rw-r--r-- root     root         5536 2012-06-14 06:26 libvoem-jni.so
+-rw-r--r-- root     root         5384 2012-06-14 06:26 libvoem-test.so
+-rw-r--r-- root     root        13664 2012-06-14 06:26 libvoem_if.so
+-rw-r--r-- root     root         9824 2012-06-14 06:26 libvoicerecorder.so
+-rw-r--r-- root     root        13644 2012-06-14 06:26 libvoicesearch.so
+-rw-r--r-- root     root       100888 2012-06-14 06:26 libvorbisidec.so
+-rw-r--r-- root     root      5680620 2012-06-14 06:26 libwebcore.so
+-rw-r--r-- root     root       111060 2012-06-14 06:26 libwebkitaccel.so
+-rw-r--r-- root     root       275748 2012-06-14 06:26 libwebrtc_audio_preprocessing.so
+-rw-r--r-- root     root         5404 2012-06-14 06:26 libwifi_test.so
+-rw-r--r-- root     root        13748 2012-06-14 06:26 libwifidiag.so
+-rw-r--r-- root     root       167704 2012-06-14 06:26 libwilhelm.so
+lrw-r--r-- root     root              2012-06-14 06:26 libwiperjni.so -> libwiperjni_v01.so
+-rw-r--r-- root     root         9768 2012-06-14 06:26 libwiperjni_v01.so
+-rw-r--r-- root     root       103776 2012-06-14 06:26 libwms.so
+-rw-r--r-- root     root        42284 2012-06-14 06:26 libwmsts.so
+-rw-r--r-- root     root        42416 2012-06-14 06:26 libwnndict.so
+-rw-r--r-- root     root         9660 2012-06-14 06:26 libwpa_client.so
+-rw-r--r-- root     root        27156 2012-06-14 06:26 libwvm.so
+-rw-r--r-- root     root        23200 2012-06-14 06:26 libxml.so
+-rw-r--r-- root     root       414032 2012-06-14 06:26 libxml2.so
+lrw-r--r-- root     root              2012-06-14 06:26 libxt_native.so -> libxt_v01.so
+-rw-r--r-- root     root         5548 2012-06-14 06:26 libxt_v01.so
+-rw-r--r-- root     root        95920 2012-06-14 06:26 libz.so
+-rw-r--r-- root     root       276960 2012-06-14 06:26 libzy_imgdenoise.so
+drwxr-xr-x root     root              2012-06-14 06:26 modules
+-rw-r--r-- root     root        30440 2012-06-14 06:26 pp_proc_plugin.so
+-rw-r--r-- root     root         5588 2012-06-14 06:26 qnet-plugin.so
+drwxr-xr-x root     root              2012-06-14 06:26 soundfx
+-rw-r--r-- root     root         5568 2012-06-14 06:26 tcp-connections.so
+
+/system/lib/bluez-plugin:
+-rw-r--r-- root     root       142508 2012-06-14 06:26 audio.so
+-rw-r--r-- root     root        52108 2012-06-14 06:26 bluetooth-health.so
+-rw-r--r-- root     root        22752 2012-06-14 06:26 input.so
+-rw-r--r-- root     root        22940 2012-06-14 06:26 network.so
+
+/system/lib/drm:
+-rw-r--r-- root     root       107044 2012-06-14 06:26 libdrmhwomavoneplugin.so
+-rw-r--r-- root     root       109172 2012-06-14 06:26 libdrmwvmplugin.so
+
+/system/lib/egl:
+-rw-r--r-- root     root           26 2012-06-14 06:26 egl.cfg
+-rw-r--r-- root     root        22160 2012-06-14 06:26 eglsubAndroid.so
+-rw-r--r-- root     root       125904 2012-06-14 06:26 libEGL_adreno200.so
+-rw-r--r-- root     root        81440 2012-06-14 06:26 libGLES_android.so
+-rw-r--r-- root     root       196876 2012-06-14 06:26 libGLESv1_CM_adreno200.so
+-rw-r--r-- root     root       591776 2012-06-14 06:26 libGLESv2_adreno200.so
+-rw-r--r-- root     root       362944 2012-06-14 06:26 libq3dtools_adreno200.so
+
+/system/lib/helix:
+-rw-r--r-- root     root       973336 2012-06-14 06:26 asfff.so
+-rw-r--r-- root     root       105138 2012-06-14 06:26 asxff.so
+-rw-r--r-- root     root       235322 2012-06-14 06:26 asxrender.so
+-rw-r--r-- root     root        42124 2012-06-14 06:26 atrc.so
+-rw-r--r-- root     root       445274 2012-06-14 06:26 audplin.so
+-rw-r--r-- root     root       593963 2012-06-14 06:26 authmgr.so
+-rw-r--r-- root     root       193398 2012-06-14 06:26 clntxres.so
+-rw-r--r-- root     root       784616 2012-06-14 06:26 colorcvt.so
+-rw-r--r-- root     root        82950 2012-06-14 06:26 cook.so
+-rw-r--r-- root     root       546130 2012-06-14 06:26 cvt1.so
+-rw-r--r-- root     root       305000 2012-06-14 06:26 drv2.so
+-rw-r--r-- root     root       564912 2012-06-14 06:26 drvc.so
+-rw-r--r-- root     root      1372489 2012-06-14 06:26 dtdrplin.so
+-rw-r--r-- root     root       815696 2012-06-14 06:26 hxdtdriver.so
+-rw-r--r-- root     root       541108 2012-06-14 06:26 hxltcolor.so
+-rw-r--r-- root     root       920795 2012-06-14 06:26 hxmedpltfm.so
+-rw-r--r-- root     root      1893932 2012-06-14 06:26 hxmedplyeng.so
+-rw-r--r-- root     root       449066 2012-06-14 06:26 hxnetwksvc.so
+-rw-r--r-- root     root       196040 2012-06-14 06:26 hxsdp.so
+-rw-r--r-- root     root       134727 2012-06-14 06:26 hxxml.so
+-rw-r--r-- root     root        52261 2012-06-14 06:26 nullrend.so
+-rw-r--r-- root     root       258875 2012-06-14 06:26 omxv.so
+-rw-r--r-- root     root       129162 2012-06-14 06:26 raac.so
+-rw-r--r-- root     root       163041 2012-06-14 06:26 ralf.so
+-rw-r--r-- root     root        98251 2012-06-14 06:26 ramfformat.so
+-rw-r--r-- root     root       243826 2012-06-14 06:26 ramrender.so
+-rw-r--r-- root     root       357952 2012-06-14 06:26 rarender.so
+-rw-r--r-- root     root       479497 2012-06-14 06:26 rmfformat.so
+-rw-r--r-- root     root       137905 2012-06-14 06:26 rn5auth.so
+-rw-r--r-- root     root       214608 2012-06-14 06:26 rv20.so
+-rw-r--r-- root     root       205427 2012-06-14 06:26 rv30.so
+-rw-r--r-- root     root       100771 2012-06-14 06:26 rv40.so
+-rw-r--r-- root     root       403404 2012-06-14 06:26 rvrender.so
+-rw-r--r-- root     root        67500 2012-06-14 06:26 sipr.so
+-rw-r--r-- root     root        74682 2012-06-14 06:26 smlfformat.so
+-rw-r--r-- root     root      1195054 2012-06-14 06:26 smlrender.so
+-rw-r--r-- root     root       231705 2012-06-14 06:26 smplfsys.so
+-rw-r--r-- root     root       554121 2012-06-14 06:26 vidplin.so
+-rw-r--r-- root     root       417743 2012-06-14 06:26 vidsite.so
+-rw-r--r-- root     root       481254 2012-06-14 06:26 wm9v.so
+-rw-r--r-- root     root       352155 2012-06-14 06:26 wma9.so
+-rw-r--r-- root     root       701387 2012-06-14 06:26 wmaA.so
+-rw-r--r-- root     root       223703 2012-06-14 06:26 wmarender.so
+-rw-r--r-- root     root       103088 2012-06-14 06:26 wmerender.so
+-rw-r--r-- root     root       263532 2012-06-14 06:26 wmv8.so
+-rw-r--r-- root     root       944771 2012-06-14 06:26 wmv9.so
+-rw-r--r-- root     root       352522 2012-06-14 06:26 wmvrender.so
+
+/system/lib/hw:
+-rw-r--r-- root     root         9896 2012-06-14 06:26 audio.a2dp.default.so
+-rw-r--r-- root     root         5636 2012-06-14 06:26 audio.primary.default.so
+-rw-r--r-- root     root       116152 2012-06-14 06:26 audio.primary.msm7630_surf.so
+-rw-r--r-- root     root        48172 2012-06-14 06:26 audio_policy.default.so
+-rw-r--r-- root     root        56364 2012-06-14 06:26 audio_policy.msm7630_surf.so
+-rw-r--r-- root     root       156520 2012-06-14 06:26 camera.msm7630_surf.so
+-rw-r--r-- root     root        13940 2012-06-14 06:26 copybit.msm7630_surf.so
+-rw-r--r-- root     root        22384 2012-06-14 06:26 gps.default.so
+-rw-r--r-- root     root        10180 2012-06-14 06:26 gralloc.default.so
+-rw-r--r-- root     root        22288 2012-06-14 06:26 gralloc.msm7630_surf.so
+-rw-r--r-- root     root        13964 2012-06-14 06:26 hwcomposer.msm7630_surf.so
+-rw-r--r-- root     root        13996 2012-06-14 06:26 libbcmfm_if.so
+-rw-r--r-- root     root         9832 2012-06-14 06:26 lights.msm7630_surf.so
+-rw-r--r-- root     root         5728 2012-06-14 06:26 nfc.huawei.so
+-rw-r--r-- root     root        23508 2012-06-14 06:26 sensors.default.so
+
+/system/lib/modules:
+-rw-r--r-- root     root       104413 2012-06-14 06:26 ansi_cprng.ko
+-rw-r--r-- root     root       215634 2012-06-14 06:26 cls_flow.ko
+-rw-r--r-- root     root        92182 2012-06-14 06:26 cpaccess.ko
+-rw-r--r-- root     root        80963 2012-06-14 06:26 dal_remotetest.ko
+-rw-r--r-- root     root       106096 2012-06-14 06:26 dma_test.ko
+-rw-r--r-- root     root        76518 2012-06-14 06:26 evbug.ko
+-rw-r--r-- root     root       207689 2012-06-14 06:26 gspca_main.ko
+-rw-r--r-- root     root       132666 2012-06-14 06:26 librasdioif.ko
+-rw-r--r-- root     root        71737 2012-06-14 06:26 mtd_erasepart.ko
+-rw-r--r-- root     root        25694 2012-06-14 06:26 mtd_nandecctest.ko
+-rw-r--r-- root     root        84782 2012-06-14 06:26 mtd_oobtest.ko
+-rw-r--r-- root     root        88437 2012-06-14 06:26 mtd_pagetest.ko
+-rw-r--r-- root     root        75749 2012-06-14 06:26 mtd_readtest.ko
+-rw-r--r-- root     root        89496 2012-06-14 06:26 mtd_speedtest.ko
+-rw-r--r-- root     root        81729 2012-06-14 06:26 mtd_stresstest.ko
+-rw-r--r-- root     root        85421 2012-06-14 06:26 mtd_subpagetest.ko
+-rw-r--r-- root     root        92453 2012-06-14 06:26 mtd_torturetest.ko
+-rw-r--r-- root     root       162654 2012-06-14 06:26 qce.ko
+-rw-r--r-- root     root       164540 2012-06-14 06:26 qcedev.ko
+-rw-r--r-- root     root       280724 2012-06-14 06:26 qcrypto.ko
+-rw-r--r-- root     root        69839 2012-06-14 06:26 reset_modem.ko
+-rw-r--r-- root     root       190842 2012-06-14 06:26 sch_dsmark.ko
+-rw-r--r-- root     root        32240 2012-06-14 06:26 scsi_wait_scan.ko
+
+/system/lib/soundfx:
+-rw-r--r-- root     root        13996 2012-06-14 06:26 libaudiopreprocessing.so
+-rw-r--r-- root     root        71940 2012-06-14 06:26 libbundlewrapper.so
+-rw-r--r-- root     root        30180 2012-06-14 06:26 libreverbwrapper.so
+-rw-r--r-- root     root         9668 2012-06-14 06:26 libvisualizer.so
+
+/system/lost+found:
+opendir failed, Permission denied
+
+/system/media:
+-rw-r--r-- root     root       605173 2012-06-14 06:26 LMprec_508.emd
+-rw-r--r-- root     root       637001 2012-06-14 06:26 PFFprec_600.emd
+drwxr-xr-x root     root              2012-06-14 06:26 audio
+
+/system/media/audio:
+drwxr-xr-x root     root              2012-06-14 06:26 alarms
+drwxr-xr-x root     root              2012-06-14 06:26 animationsounds
+drwxr-xr-x root     root              2012-06-14 06:26 notifications
+drwxr-xr-x root     root              2012-06-14 06:26 ringtones
+drwxr-xr-x root     root              2012-06-14 06:26 ui
+
+/system/media/audio/alarms:
+-rw-r--r-- root     root        16130 2012-06-14 06:26 Alarm_Beep_01.ogg
+-rw-r--r-- root     root         5898 2012-06-14 06:26 Alarm_Beep_02.ogg
+-rw-r--r-- root     root        21153 2012-06-14 06:26 Alarm_Beep_03.ogg
+-rw-r--r-- root     root        11368 2012-06-14 06:26 Alarm_Buzzer.ogg
+-rw-r--r-- root     root        73946 2012-06-14 06:26 Alarm_Classic.ogg
+-rw-r--r-- root     root        11160 2012-06-14 06:26 Alarm_Rooster_02.ogg
+-rw-r--r-- root     root       409237 2012-06-14 06:26 Aurora.ogg
+-rw-r--r-- root     root       476842 2012-06-14 06:26 Bond.ogg
+-rw-r--r-- root     root       554127 2012-06-14 06:26 Pmukkale.ogg
+-rw-r--r-- root     root       205851 2012-06-14 06:26 TinMan.ogg
+-rw-r--r-- root     root       419303 2012-06-14 06:26 Twilight.ogg
+
+/system/media/audio/animationsounds:
+-rw-r--r-- root     root        47296 2012-06-14 06:26 bootSound.ogg
+
+/system/media/audio/notifications:
+-rw-r--r-- root     root        27912 2012-06-14 06:26 8bit.ogg
+-rw-r--r-- root     root        20470 2012-06-14 06:26 Abuzz.ogg
+-rw-r--r-- root     root        10414 2012-06-14 06:26 Adara.ogg
+-rw-r--r-- root     root        27849 2012-06-14 06:26 Antimony.ogg
+-rw-r--r-- root     root         6799 2012-06-14 06:26 Arrived.ogg
+-rw-r--r-- root     root        34601 2012-06-14 06:26 Beat_Box_Android.ogg
+-rw-r--r-- root     root        19381 2012-06-14 06:26 Beryllium.ogg
+-rw-r--r-- root     root        19121 2012-06-14 06:26 CaffeineSnake.ogg
+-rw-r--r-- root     root        27921 2012-06-14 06:26 Dazzle.ogg
+-rw-r--r-- root     root        18659 2012-06-14 06:26 DearDeer.ogg
+-rw-r--r-- root     root        38113 2012-06-14 06:26 Digital.ogg
+-rw-r--r-- root     root        16985 2012-06-14 06:26 DontPanic.ogg
+-rw-r--r-- root     root        23566 2012-06-14 06:26 F1_MissedCall.ogg
+-rw-r--r-- root     root        20983 2012-06-14 06:26 F1_New_MMS.ogg
+-rw-r--r-- root     root        11941 2012-06-14 06:26 F1_New_SMS.ogg
+-rw-r--r-- root     root        35457 2012-06-14 06:26 Glory.ogg
+-rw-r--r-- root     root        38517 2012-06-14 06:26 Heaven.ogg
+-rw-r--r-- root     root        18442 2012-06-14 06:26 Highwire.ogg
+-rw-r--r-- root     root        13986 2012-06-14 06:26 Hojus.ogg
+-rw-r--r-- root     root        15619 2012-06-14 06:26 KzurbSonar.ogg
+-rw-r--r-- root     root        24282 2012-06-14 06:26 Marbles.ogg
+-rw-r--r-- root     root        17496 2012-06-14 06:26 Mira.ogg
+-rw-r--r-- root     root        20052 2012-06-14 06:26 OnTheHunt.ogg
+-rw-r--r-- root     root        15711 2012-06-14 06:26 Orpheus.ogg
+-rw-r--r-- root     root        25787 2012-06-14 06:26 Pollux.ogg
+-rw-r--r-- root     root        22771 2012-06-14 06:26 Scrat.ogg
+-rw-r--r-- root     root        24298 2012-06-14 06:26 Shaula.ogg
+-rw-r--r-- root     root         9069 2012-06-14 06:26 Spica.ogg
+-rw-r--r-- root     root        43522 2012-06-14 06:26 TaDa.ogg
+-rw-r--r-- root     root        18858 2012-06-14 06:26 Tinkerbell.ogg
+-rw-r--r-- root     root        32739 2012-06-14 06:26 Tinkly.ogg
+-rw-r--r-- root     root        25175 2012-06-14 06:26 Upsilon.ogg
+-rw-r--r-- root     root        16487 2012-06-14 06:26 Voila.ogg
+-rw-r--r-- root     root        31054 2012-06-14 06:26 Waterflow.ogg
+-rw-r--r-- root     root        17940 2012-06-14 06:26 Welcoming.ogg
+-rw-r--r-- root     root        18211 2012-06-14 06:26 horkos.ogg
+
+/system/media/audio/ringtones:
+-rw-r--r-- root     root        89534 2012-06-14 06:26 ArgoNavis.ogg
+-rw-r--r-- root     root        36049 2012-06-14 06:26 Backroad.ogg
+-rw-r--r-- root     root       200073 2012-06-14 06:26 Banana.ogg
+-rw-r--r-- root     root        46663 2012-06-14 06:26 BirdLoop.ogg
+-rw-r--r-- root     root        34221 2012-06-14 06:26 CaribbeanIce.ogg
+-rw-r--r-- root     root       406165 2012-06-14 06:26 Eastern.ogg
+-rw-r--r-- root     root        35057 2012-06-14 06:26 EtherShake.ogg
+-rw-r--r-- root     root        51678 2012-06-14 06:26 Girtab.ogg
+-rw-r--r-- root     root       110438 2012-06-14 06:26 Glade.ogg
+-rw-r--r-- root     root        90093 2012-06-14 06:26 Haight_Ashbury.ogg
+-rw-r--r-- root     root        88399 2012-06-14 06:26 Horse.ogg
+-rw-r--r-- root     root       252320 2012-06-14 06:26 Huawei_Tune.ogg
+-rw-r--r-- root     root       171861 2012-06-14 06:26 Interstellar.ogg
+-rw-r--r-- root     root        48843 2012-06-14 06:26 Jungle_Jam.ogg
+-rw-r--r-- root     root        42587 2012-06-14 06:26 LoopyLounge.ogg
+-rw-r--r-- root     root       115350 2012-06-14 06:26 LoveFlute.ogg
+-rw-r--r-- root     root        34672 2012-06-14 06:26 MidEvilJaunt.ogg
+-rw-r--r-- root     root       131696 2012-06-14 06:26 Midnight.ogg
+-rw-r--r-- root     root        85809 2012-06-14 06:26 Mystic_Harp.ogg
+-rw-r--r-- root     root        29742 2012-06-14 06:26 Noises1.ogg
+-rw-r--r-- root     root        31643 2012-06-14 06:26 Noises2.ogg
+-rw-r--r-- root     root        73117 2012-06-14 06:26 Orion.ogg
+-rw-r--r-- root     root       112981 2012-06-14 06:26 PERSEUS.ogg
+-rw-r--r-- root     root        44963 2012-06-14 06:26 Ring_Classic_02.ogg
+-rw-r--r-- root     root        17249 2012-06-14 06:26 Ring_Digital_02.ogg
+-rw-r--r-- root     root        32155 2012-06-14 06:26 Ring_Synth_04.ogg
+-rw-r--r-- root     root       322952 2012-06-14 06:26 Sceptrum.ogg
+-rw-r--r-- root     root       301508 2012-06-14 06:26 September.ogg
+-rw-r--r-- root     root        32948 2012-06-14 06:26 SitarVsSitar.ogg
+-rw-r--r-- root     root        73377 2012-06-14 06:26 Sneaky_Satellite.ogg
+-rw-r--r-- root     root        69601 2012-06-14 06:26 Solarium.ogg
+-rw-r--r-- root     root        43759 2012-06-14 06:26 Terminated.ogg
+-rw-r--r-- root     root       246033 2012-06-14 06:26 Themos.ogg
+-rw-r--r-- root     root       140547 2012-06-14 06:26 URSAMINOR.ogg
+-rw-r--r-- root     root       112874 2012-06-14 06:26 Westlake.ogg
+-rw-r--r-- root     root        33407 2012-06-14 06:26 World.ogg
+
+/system/media/audio/ui:
+-rw-r--r-- root     root         6521 2012-06-14 06:26 Effect_Tick.ogg
+-rw-r--r-- root     root        11337 2012-06-14 06:26 KeypressDelete.ogg
+-rw-r--r-- root     root        18427 2012-06-14 06:26 KeypressReturn.ogg
+-rw-r--r-- root     root        12661 2012-06-14 06:26 KeypressSpacebar.ogg
+-rw-r--r-- root     root         7741 2012-06-14 06:26 KeypressStandard.ogg
+-rw-r--r-- root     root         9450 2012-06-14 06:26 Lock.ogg
+-rw-r--r-- root     root         7315 2012-06-14 06:26 LowBattery.ogg
+-rw-r--r-- root     root        15064 2012-06-14 06:26 Unlock.ogg
+-rw-r--r-- root     root         7742 2012-06-14 06:26 VideoRecord.ogg
+-rw-r--r-- root     root        25420 2012-06-14 06:26 camera_click.ogg
+
+/system/tts:
+drwxr-xr-x root     root              2012-06-14 06:26 lang_pico
+
+/system/tts/lang_pico:
+-rw-r--r-- root     root       634996 2012-06-14 06:26 de-DE_gl0_sg.bin
+-rw-r--r-- root     root       440732 2012-06-14 06:26 de-DE_ta.bin
+-rw-r--r-- root     root       584436 2012-06-14 06:26 en-GB_kh0_sg.bin
+-rw-r--r-- root     root       412248 2012-06-14 06:26 en-GB_ta.bin
+-rw-r--r-- root     root       777396 2012-06-14 06:26 en-US_lh0_sg.bin
+-rw-r--r-- root     root       650668 2012-06-14 06:26 en-US_ta.bin
+-rw-r--r-- root     root       256744 2012-06-14 06:26 es-ES_ta.bin
+-rw-r--r-- root     root       605280 2012-06-14 06:26 es-ES_zl0_sg.bin
+-rw-r--r-- root     root       833236 2012-06-14 06:26 fr-FR_nk0_sg.bin
+-rw-r--r-- root     root       381936 2012-06-14 06:26 fr-FR_ta.bin
+-rw-r--r-- root     root       628268 2012-06-14 06:26 it-IT_cm0_sg.bin
+-rw-r--r-- root     root       252044 2012-06-14 06:26 it-IT_ta.bin
+
+/system/usr:
+drwxr-xr-x root     root              2012-06-14 06:26 icu
+drwxr-xr-x root     root              2012-06-14 06:26 idc
+drwxr-xr-x root     root              2012-06-14 06:26 keychars
+drwxr-xr-x root     root              2012-06-14 06:26 keylayout
+drwxr-xr-x root     root              2012-06-14 06:26 share
+drwxr-xr-x root     root              2012-06-14 06:26 srec
+
+/system/usr/icu:
+-rw-r--r-- root     root      7314368 2012-06-14 06:26 icudt46l.dat
+
+/system/usr/idc:
+-rw-r--r-- root     root          869 2012-06-14 06:26 qwerty.idc
+-rw-r--r-- root     root          870 2012-06-14 06:26 qwerty2.idc
+
+/system/usr/keychars:
+-rw-r--r-- root     root        17722 2012-06-14 06:26 Generic.kcm
+-rw-r--r-- root     root        15149 2012-06-14 06:26 Virtual.kcm
+-rw-r--r-- root     root        15840 2012-06-14 06:26 qwerty.kcm
+-rw-r--r-- root     root        15710 2012-06-14 06:26 qwerty2.kcm
+-rw-r--r-- root     root        15662 2012-06-14 06:26 surf_keypad.kcm
+
+/system/usr/keylayout:
+-rw-r--r-- root     root         1862 2012-06-14 06:26 7k_handset.kl
+-rw-r--r-- root     root          982 2012-06-14 06:26 AVRCP.kl
+-rw-r--r-- root     root         9150 2012-06-14 06:26 Generic.kl
+-rw-r--r-- root     root         1293 2012-06-14 06:26 Vendor_045e_Product_028e.kl
+-rw-r--r-- root     root         1027 2012-06-14 06:26 Vendor_046d_Product_c216.kl
+-rw-r--r-- root     root         1325 2012-06-14 06:26 Vendor_046d_Product_c294.kl
+-rw-r--r-- root     root         1392 2012-06-14 06:26 Vendor_046d_Product_c299.kl
+-rw-r--r-- root     root         2793 2012-06-14 06:26 Vendor_046d_Product_c532.kl
+-rw-r--r-- root     root         1458 2012-06-14 06:26 Vendor_054c_Product_0268.kl
+-rw-r--r-- root     root         2409 2012-06-14 06:26 Vendor_05ac_Product_0239.kl
+-rw-r--r-- root     root         1994 2012-06-14 06:26 Vendor_22b8_Product_093d.kl
+-rw-r--r-- root     root         1197 2012-06-14 06:26 fluid-keypad.kl
+-rw-r--r-- root     root          733 2012-06-14 06:26 msm_tma300_ts.kl
+-rw-r--r-- root     root         2577 2012-06-14 06:26 qwerty.kl
+-rw-r--r-- root     root         3894 2012-06-14 06:26 surf_keypad.kl
+
+/system/usr/share:
+drwxr-xr-x root     root              2012-06-14 06:26 bmd
+drwxr-xr-x root     root              2012-06-14 06:26 zoneinfo
+
+/system/usr/share/bmd:
+-rw-r--r-- root     root        12862 2012-06-14 06:26 RFFspeed_501.bmd
+-rw-r--r-- root     root        19586 2012-06-14 06:26 RFFstd_501.bmd
+
+/system/usr/share/zoneinfo:
+-rw-r--r-- root     root       480654 2012-06-14 06:26 zoneinfo.dat
+-rw-r--r-- root     root        29900 2012-06-14 06:26 zoneinfo.idx
+-rw-r--r-- root     root            6 2012-06-14 06:26 zoneinfo.version
+
+/system/usr/srec:
+drwxr-xr-x root     root              2012-06-14 06:26 config
+
+/system/usr/srec/config:
+drwxr-xr-x root     root              2012-06-14 06:26 en.us
+
+/system/usr/srec/config/en.us:
+-rw-r--r-- root     root         4623 2012-06-14 06:26 baseline.par
+-rw-r--r-- root     root         4896 2012-06-14 06:26 baseline11k.par
+-rw-r--r-- root     root         4895 2012-06-14 06:26 baseline8k.par
+drwxr-xr-x root     root              2012-06-14 06:26 dictionary
+drwxr-xr-x root     root              2012-06-14 06:26 g2p
+drwxr-xr-x root     root              2012-06-14 06:26 grammars
+drwxr-xr-x root     root              2012-06-14 06:26 models
+
+/system/usr/srec/config/en.us/dictionary:
+-rw-r--r-- root     root          254 2012-06-14 06:26 basic.ok
+-rw-r--r-- root     root       628151 2012-06-14 06:26 cmu6plus.ok.zip
+-rw-r--r-- root     root          419 2012-06-14 06:26 enroll.ok
+
+/system/usr/srec/config/en.us/g2p:
+-rw-r--r-- root     root        22693 2012-06-14 06:26 en-US-ttp.data
+
+/system/usr/srec/config/en.us/grammars:
+-rw-r--r-- root     root        55581 2012-06-14 06:26 VoiceDialer.g2g
+-rw-r--r-- root     root          622 2012-06-14 06:26 boolean.g2g
+-rw-r--r-- root     root         1395 2012-06-14 06:26 phone_type_choice.g2g
+
+/system/usr/srec/config/en.us/models:
+-rw-r--r-- root     root        42996 2012-06-14 06:26 generic.swiarb
+-rw-r--r-- root     root        10954 2012-06-14 06:26 generic11.lda
+-rw-r--r-- root     root       286565 2012-06-14 06:26 generic11_f.swimdl
+-rw-r--r-- root     root       287087 2012-06-14 06:26 generic11_m.swimdl
+-rw-r--r-- root     root        10954 2012-06-14 06:26 generic8.lda
+-rw-r--r-- root     root       280321 2012-06-14 06:26 generic8_f.swimdl
+-rw-r--r-- root     root       283917 2012-06-14 06:26 generic8_m.swimdl
+
+/system/vendor:
+drwxr-xr-x root     shell             2012-06-14 06:26 firmware
+drwxr-xr-x root     shell             2012-06-14 06:26 lib
+drwxr-xr-x root     shell             2012-06-14 06:26 pittpatt
+
+/system/vendor/firmware:
+lrw-r--r-- root     root              2012-06-14 06:26 hdcp.keys -> /factory/hdcp.keys
+
+/system/vendor/lib:
+-rw-r--r-- root     root      2455800 2012-06-14 06:26 libWVStreamControlAPI_L3.so
+-rw-r--r-- root     root        72812 2012-06-14 06:26 libwvdrm_L3.so
+
+/system/vendor/pittpatt:
+drwxr-xr-x root     shell             2012-06-14 06:26 models
+
+/system/vendor/pittpatt/models:
+drwxr-xr-x root     shell             2012-06-14 06:26 detection
+drwxr-xr-x root     shell             2012-06-14 06:26 recognition
+
+/system/vendor/pittpatt/models/detection:
+drwxr-xr-x root     shell             2012-06-14 06:26 multi_pose_face_landmark_detectors.3
+drwxr-xr-x root     shell             2012-06-14 06:26 yaw_roll_face_detectors.3
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3:
+drwxr-xr-x root     shell             2012-06-14 06:26 left_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2
+drwxr-xr-x root     shell             2012-06-14 06:26 left_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2
+drwxr-xr-x root     shell             2012-06-14 06:26 left_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2
+drwxr-xr-x root     shell             2012-06-14 06:26 nose_base-y0-yi45-p0-pi45-r0-ri20.2d_n2
+drwxr-xr-x root     shell             2012-06-14 06:26 nose_base-y0-yi45-p0-pi45-rn7-ri20.2d_n2
+drwxr-xr-x root     shell             2012-06-14 06:26 nose_base-y0-yi45-p0-pi45-rp7-ri20.2d_n2
+drwxr-xr-x root     shell             2012-06-14 06:26 right_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2
+drwxr-xr-x root     shell             2012-06-14 06:26 right_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2
+drwxr-xr-x root     shell             2012-06-14 06:26 right_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2:
+-rw-r--r-- root     root       750156 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2:
+-rw-r--r-- root     root       767572 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2:
+-rw-r--r-- root     root       729276 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-r0-ri20.2d_n2:
+-rw-r--r-- root     root       775036 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rn7-ri20.2d_n2:
+-rw-r--r-- root     root       737512 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rp7-ri20.2d_n2:
+-rw-r--r-- root     root       723856 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2:
+-rw-r--r-- root     root       752764 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2:
+-rw-r--r-- root     root       761436 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2:
+-rw-r--r-- root     root       736196 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3:
+drwxr-xr-x root     shell             2012-06-14 06:26 head-y0-yi45-p0-pi45-r0-ri30.4a
+drwxr-xr-x root     shell             2012-06-14 06:26 head-y0-yi45-p0-pi45-rn30-ri30.5
+drwxr-xr-x root     shell             2012-06-14 06:26 head-y0-yi45-p0-pi45-rp30-ri30.5
+
+/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-r0-ri30.4a:
+-rw-r--r-- root     root      1692832 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rn30-ri30.5:
+-rw-r--r-- root     root      1584592 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rp30-ri30.5:
+-rw-r--r-- root     root      1676500 2012-06-14 06:26 full_model.bin
+
+/system/vendor/pittpatt/models/recognition:
+drwxr-xr-x root     shell             2012-06-14 06:26 face.face.y0-y0-22-b-N
+
+/system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N:
+-rw-r--r-- root     root     11981284 2012-06-14 06:26 full_model.bin
+
+/system/wifi:
+-rw-r--r-- root     root          228 2012-06-14 06:26 bcm_loadecho.sh
+-rw-r--r-- root     root          249 2012-06-14 06:26 bcm_loadecho_4330.sh
+-rw-r--r-- root     root          114 2012-06-14 06:26 bcm_loadipf.sh
+-rw-r--r-- root     root          130 2012-06-14 06:26 bcm_loadipf_4330.sh
+-rw-r--r-- root     root           68 2012-06-14 06:26 connectap.sh
+-rw-r--r-- root     root           73 2012-06-14 06:26 connectap_4330.sh
+-rw-r--r-- root     root       262549 2012-06-14 06:26 firmware.bin
+-rw-r--r-- root     root       263940 2012-06-14 06:26 firmware_apsta.bin
+-rw-r--r-- root     root       244512 2012-06-14 06:26 firmware_test.bin
+-rw-r--r-- root     root       226736 2012-06-14 06:26 fw_4330_b2.bin
+-rw-r--r-- root     root       228730 2012-06-14 06:26 fw_4330_b2_test.bin
+-rw-r--r-- root     root        27136 2012-06-14 06:26 iwconfig
+-rw-r--r-- root     root        31564 2012-06-14 06:26 iwlist
+-rw-r--r-- root     root        13984 2012-06-14 06:26 iwpriv
+-rw-r--r-- root     root          720 2012-06-14 06:26 nvram.txt
+-rw-r--r-- root     root          872 2012-06-14 06:26 nvram_4330.txt
+-rw-r--r-- root     root          870 2012-06-14 06:26 nvram_4330_MSM7627A_C8812.txt
+-rw-r--r-- root     root         5616 2012-06-14 06:26 udp_server
+-rw-r--r-- root     root          142 2012-06-14 06:26 wifi_mt_1.1.sh
+-rw-r--r-- root     root          520 2012-06-14 06:26 wifi_mt_1.2.sh
+-rw-r--r-- root     root          290 2012-06-14 06:26 wifi_mt_2.1.sh
+-rw-r--r-- root     root           20 2012-06-14 06:26 wifi_mt_finish_1.1.sh
+-rw-r--r-- root     root           20 2012-06-14 06:26 wifi_mt_finish_1.2.sh
+-rw-r--r-- root     root           25 2012-06-14 06:26 wifi_mt_finish_2.1.sh
+
+/system/xbin:
+-rwxr-xr-x root     shell       59392 2012-06-14 06:26 dexdump
