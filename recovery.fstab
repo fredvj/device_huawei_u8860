@@ -5,15 +5,15 @@
 # boot.img & recovery.img are stored in the "/image" folder of mmcblk0p1
 # The partition is vfat, mounted as "/.cust_backup" in the root fs
 
-# /boot		vfat		/dev/block/mmcblk0p1
-# /recovery       vfat            /dev/block/mmcblk0p1
+/boot		mtd		boot
+/recovery       mtd		recovery
 
-/.cust_backup	vfat		/dev/block/mmcblk0p1
+/cust		vfat		/dev/block/mmcblk0p1
 
 /cache		ext4		/dev/block/mmcblk0p6
 /system         ext4            /dev/block/mmcblk0p12
 /data		ext4		/dev/block/mmcblk0p13
 /emmc		vfat		/dev/block/mmcblk0p14
 /sdcard		vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1
-/sd-ext		ext4		/dev/block/mmcblk1p2
-
+/sd-ext		auto		/dev/block/mmcblk1p2
+/misc		auto		/dev/block/mmcblk0p7

@@ -41,7 +41,8 @@ PRODUCT_PACKAGES += \
 # Vold config
 
 PRODUCT_COPY_FILES += \
-	device/huawei/u8860/vold.fstab:system/etc/vold.fstab
+	device/huawei/u8860/vold.fstab:system/etc/vold.fstab \
+	device/huawei/u8860/init.huawei.rc:root/init.huawei.rc
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_u8860
