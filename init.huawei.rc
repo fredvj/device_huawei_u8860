@@ -14,11 +14,11 @@ on init
 on emmc-fs
 # mount mmc partitions
      wait /dev/block/mmcblk0p12
-     mount ext4 /dev/block/mmcblk0p12 /system ro barrier=1,nodelalloc
+     mount ext4 /dev/block/mmcblk0p12 /system rw barrier=1
      wait /dev/block/mmcblk0p13
      exec /system/bin/e2fsck -p /dev/block/mmcblk0p13
-     mount ext4 /dev/block/mmcblk0p13 /data nosuid nodev barrier=1 noauto_da_alloc,nodelalloc
-     mount ext4 /dev/block/mmcblk0p6 /cache nosuid nodev barrier=1,nodelalloc
+     mount ext4 /dev/block/mmcblk0p13 /data nosuid nodev barrier=1 noauto_da_alloc
+     mount ext4 /dev/block/mmcblk0p6 /cache nosuid nodev barrier=1
 
      setrlimit 7 2048 2048
      chmod 0664 /dev/light
