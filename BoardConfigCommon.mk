@@ -61,6 +61,8 @@ BOARD_USES_MMCUTILS := true
 TARGET_PREBUILT_KERNEL := device/huawei/u8860/kernel
 TARGET_RECOVERY_INITRC := device/huawei/u8860/recovery/recovery.rc
 
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/huawei/u8860/releasetools/ota_from_target_files
+
 # All the defines for /bootable/recovery (2012-07-24)
 #
 # BOARD_TOUCH_RECOVERY := true
