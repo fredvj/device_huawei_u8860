@@ -7,3 +7,7 @@ persist.service.adb.root=1
 
 # Default: /misc,/radio,/bootloader,/recovery,/efs
 ro.cwm.forbid_format=/boot,/cust
+
+# Enable console
+ro.debuggable=1
+
