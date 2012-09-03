@@ -1,0 +1,15 @@
+Situation:
+----------
+adb logcat ->
+Unable to open log device '/dev/log/main'
+
+Solution:
+---------
+Open the phone app and dial:
+*#*#2846579#*#*
+
+Enable logging
+
+Source:
+-------
+http://forum.xda-developers.com/showpost.php?p=17774398&postcount=93
