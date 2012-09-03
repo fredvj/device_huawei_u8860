@@ -45,6 +45,8 @@ on boot
     hostname localhost
     domainname localdomain
 
+    write /sys/class/android_usb/android0/iSerial "CM9-U8860"
+
     class_start default
 
 service ueventd /sbin/ueventd
