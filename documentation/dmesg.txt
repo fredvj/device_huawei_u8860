@@ -1,0 +1,610 @@
+<6>[0, swapper] [    0.000000] Initializing cgroup subsys cpu
+<5>[0, swapper] [    0.000000] Linux version 3.0.8-perf (android@localhost) (gcc version 4.4.3 (GCC) ) #1 PREEMPT Mon Mar 12 11:09:22 CST 2012
+<4>[0, swapper] [    0.000000] CPU: ARMv7 Processor [511f00f2] revision 2 (ARMv7), cr=10c53c7d
+<4>[0, swapper] [    0.000000] CPU: VIPT nonaliasing data cache, VIVT ASID tagged instruction cache
+<4>[0, swapper] [    0.000000] Machine: HUAWEI U8860LP BOARD
+<4>[0, swapper] [    0.000000] msm7x30_fixup:camera_id=-1
+<4>[0, swapper] [    0.000000] msm7x30_fixup:lcd_id=0
+<4>[0, swapper] [    0.000000] msm7x30_fixup:ts_id=-1
+<4>[0, swapper] [    0.000000] msm7x30_fixup:sub_board_id=1
+<4>[0, swapper] [    0.000000] msm7x30_fixup:charge_flag=0
+<4>[0, swapper] [    0.000000] Ignoring unrecognised tag 0x5441000c
+<6>[0, swapper] [    0.000000] memory pool 2 (start a700000 size 5900000) initialized
+<4>[0, swapper] [    0.000000] Memory policy: ECC disabled, Data cache writeback
+<3>[0, swapper] [    0.000000] smem_find(137, 72): wrong size 64
+<6>[0, swapper] [    0.000000] socinfo_init: v4, id=74, ver=2.1, raw_id=1402, raw_ver=2, hw_plat=1, hw_plat_ver=65536
+<7>[0, swapper] [    0.000000] On node 0 totalpages: 92416
+<7>[0, swapper] [    0.000000]   Normal zone: 2108 pages used for memmap
+<7>[0, swapper] [    0.000000]   Normal zone: 0 pages reserved
+<7>[0, swapper] [    0.000000]   Normal zone: 32964 pages, LIFO batch:7
+<7>[0, swapper] [    0.000000]   HighMem zone: 448 pages used for memmap
+<7>[0, swapper] [    0.000000]   HighMem zone: 56896 pages, LIFO batch:15
+<6>[0, swapper] [    0.000000] allocating 5242880 bytes at c12c1000 (14c1000 physical) for fb
+<7>[0, swapper] [    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+<7>[0, swapper] [    0.000000] pcpu-alloc: [0] 0 
+<4>[0, swapper] [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 89860
+<5>[0, swapper] [    0.000000] Kernel command line: console=ttyDCC0 androidboot.hardware=huawei androidboot.localproppath=normal/cn usb.pid.index=25 usb.serial= androidboot.serialno= androidboot.emmc=true androidboot.image=recovery androidboot.mode=user androidboot.baseband=msm
+<6>[0, swapper] [    0.000000] PID hash table entries: 1024 (order: 0, 4096 bytes)
+<6>[0, swapper] [    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[0, swapper] [    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+<6>[0, swapper] [    0.000000] Memory: 60MB 45MB 256MB = 361MB total
+<5>[0, swapper] [    0.000000] Memory: 347284k/347284k available, 113516k reserved, 229376K highmem
+<5>[0, swapper] [    0.000000] Virtual kernel memory layout:
+<5>[0, swapper] [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[0, swapper] [    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[0, swapper] [    0.000000]     DMA     : 0xff000000 - 0xffe00000   (  14 MB)
+<5>[0, swapper] [    0.000000]     vmalloc : 0xe2800000 - 0xfa000000   ( 376 MB)
+<5>[0, swapper] [    0.000000]     lowmem  : 0xc0000000 - 0xe2000000   ( 544 MB)
+<5>[0, swapper] [    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+<5>[0, swapper] [    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+<5>[0, swapper] [    0.000000]       .init : 0xc0008000 - 0xc003f000   ( 220 kB)
+<5>[0, swapper] [    0.000000]       .text : 0xc003f000 - 0xc0863fa8   (8340 kB)
+<5>[0, swapper] [    0.000000]       .data : 0xc0864000 - 0xc0908fe0   ( 660 kB)
+<5>[0, swapper] [    0.000000]        .bss : 0xc0909004 - 0xc0a3cb18   (1231 kB)
+<6>[0, swapper] [    0.000000] Preemptible hierarchical RCU implementation.
+<6>[0, swapper] [    0.000000] NR_IRQS:566
+<6>[0, swapper] [    0.000000] sched_clock: 32 bits at 32kHz, resolution 30517ns, wraps every 131071999ms
+<6>[0, swapper] [    0.000061] Calibrating delay loop... 933.06 BogoMIPS (lpj=4665344)
+<6>[0, swapper] [    0.040069] pid_max: default: 32768 minimum: 301
+<6>[0, swapper] [    0.040161] Mount-cache hash table entries: 512
+<6>[0, swapper] [    0.040374] Initializing cgroup subsys cpuacct
+<6>[0, swapper] [    0.040374] Initializing cgroup subsys freezer
+<6>[0, swapper] [    0.040405] CPU: Testing write buffer coherency: ok
+<6>[1, swapper] [    0.040527] hw perfevents: enabled with ARMv7 Scorpion PMU driver, 5 counters available
+<6>[1, swapper] [    0.041870] print_constraints: dummy: 
+<3>[1, swapper] [    0.041900] rdev_init_debugfs: Error-Bad Function Input
+<6>[1, swapper] [    0.041992] NET: Registered protocol family 16
+<6>[1, swapper] [    0.042602] Clock ownership
+<6>[1, swapper] [    0.042602]   GLBL  : 07d82110
+<6>[1, swapper] [    0.042602]   APPS  : fe6001c3 1000003f 00000c7f
+<6>[1, swapper] [    0.042633]   ROW   : 000a8094 00000c0b
+<6>[1, swapper] [    0.042724] acpuclk_7x30_init()
+<6>[1, swapper] [    0.043334] ACPU running at 1401600 KHz
+<6>[1, swapper] [    0.043334] usb_autorun: proc_usb_para
+<6>[1, swapper] [    0.043365] usb_autorun: SMEM sb_serial=, usb_pid_index=25
+<6>[1, swapper] [    0.043365] usb_autorun: SMEM vendor=normal,country=cn
+<6>[1, swapper] [    0.043670] print_constraints: smps0: 500 <--> 1500 mV normal 
+<6>[1, swapper] [    0.043731] print_constraints: smps1: 500 <--> 1500 mV normal 
+<6>[1, swapper] [    0.043792] print_constraints: smps2: 1300 mV normal 
+<6>[1, swapper] [    0.043853] print_constraints: smps3: 1800 mV normal 
+<6>[1, swapper] [    0.043914] print_constraints: smps4: 2200 mV normal 
+<6>[1, swapper] [    0.043975] print_constraints: ldo00: 1200 mV normal 
+<6>[1, swapper] [    0.044036] print_constraints: ldo02: 2600 mV normal 
+<6>[1, swapper] [    0.044097] print_constraints: ldo03: 1800 <--> 3000 mV normal 
+<6>[1, swapper] [    0.044189] print_constraints: ldo04: 2850 mV normal 
+<6>[1, swapper] [    0.044250] print_constraints: ldo05: 2850 mV normal 
+<6>[1, swapper] [    0.044311] print_constraints: ldo06: 3075 <--> 3400 mV normal 
+<6>[1, swapper] [    0.044372] print_constraints: ldo07: 1800 mV normal 
+<6>[1, swapper] [    0.044464] print_constraints: ldo08: 1800 <--> 2850 mV normal 
+<6>[1, swapper] [    0.044525] print_constraints: ldo09: 2050 mV normal 
+<6>[1, swapper] [    0.044586] print_constraints: ldo10: 2600 <--> 2700 mV normal 
+<6>[1, swapper] [    0.044647] print_constraints: ldo11: 1800 <--> 2600 mV normal 
+<6>[1, swapper] [    0.044708] print_constraints: ldo12: 1800 mV normal 
+<6>[1, swapper] [    0.044769] print_constraints: ldo13: 2900 <--> 3050 mV normal 
+<6>[1, swapper] [    0.044860] print_constraints: ldo14: 2850 mV normal 
+<6>[1, swapper] [    0.044921] print_constraints: ldo15: 3050 <--> 3100 mV normal 
+<6>[1, swapper] [    0.044982] print_constraints: ldo16: 2600 mV normal 
+<6>[1, swapper] [    0.045074] print_constraints: ldo17: 2600 mV normal 
+<6>[1, swapper] [    0.045135] print_constraints: ldo18: 2200 mV normal 
+<6>[1, swapper] [    0.045196] print_constraints: ldo19: 2400 <--> 2500 mV normal 
+<6>[1, swapper] [    0.045288] print_constraints: ldo20: 1500 <--> 1800 mV normal 
+<6>[1, swapper] [    0.045349] print_constraints: ldo21: 1100 mV normal 
+<6>[1, swapper] [    0.045410] print_constraints: ldo22: 1200 <--> 1300 mV normal 
+<6>[1, swapper] [    0.045501] print_constraints: ldo23: 1350 mV normal 
+<6>[1, swapper] [    0.045562] print_constraints: ldo24: 1200 mV normal 
+<6>[1, swapper] [    0.045654] print_constraints: ldo25: 1200 mV normal 
+<6>[1, swapper] [    0.045715] print_constraints: lvsw0: normal 
+<6>[1, swapper] [    0.045776] print_constraints: lvsw1: normal 
+<6>[1, swapper] [    0.045837] print_constraints: ncp: 1800 mV normal 
+<6>[1, swapper] [    0.046325] pm8058_probe: PMIC revision: E3
+<6>[1, swapper] [    0.047119] pm_gpio_probe: OK: base=182, ngpio=40
+<6>[1, swapper] [    0.047271] pm8xxx_mpp_probe: OK: base=222, ngpio=12
+<6>[1, swapper] [    0.049163] bcm_detect_chip_type : bcm_chip_type = 0
+<4>[1, swapper] [    0.064331] dev_alloc_skb malloc 32k buffer to avoid page allocation fail
+<4>[1, swapper] [    0.064392] bcm_wifi_init_gpio_mem successfully 
+<6>[1, swapper] [    0.070190] snddev_poweramp_gpio_init 
+<6>[1, swapper] [    0.070251] aux_pcm_gpio_init 
+<6>[1, swapper] [    0.070373] snddev_hac_gpio_init 
+<3>[1, swapper] [    0.072631] pm8xxx_gpio_config: called on gpio 35 not handled by any pmic
+<3>[1, swapper] [    0.072631] pm8058_gpios_init PMIC_GPIO_SD_DET config failed
+<5>[1, swapper] [    0.072662] Boot Reason = 0x01
+<3>[1, swapper] [    0.074340] i2c i2c-4: Failed to register i2c client s5k3e2fx at 0x10 (-16)
+<3>[1, swapper] [    0.074340] i2c i2c-4: Can't create device at 0x10
+<3>[1, swapper] [    0.074371] i2c i2c-4: Failed to register i2c client mt9p012 at 0x36 (-16)
+<3>[1, swapper] [    0.074371] i2c i2c-4: Can't create device at 0x36
+<6>[1, swapper] [    0.075286] print_constraints: fs_gfx2d0: normal 
+<6>[1, swapper] [    0.075408] print_constraints: fs_gfx3d: normal 
+<6>[1, swapper] [    0.075469] print_constraints: fs_mdp: normal 
+<6>[1, swapper] [    0.075561] print_constraints: fs_mfc: normal 
+<6>[1, swapper] [    0.075653] print_constraints: fs_rot: normal 
+<6>[1, swapper] [    0.075744] print_constraints: fs_vfe: normal 
+<6>[1, swapper] [    0.075836] print_constraints: fs_vpe: normal 
+<6>[1, swapper] [    0.082763] bio: create slab <bio-0> at 0
+<5>[1, swapper] [    0.083099] pmic8058_pwm_probe: OK
+<5>[1, swapper] [    0.083312] SCSI subsystem initialized
+<6>[1, swapper] [    0.083465] usbcore: registered new interface driver usbfs
+<6>[1, swapper] [    0.083526] usbcore: registered new interface driver hub
+<6>[1, swapper] [    0.083618] usbcore: registered new device driver usb
+<6>[1, swapper] [    0.083709] msm_i2c_probe
+<6>[1, swapper] [    0.083801] msm_i2c_probe: clk_ctl 35d, 100000 Hz
+<6>[1, swapper] [    0.084411] msm_i2c_probe
+<6>[1, swapper] [    0.084472] msm_i2c_probe: clk_ctl 35d, 100000 Hz
+<6>[1, swapper] [    0.084838] Advanced Linux Sound Architecture Driver Version 1.0.24.
+<6>[1, swapper] [    0.085083] Bluetooth: Core ver 2.16
+<6>[1, swapper] [    0.085113] NET: Registered protocol family 31
+<6>[1, swapper] [    0.085144] Bluetooth: HCI device and connection manager initialized
+<6>[1, swapper] [    0.085144] Bluetooth: HCI socket layer initialized
+<6>[1, swapper] [    0.085144] Bluetooth: L2CAP socket layer initialized
+<6>[1, swapper] [    0.085266] Bluetooth: SCO socket layer initialized
+<6>[1, swapper] [    0.085601] Switching to clocksource gp_timer
+<6>[1, swapper] [    0.086090] NET: Registered protocol family 2
+<6>[1, swapper] [    0.086151] IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+<6>[1, swapper] [    0.086334] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+<6>[1, swapper] [    0.086425] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+<6>[1, swapper] [    0.086486] TCP: Hash tables configured (established 8192 bind 8192)
+<6>[1, swapper] [    0.086486] TCP reno registered
+<6>[1, swapper] [    0.086517] UDP hash table entries: 256 (order: 0, 4096 bytes)
+<6>[1, swapper] [    0.086517] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+<6>[1, swapper] [    0.086730] NET: Registered protocol family 1
+<6>[4, kworker/0:0] [    0.086822] cfg80211: Calling CRDA to update world regulatory domain
+<6>[1, swapper] [    0.086914] RPC: Registered named UNIX socket transport module.
+<6>[1, swapper] [    0.086944] RPC: Registered udp transport module.
+<6>[1, swapper] [    0.086944] RPC: Registered tcp transport module.
+<6>[1, swapper] [    0.086944] RPC: Registered tcp NFSv4.1 backchannel transport module.
+<6>[1, swapper] [    0.087066] Trying to unpack rootfs image as initramfs...
+<6>[1, swapper] [    0.194885] Freeing initrd memory: 2784K
+<6>[1, swapper] [    0.195007] PMU: registered new PMU device of type 0
+<6>[1, swapper] [    0.195251] sdio_al:SDIO-AL SW version 1.30
+<4>[1, swapper] [    0.197296] get_nand_partitions: no flash partition table in shared memory
+<3>[5, kworker/u:0] [    0.198089] Notify: smsm init
+<6>[1, swapper] [    0.199920] [afe.c:afe_init] AFE driver init
+<6>[1, swapper] [    0.200012] rpcrouter_smd_remote_notify: smd opened 0x  (null)
+<6>[1, swapper] [    0.200317] [audpp.c:audpp_probe] Number of decoder supported  5
+<6>[1, swapper] [    0.200317] [audpp.c:audpp_probe] Number of concurrency supported  7
+<6>[1, swapper] [    0.200347] [audpp.c:audpp_probe] module_name:AUDPLAY4TASK
+<6>[1, swapper] [    0.200347] [audpp.c:audpp_probe] queueid:17
+<6>[1, swapper] [    0.200347] [audpp.c:audpp_probe] decid:4
+<6>[1, swapper] [    0.200347] [audpp.c:audpp_probe] nr_codec_support:1
+<6>[1, swapper] [    0.200378] [audpp.c:audpp_probe] module_name:AUDPLAY3TASK
+<6>[1, swapper] [    0.200378] [audpp.c:audpp_probe] queueid:16
+<6>[1, swapper] [    0.200378] [audpp.c:audpp_probe] decid:3
+<6>[1, swapper] [    0.200378] [audpp.c:audpp_probe] nr_codec_support:11
+<6>[1, swapper] [    0.200378] [audpp.c:audpp_probe] module_name:AUDPLAY2TASK
+<6>[1, swapper] [    0.200408] [audpp.c:audpp_probe] queueid:15
+<6>[1, swapper] [    0.200408] [audpp.c:audpp_probe] decid:2
+<6>[1, swapper] [    0.200408] [audpp.c:audpp_probe] nr_codec_support:11
+<6>[1, swapper] [    0.200408] [audpp.c:audpp_probe] module_name:AUDPLAY1TASK
+<6>[1, swapper] [    0.200439] [audpp.c:audpp_probe] queueid:14
+<6>[1, swapper] [    0.200439] [audpp.c:audpp_probe] decid:1
+<6>[1, swapper] [    0.200439] [audpp.c:audpp_probe] nr_codec_support:11
+<6>[1, swapper] [    0.200439] [audpp.c:audpp_probe] module_name:AUDPLAY0TASK
+<6>[1, swapper] [    0.200469] [audpp.c:audpp_probe] queueid:13
+<6>[1, swapper] [    0.200469] [audpp.c:audpp_probe] decid:0
+<6>[1, swapper] [    0.200469] [audpp.c:audpp_probe] nr_codec_support:11
+<6>[1, swapper] [    0.200866] [snddev_ecodec.c:snddev_ecodec_init] snddev_ecodec_init
+<3>[20, kworker/u:1] [    0.204254] rpcrouter: Server create rejected, version = 0, program = 3000001f
+<6>[26, kworker/u:2] [    0.208984] [adsp.c:adsp_rtos_mtoa_cb] INIT_INFO Event
+<6>[1, swapper] [    0.209045] [adsp.c:adsp_init] msm_adsp -- 0
+<6>[1, swapper] [    0.209320] [lpa.c:lpa_probe] lpa probe
+<6>[1, swapper] [    0.209442] audio_mvs_init:
+<6>[1, swapper] [    0.209472] __msm_rpc_connect: server not found 30000014:50001
+<3>[1, swapper] [    0.209472] audio_mvs_init: MVS RPC connect failed ver 0x50001
+<6>[1, swapper] [    0.209472] __msm_rpc_connect: server not found 30000014:40001
+<3>[1, swapper] [    0.209503] audio_mvs_init: MVS RPC connect failed ver 0x40001
+<7>[1, swapper] [    0.209747] Registered led device: red
+<7>[1, swapper] [    0.209777] Registered led device: green
+<7>[1, swapper] [    0.209808] Registered led device: blue
+<7>[1, swapper] [    0.209930] Registered led device: ptt_led
+<4>[1, swapper] [    0.209960] led_classdev_register sucess
+<6>[1, swapper] [    0.210174] rmt_storage_get_ramfs: RAMFS entry: addr = 0x07700000, size = 0x00300000
+<6>[28, audio_mvs] [    0.210235] audio_mvs_thread:
+<6>[1, swapper] [    0.210266] rmt_storage_probe: Remote storage RPC client (0x300000a7)initialized
+<3>[1, swapper] [    0.214141] msm_rpc_client_req2: RPC call was not successful (3)
+<3>[1, swapper] [    0.214141] rmt_storage_reg_cb: Failed to register callback for event 7
+<6>[1, swapper] [    0.214141] rmt_storage_reg_callbacks: Unable (-22) registering aloc_rmt_buf
+<4>[1, swapper] [    0.219787] highmem bounce pool size: 64 pages
+<6>[1, swapper] [    0.219940] ashmem: initialized
+<6>[1, swapper] [    0.220489] fuse init (API version 7.16)
+<7>[1, swapper] [    0.220581] yaffs: yaffs built Mar 12 2012 11:08:41 Installing.
+<6>[1, swapper] [    0.220611] msgmni has been set to 235
+<6>[1, swapper] [    0.221221] io scheduler noop registered
+<6>[1, swapper] [    0.221252] io scheduler cfq registered (default)
+<6>[1, swapper] [    0.225006] mddi_clk init rate is 49150000
+<6>[1, swapper] [    0.225067] primary mddi base phy_addr = 0xad600000 virt = 0xe2820000
+<3>[1, swapper] [    0.235351] nt35560_init:------nt35560_init------
+<6>[1, swapper] [    0.235626] setting pdata->panel_info.fb_num to 3. type: 1
+<3>[1, swapper] [    0.235748] mddi_probe: clk_set_max_rate failed
+<6>[1, swapper] [    0.236267] FrameBuffer[0] 480x854 size=4919296 bytes is registered successfully!
+<7>[1, swapper] [    0.236724] Registered led device: lcd-backlight
+<6>[1, swapper] [    0.237335] 
+<6>[1, swapper] [    0.237335]  msm_vidc_enc: Inside vid_enc_init()
+<6>[1, swapper] [    0.237426] 
+<6>[1, swapper] [    0.237426]  msm_vidc_enc: Inside vid_enc_vcd_init()
+<6>[1, swapper] [    0.237609] msm_serial: detected port #1
+<6>[1, swapper] [    0.237670] msm_serial.1: ttyMSM1 at MMIO 0xacb00000 (irq = 69) is a MSM
+<6>[1, swapper] [    0.255859] msm_serial: driver initialized
+<6>[1, swapper] [    0.256042] msm_serial_hs.0: ttyHS0 at MMIO 0xa3300000 (irq = 73) is a MSM HS UART
+<6>[1, swapper] [    0.276000] msm_serial_hs module loaded
+<6>[1, swapper] [    0.278167] kgsl kgsl-3d0: |kgsl_gpummu_init| MMU type set for device is GPUMMU
+<6>[1, swapper] [    0.278625] kgsl kgsl-2d0: |kgsl_gpummu_init| MMU type set for device is GPUMMU
+<6>[1, swapper] [    0.279907] brd: module loaded
+<6>[1, swapper] [    0.280975] loop: module loaded
+<6>[1, swapper] [    0.281097] pmem: Initializing pmem (user-space) as cached
+<6>[1, swapper] [    0.281219] allocating 37748736 bytes at   (null) (a700000 physical) for pmem
+<6>[1, swapper] [    0.281250] pmem: Initializing pmem_adsp (user-space) as non-cached
+<6>[1, swapper] [    0.281341] allocating 47185920 bytes at   (null) (cb00000 physical) for pmem_adsp
+<6>[1, swapper] [    0.281372] pmem: Initializing pmem_audio (user-space) as non-cached
+<6>[1, swapper] [    0.281433] allocating 2097152 bytes at   (null) (f800000 physical) for pmem_audio
+<6>[1, swapper] [    0.281555] Android kernel panic handler initialized (bind=MTD-Crash)
+<5>[1, swapper] [    0.281616] pm8xxx_upl_probe: OK
+<3>[1, swapper] [    0.282989] msm_i2c msm_i2c.2: (0018) Error during data xfer (-5)
+<3>[1, swapper] [    0.283111] msm_i2c msm_i2c.2: (0018) Error during data xfer (-5)
+<3>[1, swapper] [    0.283111] marimba-core 2-000c: i2c read failed
+<6>[1, swapper] [    0.287078] adie_codec_register_codec_operations: codec type 1
+<6>[1, swapper] [    0.287200] timpani_codec_rpc_init: connected to remote oem rapi server
+<3>[1, swapper] [    0.313598] msm_i2c msm_i2c.0: (0050) Error during data xfer (-5)
+<3>[1, swapper] [    0.323699] msm_i2c msm_i2c.0: (0050) Error during data xfer (-5)
+<4>[1, swapper] [    0.323730] pn544: probe of 0-0028 failed with error -121
+<6>[1, swapper] [    0.324188] SCSI Media Changer driver v0.25 
+<6>[1, swapper] [    0.324493] msm_nand_probe: phys addr 0xa0200000 
+<6>[1, swapper] [    0.324493] msm_nand_probe: Dual Nand Ctrl in ping-pong mode
+<6>[1, swapper] [    0.324523] msm_nand_probe: dmac 0x7
+<6>[1, swapper] [    0.324523] msm_nand_probe: allocated dma buffer at ffdca000, dma_addr 415d6000
+<3>[1, swapper] [    0.324798] flash_onfi_probe: No partition info available
+<6>[1, swapper] [    0.324859] status: 20
+<6>[1, swapper] [    0.324859] nandid: 7070707 maker 07 device 07
+<3>[1, swapper] [    0.324890] ERROR: unknown nand device manuf=7 devid=7
+<6>[1, swapper] [    0.324890] SFLASHC Async Mode bit: 1 
+<6>[1, swapper] [    0.324920] =================================================================
+<6>[1, swapper] [    0.324920] flash_onenand_probe: manufacturer_id = 0xf000
+<6>[1, swapper] [    0.324951] flash_onenand_probe: device_id = 0xf001
+<6>[1, swapper] [    0.324951] flash_onenand_probe: version_id = 0xf002
+<6>[1, swapper] [    0.324951] flash_onenand_probe: data_buf_size = 0xf003
+<6>[1, swapper] [    0.324951] flash_onenand_probe: boot_buf_size = 0xf004
+<6>[1, swapper] [    0.324981] flash_onenand_probe: num_of_buffers = 0xf005
+<6>[1, swapper] [    0.324981] flash_onenand_probe: technology = 0xf006
+<6>[1, swapper] [    0.324981] =================================================================
+<6>[1, swapper] [    0.324981] flash_onenand_probe: Detected an unsupported device
+<3>[1, swapper] [    0.325012] msm_nand_probe: No nand device found
+<6>[1, swapper] [    0.325744] PPP generic driver version 2.4.2
+<6>[1, swapper] [    0.325927] PPP Deflate Compression module registered
+<6>[1, swapper] [    0.325927] PPP BSD Compression module registered
+<4>[60, modprobe] [    0.326660] do_exit: exit code=256
+<4>[62, modprobe] [    0.327270] do_exit: exit code=256
+<6>[1, swapper] [    0.327484] PPP MPPE Compression module registered
+<6>[1, swapper] [    0.327484] NET: Registered protocol family 24
+<6>[1, swapper] [    0.327514] SLIP: version 0.8.4-NET3.019-NEWTTY (dynamic channels, max=256) (6 bit encapsulation enabled).
+<6>[1, swapper] [    0.327514] CSLIP: code copyright 1989 Regents of the University of California.
+<4>[1, swapper] [    0.327911] smc91x: not found (-19).
+<6>[1, swapper] [    0.328094] smsc911x: Driver version 2008-10-21
+<6>[1, swapper] [    0.328186] rmnet_init: SMD devices[8]
+<6>[1, swapper] [    0.330718] rmnet_init: SDIO devices[8]
+<6>[1, swapper] [    0.332885] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[1, swapper] [    0.332977] host driver registered w/ tranceiver
+<6>[1, swapper] [    0.333099] usbcore: registered new interface driver cdc_acm
+<6>[1, swapper] [    0.333129] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+<6>[1, swapper] [    0.333129] Initializing USB Mass Storage driver...
+<6>[1, swapper] [    0.333160] usbcore: registered new interface driver usb-storage
+<6>[1, swapper] [    0.333190] USB Mass Storage support registered.
+<6>[1, swapper] [    0.333221] usbcore: registered new interface driver ums-alauda
+<6>[1, swapper] [    0.333251] usbcore: registered new interface driver ums-cypress
+<6>[1, swapper] [    0.333282] usbcore: registered new interface driver ums-datafab
+<6>[1, swapper] [    0.333312] usbcore: registered new interface driver ums-freecom
+<6>[1, swapper] [    0.333343] usbcore: registered new interface driver ums-isd200
+<6>[1, swapper] [    0.333374] usbcore: registered new interface driver ums-jumpshot
+<6>[1, swapper] [    0.333404] usbcore: registered new interface driver ums-karma
+<6>[1, swapper] [    0.333435] usbcore: registered new interface driver ums-onetouch
+<6>[1, swapper] [    0.333465] usbcore: registered new interface driver ums-sddr09
+<6>[1, swapper] [    0.333496] usbcore: registered new interface driver ums-sddr55
+<6>[1, swapper] [    0.333526] usbcore: registered new interface driver ums-usbat
+<6>[1, swapper] [    0.333557] usbcore: registered new interface driver usb_ehset_test
+<3>[1, swapper] [    0.333709] msm72k_probe:wakelock init 
+<6>[1, swapper] [    0.333770] peripheral driver registered w/ tranceiver
+<6>[1, swapper] [    0.335052] android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[1, swapper] [    0.335052] android_usb gadget: Number of LUNs=1
+<6>[1, swapper] [    0.335083]  lun0: LUN: removable read only CD-ROM file: (no medium)
+<6>[1, swapper] [    0.335174] android_usb gadget: android_usb ready
+<6>[1, swapper] [    0.336181] diagchar initialized now
+<6>[1, swapper] [    0.336761] input: fluid-keypad as /devices/platform/msm_ssbi.0/pm8058-core/pm8xxx-keypad/input/input0
+<6>[1, swapper] [    0.336944] cyttsp_init:Cypress TrueTouch(R) Standard Product
+<6>[1, swapper] [    0.336944] cyttsp_init:I2C Touchscreen Driver (Built Mar 12 2012 @ 11:07:12)
+<3>[1, swapper] [    0.337036] regulator_check_voltage: ldo10: requested voltage range [2700, 2700] does not fit within constraints: [2600000, 2700000]
+<3>[1, swapper] [    0.337036] the atmel's power init is failed!
+<4>[1, swapper] [    0.337066] atmel-rmi-ts: probe of 0-004a failed with error -22
+<3>[1, swapper] [    0.337097] synaptics_rmi4_probe: it's the first touch driver! 
+<3>[1, swapper] [    0.459930] RMI4 $70 data read: $13 + 31
+<6>[1, swapper] [    0.461181] input: synaptics as /devices/virtual/input/input1
+<3>[1, swapper] [    0.461364] probing for Synaptics RMI4 device Synaptics_rmi at $70...
+<6>[1, swapper] [    0.511840] gs_probe:change i2c addr to actrual address = 83
+<3>[1, swapper] [    0.511962] msm_i2c msm_i2c.0: (00a6) Error during data xfer (-5)
+<3>[1, swapper] [    0.511993] ADI346 chip i2c reg_read failed
+<6>[1, swapper] [    0.511993] gs_probe:     607     revid===251
+<3>[1, swapper] [    0.511993] Failed to probe 
+<6>[1, swapper] [    0.512420] gs_probe: faile  adi346  in  mode
+<4>[1, swapper] [    0.512420] gs_adi346: probe of 0-0053 failed with error 7
+<4>[1, swapper] [    0.512481] my gs_probe_lis3xh
+<4>[1, swapper] [    0.563354] mode is 7
+<4>[1, swapper] [    0.563781] sub_type = 51
+<4>[1, swapper] [    0.563781] gs is ST LIS3DH
+<6>[1, swapper] [    0.564178] input: sensors as /devices/virtual/input/input2
+<6>[1, swapper] [    0.564361] gs_probe: Start LIS35DE  in polling mode
+<4>[1, swapper] [    0.564788] i2c-core: driver [bma150] using legacy suspend method
+<4>[1, swapper] [    0.564788] i2c-core: driver [bma150] using legacy resume method
+<7>[1, swapper] [    0.565002] RTC Registering with rs30000048
+<7>[1, swapper] [    0.565673] msmrtc_rpc_proc_result: RPC client reply for PROC=12 success
+<6>[73, krtcclntcbd] [    0.566192] RPC CALL -- TOD TIME UPDATE: ttick = 488137
+<6>[73, krtcclntcbd] [    0.566192] stamp=53864434694651904, freq = 0
+<3>[73, krtcclntcbd] [    0.566192] /mnt/disk/sundong/Icecream_luxiao/branch/version_ziyan_ICS/B977_20120307_version/platform/R3_Auto_Make_Tool/work_space/project/kernel/drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+<7>[1, swapper] [    0.566314] msmrtc_rpc_proc_result: RPC client reply for PROC=17 success
+<7>[1, swapper] [    0.566772] msmrtc_tod_proc_result: 07/27/2012 00:03:39 (04)
+<6>[1, swapper] [    0.567108] using rtc device, msm_rtc, for alarms
+<7>[1, swapper] [    0.567138] msm_rtc: dev (254:0)
+<6>[1, swapper] [    0.567138] rs30000048 rs30000048.262144: rtc core: registered msm_rtc as rtc0
+<7>[1, swapper] [    0.567535] msmrtc_tod_proc_result: 01/06/1980 00:00:00 (06)
+<7>[1, swapper] [    0.567657] msm_rtc_secure: dev (254:1)
+<6>[1, swapper] [    0.567657] rs30000048 rs30000048.262144: rtc core: registered msm_rtc_secure as rtc1
+<6>[1, swapper] [    0.567718] i2c /dev entries driver
+<3>[1, swapper] [    0.586334] st303_gs probe 
+<3>[1, swapper] [    0.636993] st303_gs probe failed, because the othe gsensor has been probed.
+<6>[1, swapper] [    0.637420] L3G4200D init driver
+<6>[1, swapper] [    0.688629] input: gy_sensors as /devices/virtual/input/input3
+<7>[1, swapper] [    0.688842] l3g4200d_probe   successful
+<6>[1, swapper] [    0.688934] lirc_dev: IR Remote Control driver registered, major 238 
+<6>[1, swapper] [    0.688964] IR NEC protocol handler initialized
+<6>[1, swapper] [    0.688964] IR RC5(x) protocol handler initialized
+<6>[1, swapper] [    0.688964] IR RC6 protocol handler initialized
+<6>[1, swapper] [    0.688964] IR JVC protocol handler initialized
+<6>[1, swapper] [    0.688964] IR Sony protocol handler initialized
+<6>[1, swapper] [    0.688995] IR RC5 (streamzap) protocol handler initialized
+<6>[1, swapper] [    0.688995] IR LIRC bridge handler initialized
+<6>[1, swapper] [    0.688995] Linux video capture interface: v2.00
+<4>[1, swapper] [    0.689361] TPS61310 tps61310_init :
+<4>[1, swapper] [    0.689392] Enter tps61310_i2c_probe()
+<6>[1, swapper] [    0.689422] torch.c :init hw_camera_led_init start
+<6>[15, kworker/0:1] [    0.785980] android_work: did not send uevent (0 0   (null))
+<3>[1, swapper] [    0.836944] msm_sync_init: failed to initialize sn12m0pz
+<4>[1, swapper] [    0.836975] msm_camera_sn12m0pz: probe of msm_camera_sn12m0pz.0 failed with error -16
+<4>[1, swapper] [    0.837127] __mt9v114_probe
+<6>[1, swapper] [    0.837768] mt9v114_sunny.c: i2c probe ok
+<3>[0, swapper] [    0.935211] qup_i2c qup_i2c.4: QUP: I2C status flags :0xd43c8, irq:104
+<3>[0, swapper] [    0.935241] qup_i2c qup_i2c.4: QUP: I2C status flags :0xd00c8, irq:103
+<3>[1, swapper] [    0.935241] qup_i2c qup_i2c.4: I2C slave addr:0x3d not connected
+<6>[1, swapper] [    0.935272] mt9v114_sunny.c: mt9v114_i2c_txdata faild
+<6>[1, swapper] [    0.946319] mt9v114_sunny.c: mt9v114 model_id = 0x2283
+<6>[1, swapper] [    0.954101] s5k4e1gx: s5k4e1gx_probe called!
+<6>[1, swapper] [    1.004119] s5k4e1gx: s5k4e1gx_probe successed! rc = 0
+<6>[1, swapper] [    1.004150] s5k4e1gx: Line:1518  s5k4e1gx_sensor_probe rc=0 
+<6>[1, swapper] [    1.004180] s5k4e1gx: s5k4e1gx_probe_init_sensor
+<6>[1, swapper] [    1.076477] s5k4e1gx: s5k4e1gx_sensor_init(): reseting sensor.
+<3>[0, swapper] [    1.076599] qup_i2c qup_i2c.4: QUP: I2C status flags :0xb43c8, irq:104
+<3>[1, swapper] [    1.076629] qup_i2c qup_i2c.4: I2C slave addr:0x37 not connected
+<6>[1, swapper] [    1.076629] s5k4e1gx: s5k4e1gx_i2c_txdata failed
+<6>[1, swapper] [    1.076629] s5k4e1gx: i2c_write_w failed, addr = 0x100, val = 0x0!
+<6>[1, swapper] [    1.076660] s5k4e1gx: sensor reset failed. rc = -5
+<6>[1, swapper] [    1.076660] s5k4e1gx: s5k4e1gx_probe_init_done start
+<6>[1, swapper] [    1.077606] s5k4e1gx: SENSOR PROBE FAILS!
+<3>[1, swapper] [    1.078186] msm_sync_init: failed to initialize s5k4e1gx
+<4>[1, swapper] [    1.078186] msm_camera_s5k4e1gx: probe of msm_camera_s5k4e1gx.0 failed with error -5
+<6>[1, swapper] [    1.079040] mt9p017.c: mt9p017_probe called!
+<6>[1, swapper] [    1.129028] mt9p017.c: mt9p017_probe successed! rc = 0
+<6>[1, swapper] [    1.266723] mt9p017.c: mt9p017_i2c_read_w succeeded:	saddr = 0x6d addr = 0x0, val =0x4b00!
+<6>[1, swapper] [    1.266723] mt9p017.c: mt9p017 chipid = 0x4b00
+<6>[1, swapper] [    1.266723] mt9p017.c: mt9p017 wrong model_id = 0x4b00
+<6>[1, swapper] [    1.267700] mt9p017.c: /mnt/disk/sundong/Icecream_luxiao/branch/version_ziyan_ICS/B977_20120307_version/platform/R3_Auto_Make_Tool/work_space/project/kernel/drivers/media/video/msm/mt9p017.c mt9p017_sensor_probe:1810
+<3>[1, swapper] [    1.268310] msm_sync_init: failed to initialize mt9p017
+<3>[1, swapper] [    1.353332] msm_sync_init: failed to initialize ov5647_sunny
+<6>[1, swapper] [    1.977172] I2C radio driver for Qualcomm FM Radio Transceiver , Version 1.0.0
+<7>[1, swapper] [    1.977294] msm_batt_init: enter
+<6>[1, swapper] [    1.977325] __msm_rpc_connect: server not found 30000089:40001
+<6>[1, swapper] [    1.977325] __msm_rpc_connect: server not found 30000089:10001
+<6>[1, swapper] [    1.977355] __msm_rpc_connect: server not found 30000089:20001
+<7>[1, swapper] [    1.978790] msm_batt_enable_filter: enable vbatt filter: OK
+<6>[1, swapper] [    1.979858] msm_batt_init: Charger/Battery = 0x00040001/0x00050001 (RPC version)
+<6>[1, swapper] [    1.980621] msm_adc successfully registered
+<6>[1, swapper] [    1.980651] msm_adc successfully registered
+<5>[1, swapper] [    1.980926] pop_mem_tm_probe: device 0 probed successfully
+<5>[1, swapper] [    1.980957] pop_mem_tm_probe: device 1 probed successfully
+<6>[1, swapper] [    1.981109] device-mapper: uevent: version 1.0.3
+<6>[1, swapper] [    1.981231] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+<6>[1, swapper] [    1.981262] Bluetooth: HCI UART driver ver 2.2
+<6>[1, swapper] [    1.981292] Bluetooth: HCI H4 protocol initialized
+<6>[1, swapper] [    1.981292] Bluetooth: HCILL protocol initialized
+<6>[1, swapper] [    1.981292] Bluetooth: MSM Sleep Mode Driver Ver 1.1
+<3>[1, swapper] [    1.981811] hw_extern_sdcard_probe: enter-----> 
+<3>[1, swapper] [    1.982086] hw_extern_sdcardMounted_probe: enter-----> 
+<6>[1, swapper] [    1.982788] mmc0: mci-version: 0
+<3>[1, swapper] [    1.982879] mmc0: No card detect facilities available
+<6>[1, swapper] [    1.986236] mmc0: Qualcomm MSM SDCC-core at 0x00000000a0500000 irq 98,0 dma 8 dmacrcri 7
+<6>[1, swapper] [    1.986236] mmc0: 8 bit data mode enabled
+<6>[1, swapper] [    1.986236] mmc0: 4 bit data mode disabled
+<6>[1, swapper] [    1.986267] mmc0: polling status mode disabled
+<6>[1, swapper] [    1.986267] mmc0: MMC clock 144000 -> 49152000 Hz, PCLK 96000000 Hz
+<6>[1, swapper] [    1.986267] mmc0: Slot eject status = 0
+<6>[1, swapper] [    1.986267] mmc0: Power save feature enable = 1
+<6>[1, swapper] [    1.986297] mmc0: DM non-cached buffer at ffd60000, dma_addr 0x416a0000
+<6>[1, swapper] [    1.986297] mmc0: DM cmd busaddr 0x416a0000, cmdptr busaddr 0x416b7f40
+<6>[1, swapper] [    1.986694] mmc1: mci-version: 0
+<3>[1, swapper] [    1.986755] mmc1: No card detect facilities available
+<6>[1, swapper] [    1.996215] mmc1: Qualcomm MSM SDCC-core at 0x00000000a3000000 irq 96,0 dma 8 dmacrcri 12
+<6>[1, swapper] [    1.996246] mmc1: 8 bit data mode disabled
+<6>[1, swapper] [    1.996246] mmc1: 4 bit data mode enabled
+<6>[1, swapper] [    1.996246] mmc1: polling status mode disabled
+<6>[1, swapper] [    1.996246] mmc1: MMC clock 144000 -> 49152000 Hz, PCLK 96000000 Hz
+<6>[1, swapper] [    1.996276] mmc1: Slot eject status = 0
+<6>[1, swapper] [    1.996276] mmc1: Power save feature enable = 1
+<6>[1, swapper] [    1.996276] mmc1: DM non-cached buffer at ffd40000, dma_addr 0x416c0000
+<6>[1, swapper] [    1.996276] mmc1: DM cmd busaddr 0x416c0000, cmdptr busaddr 0x416d7f40
+<6>[1, swapper] [    1.996673] mmc2: mci-version: 0
+<6>[1, swapper] [    1.997100] mmc2: Qualcomm MSM SDCC-core at 0x00000000a3100000 irq 100,537 dma 8 dmacrcri 13
+<6>[1, swapper] [    1.997131] mmc2: 8 bit data mode disabled
+<6>[1, swapper] [    1.997131] mmc2: 4 bit data mode enabled
+<6>[1, swapper] [    1.997131] mmc2: polling status mode enabled
+<6>[1, swapper] [    1.997131] mmc2: MMC clock 144000 -> 40960000 Hz, PCLK 96000000 Hz
+<6>[1, swapper] [    1.997161] mmc2: Slot eject status = 0
+<6>[1, swapper] [    1.997161] mmc2: Power save feature enable = 1
+<6>[1, swapper] [    1.997161] mmc2: DM non-cached buffer at ffd20000, dma_addr 0x416e0000
+<6>[1, swapper] [    1.997161] mmc2: DM cmd busaddr 0x416e0000, cmdptr busaddr 0x416f7f40
+<7>[1, swapper] [    1.997436] Registered led device: keyboard-ffa-backlight
+<7>[1, swapper] [    1.997619] Registered led device: button-backlight
+<3>[1, swapper] [    1.997619] pm8xxx_gpio_config: called on gpio 24 not handled by any pmic
+<3>[1, swapper] [    1.997619] led_pwm_gpio_config LED backlight GPIO config failed
+<6>[1, swapper] [    1.998016] usbcore: registered new interface driver usbhid
+<6>[1, swapper] [    1.998016] usbhid: USB HID core driver
+<4>[1, swapper] [    1.998291] oem_rapi_read_nv: nv=60008 buf size(4)
+<4>[1, swapper] [    1.998291] oem_rapi_read_nv: connected to remote oem rapi server
+<4>[1, swapper] [    1.999450] oem_rapi_read_nv: oem_rapi_client_streaming_function result=0
+<4>[1, swapper] [    1.999481] oem_rapi_read_nv: out_len=1 ret=5
+<4>[1, swapper] [    1.999481] logger open flag: on_off_flag=255
+<6>[1, swapper] [    2.000366] msm-cpu-dai msm-cpu-dai.0: asoc_msm_cpu_probe: dev name msm-cpu-dai.0
+<6>[1, swapper] [    2.000457] msm-codec-dai msm-codec-dai.0: asoc_msm_codec_probe: dev name msm-codec-dai.0
+<6>[1, swapper] [    2.000915] mvs-cpu-dai mvs-cpu-dai.0: asoc_mvs_cpu_probe: dev name mvs-cpu-dai.0
+<6>[1, swapper] [    2.001068] mvs-codec-dai mvs-codec-dai.0: asoc_mvs_codec_probe: dev name mvs-codec-dai.0
+<6>[1, swapper] [    2.006439] asoc: msm-codec-dai <-> msm-cpu-dai.0 mapping ok
+<6>[1, swapper] [    2.006530] asoc: mvs-codec-dai <-> mvs-cpu-dai.0 mapping ok
+<6>[1, swapper] [    2.006988] ALSA device list:
+<6>[1, swapper] [    2.006988]   #0: msm-audio
+<6>[1, swapper] [    2.007385] oprofile: using arm/armv7-scorpion
+<6>[1, swapper] [    2.007476] Mirror/redirect action on
+<6>[1, swapper] [    2.007476] u32 classifier
+<6>[1, swapper] [    2.007476]     Actions configured
+<6>[1, swapper] [    2.007507] Netfilter messages via NETLINK v0.30.
+<6>[1, swapper] [    2.007537] nf_conntrack version 0.5.0 (5469 buckets, 21876 max)
+<6>[1, swapper] [    2.007751] ctnetlink v0.93: registering with nfnetlink.
+<6>[1, swapper] [    2.007781] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+<6>[1, swapper] [    2.007812] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+<6>[1, swapper] [    2.007995] xt_time: kernel timezone is -0000
+<6>[1, swapper] [    2.008026] IPv4 over IPv4 tunneling driver
+<6>[1, swapper] [    2.008392] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[1, swapper] [    2.008514] arp_tables: (C) 2002 David S. Miller
+<6>[1, swapper] [    2.008575] TCP cubic registered
+<6>[1, swapper] [    2.008666] NET: Registered protocol family 10
+<6>[1, swapper] [    2.010711] Mobile IPv6
+<6>[1, swapper] [    2.010742] ip6_tables: (C) 2000-2006 Netfilter Core Team
+<6>[1, swapper] [    2.010833] IPv6 over IPv4 tunneling driver
+<6>[1, swapper] [    2.011627] NET: Registered protocol family 17
+<6>[1, swapper] [    2.011657] NET: Registered protocol family 15
+<6>[1, swapper] [    2.011810] Bluetooth: RFCOMM TTY layer initialized
+<6>[1, swapper] [    2.011810] Bluetooth: RFCOMM socket layer initialized
+<6>[1, swapper] [    2.011840] Bluetooth: RFCOMM ver 1.11
+<3>[1, swapper] [    2.011871] gs_mma8452 probe failed, because the othe gsensor has been probed.
+<3>[1, swapper] [    2.137237] gs_bma250 probe failed, because the othe gsensor has been probed.
+<3>[1, swapper] [    2.137725] regulator_check_voltage: ldo10: requested voltage range [2700, 2700] does not fit within constraints: [2600000, 2700000]
+<4>[1, swapper] [    2.137725] aps-12d: probe of 0-0044 failed with error -22
+<4>[1, swapper] [    2.137756] i2c-core: driver [aps-12d] using legacy suspend method
+<4>[1, swapper] [    2.137756] i2c-core: driver [aps-12d] using legacy resume method
+<6>[1, swapper] [    2.251312] input: sensors_aps as /devices/virtual/input/input4
+<6>[1, swapper] [    2.256256] aps_9900_probe: Start Proximity Sensor APS-9900
+<4>[1, swapper] [    2.256286] i2c-core: driver [aps-9900] using legacy suspend method
+<4>[1, swapper] [    2.256286] i2c-core: driver [aps-9900] using legacy resume method
+<6>[1, swapper] [    2.256317] VFP support v0.3: implementor 51 architecture 64 part 0f variant 1 rev 0
+<4>[1, swapper] [    2.257843] ------------[ cut here ]------------
+<4>[1, swapper] [    2.257873] WARNING: at /mnt/disk/sundong/Icecream_luxiao/branch/version_ziyan_ICS/B977_20120307_version/platform/R3_Auto_Make_Tool/work_space/project/kernel/arch/arm/mach-msm/clock-local.c:392 __branch_clk_disable_reg+0xe0/0xf8()
+<4>[1, swapper] [    2.257904] mdc_clk status stuck at 'on'
+<4>[1, swapper] [    2.257904] Modules linked in:
+<4>[1, swapper] [    2.257934] [<c004ac4c>] (unwind_backtrace+0x0/0x12c) from [<c00e3b3c>] (warn_slowpath_common+0x4c/0x64)
+<4>[1, swapper] [    2.257934] [<c00e3b3c>] (warn_slowpath_common+0x4c/0x64) from [<c00e3bd4>] (warn_slowpath_fmt+0x2c/0x3c)
+<4>[1, swapper] [    2.257965] [<c00e3bd4>] (warn_slowpath_fmt+0x2c/0x3c) from [<c00d6060>] (__branch_clk_disable_reg+0xe0/0xf8)
+<4>[1, swapper] [    2.257995] [<c00d6060>] (__branch_clk_disable_reg+0xe0/0xf8) from [<c00d6160>] (__rcg_clk_disable_reg+0x14/0x68)
+<4>[1, swapper] [    2.257995] [<c00d6160>] (__rcg_clk_disable_reg+0x14/0x68) from [<c00d61e4>] (rcg_clk_disable+0x30/0x68)
+<4>[1, swapper] [    2.258026] [<c00d61e4>] (rcg_clk_disable+0x30/0x68) from [<c000e9cc>] (clock_late_init+0x8c/0x118)
+<4>[1, swapper] [    2.258026] [<c000e9cc>] (clock_late_init+0x8c/0x118) from [<c003f3c0>] (do_one_initcall+0x94/0x164)
+<4>[1, swapper] [    2.258056] [<c003f3c0>] (do_one_initcall+0x94/0x164) from [<c0008374>] (kernel_init+0x74/0x118)
+<4>[1, swapper] [    2.258087] [<c0008374>] (kernel_init+0x74/0x118) from [<c004615c>] (kernel_thread_exit+0x0/0x8)
+<4>[1, swapper] [    2.258087] ---[ end trace f89420f0a2391709 ]---
+<6>[1, swapper] [    2.259399] clock_late_init() disabled 81 unused clocks
+<6>[1, swapper] [    2.259826] [voice.c:voice_init] 
+<6>[84, voice] [    2.266510] [voice.c:voice_thread] voice_thread() start
+<6>[1, swapper] [    2.266540] [audio_acdb.c:acdb_init] build id used is = 7X30A-AABBQMLYM-40000230
+<6>[1, swapper] [    2.266906] rmt_oeminfo_server_probe: Remote oeminfo RPC server initialized
+<6>[1, swapper] [    2.267211] input: 7k_handset as /devices/virtual/input/input5
+<3>[86, khsclntd] [    2.267974] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<3>[86, khsclntd] [    2.267974] report_hs_key: kernel recieve modem linectl hdset key: KEY_MEDIA
+<3>[85, acdb_cb_thread] [    2.268310] [audio_acdb.c:acdb_calibrate_device] acdb_data.build_id[17] = 0
+<3>[86, khsclntd] [    2.268341] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<3>[86, khsclntd] [    2.268341] emmc_oeminfo: oeminfo key transfered.
+<3>[86, khsclntd] [    2.268371] emmc_oeminfo: rmt_oeminfo_handle_key(),enter. key_parm is 0x175ae8. 
+<3>[86, khsclntd] [    2.268371] emmc_oeminfo: rmt_oeminfo_handle_key(). malloc kevent OK. 
+<3>[86, khsclntd] [    2.268371] emmc_oeminfo: rmt_oeminfo_handle_key(). malloc kdata OK. 
+<3>[86, khsclntd] [    2.268371] emmc_oeminfo: share_ptr is 0xfa175ae8. 
+<3>[86, khsclntd] [    2.268432] 00000001 00000000 00000012 00000040 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+<3>[86, khsclntd] [    2.268463] emmc_oeminfo: put event ok!
+<3>[86, khsclntd] [    2.268463] emmc_oeminfo: rmt_oeminfo_handle_key(), end. 
+<6>[1, swapper] [    2.269470] input: ts_test_input as /devices/virtual/input/input6
+<7>[1, swapper] [    2.276977] msmrtc_tod_proc_result: 07/27/2012 00:03:41 (04)
+<6>[1, swapper] [    2.277008] rs30000048 rs30000048.262144: setting system clock to 2012-07-27 00:03:41 UTC (1343347421)
+<3>[1, swapper] [    2.277526] st303_compass: read OK! nv(60019)=99, rval=0
+<6>[26, kworker/u:2] [    2.332458] mmc0: new high speed MMC card at address 0001
+<6>[26, kworker/u:2] [    2.336669] mmcblk0: mmc0:0001 SEM04G 3.68 GiB 
+<6>[26, kworker/u:2] [    2.336730] mmcblk0boot0: mmc0:0001 SEM04G partition 1 1.00 MiB
+<6>[26, kworker/u:2] [    2.336791] mmcblk0boot1: mmc0:0001 SEM04G partition 2 1.00 MiB
+<6>[26, kworker/u:2] [    2.340515]  mmcblk0: p1 p2 p3 p4 < p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 >
+<6>[26, kworker/u:2] [    2.344299]  mmcblk0boot1: unknown partition table
+<6>[26, kworker/u:2] [    2.346130]  mmcblk0boot0: unknown partition table
+<4>[26, kworker/u:2] [    2.346313] mmc_panic_save_card card = mmc, card type = 0
+<3>[1, swapper] [    2.378662] st303_compass probe: Failed to allocate input device
+<4>[1, swapper] [    2.379119] st303_compass: probe of 0-001e failed with error -12
+<6>[1, swapper] [    2.379180] AKM8975 compass driver: initialize
+<6>[1, swapper] [    2.560485] AKM8975 AKECS_CheckChipName: find device akm8975 (1)
+<6>[1, swapper] [    2.560821] Compass akm8975 is successfully probed. -------dev_dct_probe
+<4>[1, swapper] [    2.561187]   -------part1 is 0x125f
+<4>[1, swapper] [    2.562927]  part2 is 0x0
+<4>[1, swapper] [    2.562927]  
+<4>[1, swapper] [    2.563812] Warning: unable to open an initial console.
+<6>[1, swapper] [    2.564086] Freeing init memory: 220K
+<4>[26, kworker/u:2] [    2.591583] mmc2: host does not support reading read-only switch. assuming write-enable.
+<3>[1, init] [    2.677307] init: Unable to open persistent property directory /data/property errno: 2
+<3>[1, init] [    2.678619] android_usb: already disabled
+<6>[1, init] [    2.678771] adb_bind_config
+<4>[95, rmt_storage] [    2.683959] rmt_storage (95): /proc/95/oom_adj is deprecated, please use /proc/95/oom_score_adj instead.
+<6>[97, adbd] [    2.687927] adb_open
+<4>[101, sh] [    2.696929] do_exit: exit code=32512
+<4>[98, sh] [    2.697052] do_exit: exit code=32512
+<4>[93, recovery] [    2.726715] lcd_debug_malloc_get_para: Can not open /data/hw_lcd_init_param.txt
+<6>[26, kworker/u:2] [    2.741058] mmc2: new high speed SDHC card at address e624
+<6>[26, kworker/u:2] [    2.741333] mmcblk1: mmc2:e624 SU32G 29.7 GiB 
+<6>[26, kworker/u:2] [    2.742401]  mmcblk1: p1
+<3>[93, recovery] [    2.856964] nt35560_lcd_on: nt35560_lcd exit sleep mode ,on_ret=0
+<4>[93, recovery] [    2.856994] msm_fb_pan_display:Don't refresh the first frame to LCD
+<6>[93, recovery] [    2.859008] mdp4_overlay_pipe_alloc: pipe=c08b1cfc ndx=1 num=0
+<6>[15, kworker/0:1] [    2.917419] android_work: sent uevent USB_STATE=CONNECTED
+<6>[0, swapper] [    3.051910] android_usb gadget: high speed config #1: android
+<6>[15, kworker/0:1] [    3.051971] android_work: sent uevent USB_STATE=CONFIGURED
+<3>[93, recovery] [    3.137237] nt35560_lcd_off: nt35560_lcd enter sleep mode ,off_ret=0
+<4>[93, recovery] [    3.166839] lcd_debug_malloc_get_para: Can not open /data/hw_lcd_init_param.txt
+<3>[93, recovery] [    3.296722] nt35560_lcd_on: nt35560_lcd exit sleep mode ,on_ret=0
+<6>[93, recovery] [    3.397613] EXT4-fs (mmcblk0p6): mounted filesystem with ordered data mode. Opts: 
+<6>[15, kworker/0:1] [    3.676879] 
+<6>[15, kworker/0:1] [    3.676879] Charger Type: STD DOWNSTREAM PORT
+<3>[86, khsclntd] [   17.610107] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<4>[86, khsclntd] [   17.610137] report_hs_key:Press power key ,key=81 ,now time (00:04:56.822723206 UTC)
+<3>[86, khsclntd] [   17.724700] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<4>[86, khsclntd] [   17.724700] report_hs_key:Press power key ,key=255 ,now time (00:04:56.937286196 UTC)
+<3>[86, khsclntd] [   18.815032] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<4>[86, khsclntd] [   18.815032] report_hs_key:Press power key ,key=81 ,now time (00:04:58.027618226 UTC)
+<3>[86, khsclntd] [   18.922851] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<4>[86, khsclntd] [   18.922882] report_hs_key:Press power key ,key=255 ,now time (00:04:58.135467351 UTC)
+<3>[86, khsclntd] [   23.145111] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<4>[86, khsclntd] [   23.145141] report_hs_key:Press power key ,key=81 ,now time (00:05:02.357726868 UTC)
+<3>[86, khsclntd] [   23.294525] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<4>[86, khsclntd] [   23.294555] report_hs_key:Press power key ,key=255 ,now time (00:05:02.507140932 UTC)
+<3>[86, khsclntd] [   25.747528] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<4>[86, khsclntd] [   25.747558] report_hs_key:Press power key ,key=81 ,now time (00:05:04.960113346 UTC)
+<3>[86, khsclntd] [   25.851867] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<4>[86, khsclntd] [   25.851867] report_hs_key:Press power key ,key=255 ,now time (00:05:05.064452949 UTC)
+<3>[86, khsclntd] [   39.485839] emmc_oeminfo: process_subs_srvc_callback(),enter.
+<3>[86, khsclntd] [   39.485839] emmc_oeminfo: oeminfo key transfered.
+<3>[86, khsclntd] [   39.485839] emmc_oeminfo: rmt_oeminfo_handle_key(),enter. key_parm is 0x175ae8. 
+<3>[86, khsclntd] [   39.485870] emmc_oeminfo: rmt_oeminfo_handle_key(). malloc kevent OK. 
+<3>[86, khsclntd] [   39.485870] emmc_oeminfo: rmt_oeminfo_handle_key(). malloc kdata OK. 
+<3>[86, khsclntd] [   39.485870] emmc_oeminfo: share_ptr is 0xfa175ae8. 
+<3>[86, khsclntd] [   39.485931] 00000001 00000000 00000014 00000802 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+<3>[86, khsclntd] [   39.485961] emmc_oeminfo: put event ok!
+<3>[86, khsclntd] [   39.485961] emmc_oeminfo: rmt_oeminfo_handle_key(), end. 
+<6>[30, krmt_storagecln] [   87.348419] rmt_storage_event_open_cb: open callback received
+<6>[30, krmt_storagecln] [   87.348449] open partition /boot/modem_fs1 handle=1
+<6>[30, krmt_storagecln] [   87.349761] rmt_storage_event_user_data_cb: send user data callback received
+<6>[30, krmt_storagecln] [   87.351135] rmt_storage_event_open_cb: open callback received
+<6>[30, krmt_storagecln] [   87.351165] open partition /boot/modem_fs2 handle=2
+<6>[30, krmt_storagecln] [   87.352081] rmt_storage_event_user_data_cb: send user data callback received
+<6>[30, krmt_storagecln] [   87.352935] rmt_storage_event_write_iovec_cb: write iovec callback received
+<6>[114, rmt_storage] [   87.749328] rmt_storage_ioctl: send status ioctl
