@@ -9,5 +9,5 @@ persist.service.adb.root=1
 ro.cwm.forbid_format=/boot,/cust
 
 # Enable console
-ro.debuggable=1
+# ro.debuggable=1
 
