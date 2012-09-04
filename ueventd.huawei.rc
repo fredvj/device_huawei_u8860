@@ -9,6 +9,7 @@
 
 /dev/ttyHS0               0600   bluetooth  bluetooth
 
+/dev/graphics/fb0         0660   system     graphics
 /dev/graphics/fb1         0660   system     graphics
 /dev/msm_rotator          0660   system     graphics
 /dev/pmem_audio           0660   system     audio
