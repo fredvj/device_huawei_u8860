@@ -65,3 +65,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_u8860
 PRODUCT_DEVICE := u8860
+
+# LCD density
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=240
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
