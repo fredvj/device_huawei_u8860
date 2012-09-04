@@ -5,12 +5,6 @@ on init
 	export LD_LIBRARY_PATH /system/lib
 
 on emmc-fs
-	trigger mnt-fs
-
-on fs
-	trigger mnt-fs
-
-on mnt-fs
 	wait /dev/block/mmcblk0p12
 	mount ext4 /dev/block/mmcblk0p12 /system rw barrier=1
 
