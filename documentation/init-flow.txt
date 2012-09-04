@@ -1,0 +1,15 @@
+/init.rc || /lpm.rc
+/init.<hardware>.rc (/proc/cmdline -> androidboot.hardware)
+/init.emmc.rc (if androidboot.emmc=true && file exists)
+/init.target.rc
+
+early-init
+init
+early-fs
+emmc-fs
+fs
+post-fs
+post-fs-data
+early-boot || charger
+boot
+
