@@ -52,6 +52,12 @@ bin/rmt_oeminfo
 bin/oem_rpc_svc
 bin/callife
 
+# oem_rpc_svc
+lib/libhwrpc.so
+
+# rmt_oeminfo
+lib/liboeminfo.so
+
 # Camera
 
 lib/liboemcamera.so
