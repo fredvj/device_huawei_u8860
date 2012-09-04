@@ -5,6 +5,7 @@ lib/libOpenVG.so
 lib/libgsl.so
 lib/libsc-a2xx.so
 
+lib/egl/egl.cfg
 lib/egl/eglsubAndroid.so
 lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libq3dtools_adreno200.so
