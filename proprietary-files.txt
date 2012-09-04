@@ -157,6 +157,8 @@ usr/keylayout/qwerty.kl
 usr/keylayout/surf_keypad.kl
 usr/keylayout/touchscreen-keypad.kl
 
+# Wifi
+
 wifi/bcm_loadecho.sh
 wifi/bcm_loadecho_4330.sh
 wifi/bcm_loadipf.sh
@@ -179,4 +181,12 @@ wifi/nvram_4330_MSM8255_U8730.txt
 wifi/nvram_MSM8255_U8800-PRO.txt
 wifi/nvram_MSM8255_U8820.txt
 wifi/udp_server
+
+# Bluetooth
+
+etc/bluetooth/BCM4329.hcd
+etc/bluetooth/BCM4330.hcd
+etc/bluetooth/init.bcm.bt.sh
+etc/bluetooth/init.bcm.chip_off.sh
+etc/bluetooth/init.bcm.chip_on.sh
 
