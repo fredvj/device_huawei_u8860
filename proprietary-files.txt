@@ -51,6 +51,9 @@ bin/rmt_storage
 bin/rmt_oeminfo
 bin/oem_rpc_svc
 bin/callife
+bin/filebackup
+bin/ds_fmc_appd
+bin/wlan_detect
 
 # oem_rpc_svc
 lib/libhwrpc.so
