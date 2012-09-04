@@ -11,6 +11,8 @@ $(call inherit-product, device/huawei/u8860/device_u8860.mk)
 $(call inherit-product, vendor/qcom/opensource/omx/mm-core/Android.mk)
 $(call inherit-product, vendor/qcom/opensource/omx/mm-video/Android.mk)
 
+# Select the right boot animation
+TARGET_BOOTANIMATION_NAME := vertical-480x854
 
 #
 # Setup device specific product configuration.
