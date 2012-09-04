@@ -349,52 +349,11 @@ on property:vold.decrypt=trigger_shutdown_framework
 	class_reset late_start
 	class_reset main
 
-service servicemanager /system/bin/servicemanager
-	class core
-	user system
-	group system
-	critical
-	onrestart restart zygote
-	onrestart restart media
-	onrestart restart surfaceflinger
-	onrestart restart drm
-
-service vold /system/bin/vold
-	class core
-	socket vold stream 0660 root mount
-	ioprio be 2
-
-service netd /system/bin/netd
-	class main
-	socket netd stream 0660 root system
-	socket dnsproxyd stream 0660 root inet
-
-service debuggerd /system/bin/debuggerd
-	class main
-
-service ril-daemon /system/bin/rild
-	class main
-	socket rild stream 660 root radio
-	socket rild-debug stream 660 radio system
-	user root
-	group radio cache inet misc audio sdcard_rw log
-	chmod 0660 /data/hostapd/hostapd.conf
-    
-service cnd /system/bin/cnd
-	class main
-	socket cnd stream 660 root radio
-    
 service port-bridge /system/bin/port-bridge /dev/smd0 /dev/ttyGS0
     
 on property:ro.data.large_tcp_window_size=true
 	write /proc/sys/net/ipv4/tcp_adv_win_scale  1
     
-service hostapd /system/bin/hostapd -dddd /data/hostapd/hostapd.conf
-	class main
-	user root
-	group root
-	oneshot
-
 service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
 	class main
 	group radio
@@ -403,14 +362,6 @@ service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
 on property:persist.data.ds_fmc_app.mode=1
 	start ds_fmc_appd
 
-service ims_regmanager /system/bin/exe-ims-regmanagerprocessnative
-	class main
-	user system
-	group qcom_oncrpc net_bt_admin inet radio wifi
-
-on property:persist.ims.regmanager.mode=1
-	start ims_regmanager
-        
 service qcom-sh /system/bin/sh /init.qcom.sh
 	user root
 	oneshot    
@@ -428,54 +379,6 @@ service netmgrd /system/bin/netmgrd
 
 on property:ro.use_data_netmgrd=false
 	stop netmgrd
-
-service surfaceflinger /system/bin/surfaceflinger
-	class main
-	user system
-	group graphics
-	onrestart restart zygote
-
-service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
-	class main
-	socket zygote stream 666
-	onrestart write /sys/android_power/request_state wake
-	onrestart write /sys/power/state on
-	onrestart restart media
-	onrestart restart netd
-	onrestart restart cnd
-
-service drm /system/bin/drmserver
-	class main
-	user drm
-	group system inet drmrpc
-
-service media /system/bin/mediaserver
-	class main
-	user media
-	group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc
-	ioprio rt 4
-
-service bootanim /system/bin/bootanimation
-	class main
-	user graphics
-	group graphics
-	disabled
-	oneshot
-
-service dbus /system/bin/dbus-daemon --system --nofork
-	class main
-	socket dbus stream 660 bluetooth bluetooth
-	user bluetooth
-	group bluetooth net_bt_admin
-
-service bluetoothd /system/bin/bluetoothd -n
-	class main
-	socket bluetooth stream 660 bluetooth bluetooth
-	socket dbus_bluetooth stream 660 bluetooth bluetooth
-	# init.rc does not yet support applying capabilities, so run as root and
-	# let bluetoothd drop uid to bluetooth with the right linux capabilities
-	group bluetooth net_bt_admin misc
-	disabled
 
 service wlan_detect /system/bin/wlan_detect
 	class main
@@ -514,38 +417,6 @@ service opush /system/bin/sdptool add --channel=12 OPUSH
 service pbap /system/bin/sdptool add --channel=19 PBAP
 	user bluetooth
 	group bluetooth net_bt_admin
-	disabled
-	oneshot
-
-service installd /system/bin/installd
-	class main
-	socket installd stream 600 system system
-
-service racoon /system/bin/racoon
-	class main
-	socket racoon stream 600 system system
-	# IKE uses UDP port 500. Racoon will setuid to vpn after binding the port.
-	group vpn net_admin inet
-	disabled
-	oneshot
-
-service mtpd /system/bin/mtpd
-	class main
-	socket mtpd stream 600 system system
-	user vpn
-	group vpn net_admin inet net_raw
-	disabled
-	oneshot
-
-service keystore /system/bin/keystore /data/misc/keystore
-	class main
-	user keystore
-	group keystore
-	socket keystore stream 666
-
-service dumpstate /system/bin/dumpstate -s
-	class main
-	socket dumpstate stream 0660 shell log
 	disabled
 	oneshot
 
