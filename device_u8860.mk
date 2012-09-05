@@ -45,7 +45,8 @@ PRODUCT_COPY_FILES += \
 	device/huawei/u8860/boot-u8860.rle:root/initlogo.rle \
 	device/huawei/u8860/init.huawei.rc:root/init.huawei.rc \
 	device/huawei/u8860/init.target.rc:root/init.target.rc \
-	device/huawei/u8860/ueventd.huawei.rc:root/ueventd.huawei.rc
+	device/huawei/u8860/ueventd.huawei.rc:root/ueventd.huawei.rc \
+	device/huawei/u8860/sysinit:system/bin/sysinit
 
 # Recovery magic
 
