@@ -19,7 +19,7 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
-$(call inherit-product, build/target/product/full.mk)
+$(call inherit-product, build/target/product/full_base_telephony.mk)
 
 PRODUCT_PACKAGES += \
 	make-ext4fs \
