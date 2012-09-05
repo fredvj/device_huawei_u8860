@@ -2,7 +2,7 @@ on early-init
 	start rmt_storage
 
 on init
-	export LD_LIBRARY_PATH /system/lib
+	export LD_LIBRARY_PATH=/system/lib
 
 on emmc-fs
 	wait /dev/block/mmcblk0p12
