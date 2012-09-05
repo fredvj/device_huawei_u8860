@@ -54,6 +54,7 @@ bin/callife
 bin/filebackup
 bin/ds_fmc_appd
 bin/wlan_detect
+bin/modempre
 
 # oem_rpc_svc
 lib/libhwrpc.so
