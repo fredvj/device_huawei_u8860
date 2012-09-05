@@ -451,7 +451,7 @@ service BtWiRfServer /system/xbin/RfTest
 	oneshot
 
 service btld /system/bin/btld
-	user bluetooth system
+	user bluetooth
 	group bluetooth net_bt_admin system
 	disabled 
 	oneshot
