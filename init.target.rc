@@ -1,7 +1,11 @@
 on early-init
+
 	start rmt_storage
 
 on init
+
+loglevel 9
+
         export PATH /system/sbin:/system/bin:/system/xbin
         export LD_LIBRARY_PATH /system/lib
 
