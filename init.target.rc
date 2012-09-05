@@ -2,7 +2,8 @@ on early-init
 	start rmt_storage
 
 on init
-	export LD_LIBRARY_PATH=/system/lib
+        export PATH /system/sbin:/system/bin:/system/xbin
+        export LD_LIBRARY_PATH /system/lib
 
 on emmc-fs
 	wait /dev/block/mmcblk0p12
@@ -11,6 +12,7 @@ on emmc-fs
 	# Once /system is mounted, we have to change the order of the path
 	# to point to the CM linker first
 	export PATH /system/sbin:/system/bin:/system/xbin
+	export LD_LIBRARY_PATH /system/lib
 
 	wait /dev/block/mmcblk0p13
 	exec /system/bin/e2fsck -p /dev/block/mmcblk0p13
