@@ -74,7 +74,13 @@ PRODUCT_MANUFACTURER := Huawei
 
 # LCD density
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240
+    ro.sf.lcd_density=240 \
+    rild.libpath=/system/lib/libril-qc-1.so \
+    rild.libargs=-d/dev/smd0 \
+    ro.ril.hsxpa=1 \
+    ro.ril.gprsclass=10 \
+    ro.ril.def.agps.mode=2 \
+    ro.ril.def.agps.feature=1
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
