@@ -1,27 +1,23 @@
-on early-init
-
-	start rmt_storage
-
 on init
 
 loglevel 9
-
-        export PATH /system/sbin:/system/bin:/system/xbin
-        export LD_LIBRARY_PATH /system/lib
 
 on emmc-fs
 	wait /dev/block/mmcblk0p12
 	mount ext4 /dev/block/mmcblk0p12 /system rw barrier=1
 
-	# Once /system is mounted, we have to change the order of the path
-	# to point to the CM linker first
-	export PATH /system/sbin:/system/bin:/system/xbin
-	export LD_LIBRARY_PATH /system/lib
-
 	wait /dev/block/mmcblk0p13
 	exec /system/bin/e2fsck -p /dev/block/mmcblk0p13
 	mount ext4 /dev/block/mmcblk0p13 /data nosuid nodev barrier=1 noauto_da_alloc
+
 	mount ext4 /dev/block/mmcblk0p6 /cache nosuid nodev barrier=1
 
-service rmt_storage /sbin/rmt_storage
+service rmt_storage /system/bin/rmt_storage
+	class main
+
+service analyze_svc /system/bin/logwrapper /system/bin/analyze_service
+	class main
+	socket analyze_svc1 stream 0660 root system
+	socket analyze_svc2 stream 0660 root inet
+	oneshot
 
