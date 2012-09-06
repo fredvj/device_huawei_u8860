@@ -7,6 +7,7 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DTARGET7x30 -DTARGET_MSM7x30 -DREFRESH_
 TARGET_SPECIFIC_HEADER_PATH += device/huawei/u8860/include
 
 USE_CAMERA_STUB := true
+BOARD_USES_GENERIC_AUDIO := true
 
 # inherit from the proprietary version
 -include vendor/huawei/u8860/BoardConfigVendor.mk
@@ -34,6 +35,20 @@ BOARD_HAS_DOWNLOAD_MODE := true
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QCOM_LIBS := true
 BOARD_USES_QCOM_LIBRPC := true
+
+# WLAN config
+BOARD_WLAN_DEVICE := bcmdhd
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_DRIVER := WEXT
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+WIFI_DRIVER_MODULE_PATH := "/wifi/dhd.ko"
+WIFI_DRIVER_MODULE_NAME := "dhd"
+WIFI_DRIVER_MODULE_ARG := ""
+WIFI_EXT_MODULE_PATH :=  "/system/lib/modules/librasdioif.ko"
+WIFI_EXT_MODULE_NAME :=  "librasdioif"
+WIFI_EXT_MODULE_ARG  := ""
+WIFI_DRIVER_FW_PATH_AP := "/system/wifi/firmware.bin"
+WIFI_DRIVER_FW_PATH_STA := "/system/wifi/firmware_apsta.bin"
 
 BOARD_HAS_SDCARD_INTERNAL := true
 BOARD_HAS_LARGE_FILESYSTEM := true
