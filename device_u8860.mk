@@ -9,6 +9,9 @@ $(call inherit-product-if-exists, vendor/huawei/u8860/u8860-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u8860/overlay
 
+# Inherit dalvik parameters
+$(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
+
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/huawei/u8860/kernel
@@ -25,7 +28,6 @@ PRODUCT_PACKAGES += \
 	make-ext4fs \
 	gralloc.msm7x30 \
 	hwcomposer.default \
-	audio.a2dp.default \
 	DSPManager \
 	MusicFX \
 	setup_fs \
@@ -38,6 +40,13 @@ PRODUCT_PACKAGES += \
 	libtilerenderer \
 	libQcomUI
 
+#Audio
+PRODUCT_PACKAGES += \
+	audio.a2dp.default \
+	audio.primary.msm7x30 \
+	audio_policy.msm7x30 \
+	libaudioutils
+
 # Vold config, boot logo & init scripts
 
 PRODUCT_COPY_FILES += \
@@ -46,6 +55,12 @@ PRODUCT_COPY_FILES += \
 	device/huawei/u8860/init.huawei.rc:root/init.huawei.rc \
 	device/huawei/u8860/init.target.rc:root/init.target.rc \
 	device/huawei/u8860/ueventd.huawei.rc:root/ueventd.huawei.rc
+
+# WLAN modules
+
+PRODUCTS_COPY_FILES += \
+	device/huawei/u8860/prebuilt/dhd.ko:root/wifi/dhd.ko \
+	device/huawei/u8860/prebuilt/dhd_4330.ko:root/wifi/dhd_4330.ko
 
 # Permissions
 
@@ -71,16 +86,6 @@ PRODUCT_DEVICE := u8860
 PRODUCT_BRAND := huawei
 PRODUCT_MODEL := u8860
 PRODUCT_MANUFACTURER := Huawei
-
-# LCD density
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=240 \
-    rild.libpath=/system/lib/libril-qc-1.so \
-    rild.libargs=-d/dev/smd0 \
-    ro.ril.hsxpa=1 \
-    ro.ril.gprsclass=10 \
-    ro.ril.def.agps.mode=2 \
-    ro.ril.def.agps.feature=1
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi
