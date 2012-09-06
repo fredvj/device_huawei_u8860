@@ -1,6 +1,7 @@
 #
 # system.prop for u8860
 #
+
 sys.usb.config=adb
 persist.service.adb.enable=1
 persist.service.adb.root=1
@@ -11,3 +12,25 @@ ro.cwm.forbid_format=/boot,/cust
 # Enable console
 # ro.debuggable=1
 
+# Radio Interface Layer (RIL)
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+ro.telephony.default_network=0
+ro.telephony.ril_class=LGEQualcommRIL
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+ro.ril.shutdown=true
+ro.use_data_netmgrd=true
+ro.config.ehrpd=true
+
+# OpenGLES version
+ro.opengles.version=131072
+
+# DPI
+ro.sf.lcd_density=240
+
+# Bluetooth
+ro.qualcomm.bluetooth.ftp=true
+ro.bluetooth.request.master=true
+ro.bluetooth.remote.autoconnect=true
+ro.qualcomm.bluetooth.dun=true
