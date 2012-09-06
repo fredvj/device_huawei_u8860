@@ -4,4 +4,4 @@ Device configuration for the Huawei U8860 (aka Honor)
 2012-05-17	Fixed two minutes reboot. Recovery needs rmt_storage
 2012-07-20	First round of CM9.0 RC2 recovery
 2012-07-22	Updated recovery.fstab
-
+2012-09-06	Lots of changes. We now do have the UI running
