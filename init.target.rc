@@ -1,7 +1,3 @@
-on init
-
-loglevel 9
-
 on emmc-fs
 	wait /dev/block/mmcblk0p12
 	mount ext4 /dev/block/mmcblk0p12 /system rw barrier=1
