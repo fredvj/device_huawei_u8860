@@ -374,20 +374,26 @@ service netmgrd /system/bin/netmgrd
 on property:ro.use_data_netmgrd=false
 	stop netmgrd
 
-service wlan_detect /system/bin/wlan_detect
+service wlan_detect /system/bin/logwrapper /system/bin/wlan_detect
 	class main
 	user root
 	group root
 	oneshot
 
-service wpa_supplicant /system/bin/wpa_supplicant -Dwext -ieth0 -W -c/data/misc/wifi/wpa_supplicant.conf
+service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant -Dwext -ieth0 -W -c/data/misc/wifi/wpa_supplicant.conf
 	class main
+	socket wpa_eth0 dgram 0660 wifi wifi
 	disabled
 	oneshot
 
-service dhcpcd /system/bin/dhcpcd -BKL eth0
+service dhcpcd_eth0 /system/bin/logwrapper /system/bin/dhcpcd -ABKL eth0
 	class main
 	disabled 
+	oneshot
+
+service iprenew_eth0 /system/bin/logwrapper /system/bin/dhcpcd -n eth0
+	class main
+	disabled
 	oneshot
 
 service hfag /system/bin/sdptool add --channel=10 HFAG
