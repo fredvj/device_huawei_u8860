@@ -27,6 +27,7 @@ $(call inherit-product, build/target/product/full_base_telephony.mk)
 PRODUCT_PACKAGES += \
 	make-ext4fs \
 	gralloc.msm7x30 \
+	lights.msm7x30 \
 	hwcomposer.default \
 	DSPManager \
 	MusicFX \
