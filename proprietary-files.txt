@@ -54,6 +54,7 @@ bin/callife
 bin/filebackup
 bin/ds_fmc_appd
 bin/wlan_detect
+bin/wl
 bin/modempre
 
 # oem_rpc_svc
@@ -108,14 +109,14 @@ etc/firmware/yamato_pm4.fw
 
 etc/wifi/wpa_supplicant.conf
 
-lib/hw/audio.primary.msm7k.so
-lib/hw/audio_policy.msm7k.so
-lib/hw/camera.msm7k.so
+# lib/hw/audio.primary.msm7k.so
+# lib/hw/audio_policy.msm7k.so
+# lib/hw/camera.msm7k.so
 lib/hw/copybit.msm7k.so
 lib/hw/gralloc.msm7k.so
 lib/hw/hwcomposer.msm7k.so
 lib/hw/libbcmfm_if.so
-lib/hw/lights.msm7k.so
+# lib/hw/lights.msm7k.so
 
 lib/modules/ansi_cprng.ko
 lib/modules/cls_flow.ko
