@@ -44,11 +44,8 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 WIFI_DRIVER_MODULE_PATH := "/wifi/dhd.ko"
 WIFI_DRIVER_MODULE_NAME := "dhd"
 WIFI_DRIVER_MODULE_ARG := ""
-WIFI_EXT_MODULE_PATH :=  "/system/lib/modules/librasdioif.ko"
-WIFI_EXT_MODULE_NAME :=  "librasdioif"
-WIFI_EXT_MODULE_ARG  := ""
-WIFI_DRIVER_FW_PATH_AP := "/system/wifi/firmware.bin"
-WIFI_DRIVER_FW_PATH_STA := "/system/wifi/firmware_apsta.bin"
+WIFI_DRIVER_FW_PATH_STA := "/system/wifi/firmware.bin"
+WIFI_DRIVER_FW_PATH_AP := "/system/wifi/firmware_apsta.bin"
 
 BOARD_HAS_SDCARD_INTERNAL := true
 BOARD_HAS_LARGE_FILESYSTEM := true
