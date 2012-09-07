@@ -1,7 +1,34 @@
-Device configuration for the Huawei U8860 (aka Honor)
+# Build environment for:
+#
+# Huawei U8860 (aka Honor) - CyanogenMod 9
+#
+# See: http://www.huaweidevice.com/worldwide/productFeatures.do?pinfoId=3219&directoryId=6001&treeId=3745&tab=0
+#
+#
+
+USB Charging      : Unknown
+USB ADB           : Okay
+USB Mass Strorage : Okay - internal / external - needs testing
+Video             : Okay - needs testing
+Audio             : Okay - needs testing
+Sensors           : No
+Screen rotation   : Requires "Sensors"
+WLAN              : No
+WLAN Hotspot      : No
+GSM               : No
+GSM Data          : No
+GSM Voice         : No
+GSM SMS           : No
+Bluetooth         : No
+Camera            : No
+Keyboard          : Okay - needs testing
+Memory            : Okay - needs testing
+
+---
 
 2012-05-06	Basic configuration for recovery
 2012-05-17	Fixed two minutes reboot. Recovery needs rmt_storage
 2012-07-20	First round of CM9.0 RC2 recovery
 2012-07-22	Updated recovery.fstab
 2012-09-06	Lots of changes. We now do have the UI running
+2012-09-07	Audio & Lights HAL working
