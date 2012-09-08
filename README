@@ -6,7 +6,8 @@
 #
 #
 
-USB Charging      : Unknown
+USB Charging      : Okay, but ...
+Issue             : Recovery needs charging mode (yellow screen instead)
 USB ADB           : Okay
 USB Mass Strorage : Okay - internal / external - needs testing
 Video             : Okay - needs testing
