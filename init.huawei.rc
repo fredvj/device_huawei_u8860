@@ -386,12 +386,12 @@ service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant -Dwext 
 	disabled
 	oneshot
 
-service dhcpcd_eth0 /system/bin/logwrapper /system/bin/dhcpcd -ABKL eth0
+service dhcpcd_eth0 /system/bin/logwrapper /system/bin/dhcpcd -ABKL
 	class main
 	disabled 
 	oneshot
 
-service iprenew_eth0 /system/bin/logwrapper /system/bin/dhcpcd -n eth0
+service iprenew_eth0 /system/bin/logwrapper /system/bin/dhcpcd -n
 	class main
 	disabled
 	oneshot
