@@ -1,0 +1,12 @@
+/proc/cmdline:
+console=ttyDCC0 androidboot.hardware=huawei androidboot.localproppath=normal/cn usb.pid.index=25 usb.serial= androidboot.serialno= androidboot.emmc=true androidboot.image=recovery androidboot.mode=user androidboot.baseband=msm
+
+/proc/app_info:
+...
+charge_flag:
+1
+...
+
+---
+
+The kernel command line seems to be the same for recovery and charge mode. Only the charge_flag in '/proc/app_info' changes. It is '1' for charge mode and '0' for recovery.
