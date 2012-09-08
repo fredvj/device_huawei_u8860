@@ -48,6 +48,11 @@ PRODUCT_PACKAGES += \
 	audio_policy.msm7x30 \
 	libaudioutils
 
+# Wireless AP
+PRODUCT_PACKAGES += \
+	hostapd_cli \
+	hostapd
+
 # Vold config, boot logo & init scripts
 
 PRODUCT_COPY_FILES += \
