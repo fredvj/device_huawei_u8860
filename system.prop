@@ -12,6 +12,9 @@ ro.cwm.forbid_format=/boot,/cust
 # Enable console
 # ro.debuggable=1
 
+# Wireless LAN
+wifi.interface=eth0
+
 # Radio Interface Layer (RIL)
 rild.libpath=/system/lib/libril-qc-1.so
 rild.libargs=-d /dev/smd0
