@@ -11,9 +11,9 @@ USB ADB           : Okay
 USB Mass Strorage : Okay - internal / external - needs testing
 Video             : Okay - needs testing
 Audio             : Okay - needs testing
-Sensors           : No
-Screen rotation   : Requires "Sensors"
-WLAN              : No
+Sensors           : Okay - needs testing
+Screen rotation   : Okay - needs testing
+WLAN              : Okay - needs testing
 WLAN Hotspot      : No
 GSM               : No
 GSM Data          : No
@@ -32,3 +32,4 @@ Memory            : Okay - needs testing
 2012-07-22	Updated recovery.fstab
 2012-09-06	Lots of changes. We now do have the UI running
 2012-09-07	Audio & Lights HAL working
+2012-09-08	Looks like WLAN (Client) and sensors are working
