@@ -3,6 +3,9 @@ on early-init
 	mkdir /mnt 0775 root system
 
 on init
+	# Set the default timezone
+	export TZ Europe/Berlin
+
 	# Backward compatibility
 	symlink /system/etc /etc
 	symlink /sys/kernel/debug /d
