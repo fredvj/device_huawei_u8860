@@ -8,7 +8,8 @@ on early-init
 
 on init
 
-sysclktz 1
+# System clock os using UTC
+sysclktz 0
 
     export PATH /sbin
     export ANDROID_ROOT /system
@@ -37,7 +38,8 @@ sysclktz 1
 
     mount /tmp /tmp tmpfs
 
-    write /sys/devices/platform/pmic-leds/leds/button-backlight/brightness 50
+    # Recovery is not using menu keys for the moment - no need to show them
+    # write /sys/devices/platform/pmic-leds/leds/button-backlight/brightness 50
 
 on boot
 
