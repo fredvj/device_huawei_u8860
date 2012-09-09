@@ -1,81 +1,82 @@
 on early-init
-    start ueventd
+	start ueventd
 
 # Let's keep charging if USB is connected
 
 # on boot-pause
-#     exec /sbin/charge
+#	exec /sbin/charge
 
 on init
 
 # System clock os using UTC
 sysclktz 0
 
-    export PATH /sbin
-    export ANDROID_ROOT /system
-    export ANDROID_DATA /data
-    export EXTERNAL_STORAGE /sdcard
+	export PATH /sbin
+	export ANDROID_ROOT /system
+	export ANDROID_DATA /data
+	export EXTERNAL_STORAGE /sdcard
 
-# Backup times are in UTC - check if recovery supports timezones
-    export TZ Europe/Berlin
+	# Backup times are in UTC - check if recovery supports timezones
+	export TZ Europe/Berlin
 
-    export HOME /
+	export HOME /
 
-    symlink /system/etc /etc
+	symlink /system/etc /etc
 
-    mkdir /boot
-    mkdir /sdcard
-    mkdir /sd-ext
-    mkdir /datadata
-    mkdir /emmc
-    mkdir /system
-    mkdir /data
-    mkdir /cache
+	mkdir /boot
+	mkdir /sdcard
+	mkdir /sd-ext
+	mkdir /datadata
+	mkdir /emmc
+	mkdir /system
+	mkdir /data
+	mkdir /cache
 
-    mkdir /misc
-    mkdir /cust
-    mkdir /HWUserData
+	mkdir /misc
+	mkdir /cust
+	mkdir /HWUserData
 
-    mount /tmp /tmp tmpfs
+	mount /tmp /tmp tmpfs
 
-    # Recovery is not using menu keys for the moment - no need to show them
-    # write /sys/devices/platform/pmic-leds/leds/button-backlight/brightness 50
+	# Recovery is not using menu keys for the moment - no need to show them
+	# write /sys/devices/platform/pmic-leds/leds/button-backlight/brightness 50
 
 on boot
 
-    ifup lo
-    hostname localhost
-    domainname localdomain
+	ifup lo
+	hostname localhost
+	domainname localdomain
 
-    write /sys/class/android_usb/android0/iSerial CM9-U8860
+	write /sys/class/android_usb/android0/iSerial CM9-U8860
 
-    symlink /sbin/linker /system/bin/linker
+	symlink /sbin/linker /system/bin/linker
 
-    class_start default
+	class_start default
 
 service ueventd /sbin/ueventd
-    critical
+	critical
 
 service charge /sbin/charge
 
-service recovery /sbin/recovery
+service recovery /sbin/sh /sbin/ncm.sh
+	oneshot
 
 service adbd /sbin/adbd recovery
 
 service rmt_storage /sbin/rmt_storage
 
 on property:persist.service.adb.enable=1
-    start adbd
+	start adbd
 
 on property:persist.service.adb.enable=0
-    stop adbd
+	stop adbd
 
 on property:sys.usb.config=adb
-    write /sys/class/android_usb/android0/enable 0
-    write /sys/class/android_usb/android0/idVendor 12d1
-    write /sys/class/android_usb/android0/idProduct 1038
-    write /sys/class/android_usb/android0/functions $sys.usb.config
-    write /sys/class/android_usb/android0/enable 1
-    start adbd
-    setprop sys.usb.state $sys.usb.config
+	write /sys/class/android_usb/android0/enable 0
+	write /sys/class/android_usb/android0/idVendor 12d1
+	write /sys/class/android_usb/android0/idProduct 1038
+	write /sys/class/android_usb/android0/functions $sys.usb.config
+	write /sys/class/android_usb/android0/enable 1
+	start adbd
+	setprop sys.usb.state $sys.usb.config
 
