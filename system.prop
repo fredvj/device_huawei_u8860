@@ -14,6 +14,8 @@ ro.cwm.forbid_format=/boot,/cust
 
 # Wireless LAN
 wifi.interface=eth0
+wifi.debug=true
+wifi.supplicant_scan_interval=15
 
 # Radio Interface Layer (RIL)
 rild.libpath=/system/lib/libril-qc-1.so
@@ -25,6 +27,7 @@ DEVICE_PROVISIONED=1
 ro.ril.shutdown=true
 ro.use_data_netmgrd=true
 ro.config.ehrpd=true
+keyguard.no_require_sim=true
 
 # OpenGLES version
 ro.opengles.version=131072
@@ -37,3 +40,9 @@ ro.qualcomm.bluetooth.ftp=true
 ro.bluetooth.request.master=true
 ro.bluetooth.remote.autoconnect=true
 ro.qualcomm.bluetooth.dun=true
+net.bt.name=CM9-U8860
+
+# Others
+ro.teather.denied=false
+ro.rommanager.developerid=cyanogenmod
+
