@@ -15,10 +15,10 @@ Sensors           : Okay - needs testing
 Screen rotation   : Okay - needs testing
 WLAN              : Okay - needs testing
 WLAN Hotspot      : No
-GSM               : No
+GSM               : Yes, but no Data - needs Debugging
 GSM Data          : No
-GSM Voice         : No
-GSM SMS           : No
+GSM Voice         : Okay
+GSM SMS           : Okay
 Bluetooth         : No
 Camera            : No
 Keyboard          : Okay - needs testing
@@ -39,3 +39,4 @@ Memory            : Okay - needs testing
 
 Todo:
 - Prevent /sbin/recovery from starting when in charge mode
+- Revisit RIL
