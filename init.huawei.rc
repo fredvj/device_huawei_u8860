@@ -453,12 +453,6 @@ service hci_dev_down /system/bin/hci_dev_state --dev_down
 	disabled 
 	oneshot    
 
-service BtWiRfServer /system/xbin/RfTest
-	user root
-	group bluetooth net_bt_admin system  
-	disabled
-	oneshot
-
 service btld /system/bin/btld
 	user bluetooth
 	group bluetooth net_bt_admin system
