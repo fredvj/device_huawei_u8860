@@ -47,12 +47,16 @@ on boot
     hostname localhost
     domainname localdomain
 
-    write /sys/class/android_usb/android0/iSerial "CM9-U8860"
+    write /sys/class/android_usb/android0/iSerial CM9-U8860
+
+    symlink /sbin/linker /system/bin/linker
 
     class_start default
 
 service ueventd /sbin/ueventd
     critical
+
+service charge /sbin/charge
 
 service recovery /sbin/recovery
 
@@ -75,8 +79,3 @@ on property:sys.usb.config=adb
     start adbd
     setprop sys.usb.state $sys.usb.config
 
-service offmode_check /sbin/offmode_check
-    oneshot
-
-service offmode_charge /sbin/offmode_charge
-    disabled
