@@ -19,11 +19,12 @@ lib/libril-qc-qmi-1.so
 lib/libril-qcril-hook-oem.so
 
 # Let's do it quick & dirty for the moment
-# We should build from source, but looks like have yet another
+# We should build from source, but looks like we have yet another
 # RIL with ugly vendor hacks
-bin/rild
-lib/libril.so
-lib/libreference-ril.so
+
+# bin/rild
+# lib/libril.so
+# lib/libreference-ril.so
 
 lib/libauth.so
 lib/libcm.so
