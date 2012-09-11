@@ -1,0 +1,7 @@
+# adb reboot bootloader
+# fastboot flash recovery recovery.img 
+sending 'recovery' (8424 KB)...
+OKAY [  2.108s]
+writing 'recovery'...
+FAILED (remote: partition table doesn't exist)
+finished. total time: 2.110s
