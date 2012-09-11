@@ -1,0 +1,66 @@
+Here is what you will need:
+---------------------------
+- A backup of your existing setup and the knowledge how to restore the device later on
+- Time and, if you are willing to help: Knowledge in all kinds of areas of Android
+- adb & fastboot executables for your platform (on PC)
+	Comes with the Android Platform SDK
+	http://developer.android.com/sdk/index.html
+- FAT formated Micro-SD card (Phone)
+	You know - the bigger the better ;-)
+- DLOAD files for the Cambodia ICS Demo (on SD)
+	http://www.huaweidevice.com/worldwide/downloadCenter.do?method=toDownloadFile&flay=software&softid=NDUwOTg=
+- the CM9 update: cm-9-20120911-UNOFFICIAL-u8860.zip (on SD)
+	http://dl.dropbox.com/u/63461867/u8860/CM9/cm-9-20120911-UNOFFICIAL-u8860.zip
+	MD5: 78fb3cf14829b378d5ca7f9b3811a532
+	SHA256: fdc1a0ddc86ac450de54f1af422d0371947bee4f1f446a9612a3014daac8eb80
+- the ClockworkMod Recovery image: recovery.img (on PC)
+	http://dl.dropbox.com/u/63461867/u8860/CM9/recovery.img
+- Optional: Updater to replace the RIL files: ril-blob-signed.zip (on SD)
+	http://dl.dropbox.com/u/63461867/u8860/CM9/ril-blob-signed.zip
+- Optional: gapps-ics-20120429-signed.zip (on SD)
+	http://www.goo.im/gapps/gapps-ics-20120429-signed.zip or just
+	http://www.goo.im/gapps/
+
+Here is what to do:
+-------------------
+- Extract the Huawei ROM to the /dload folder on the SD card
+	The download came with a detailed description
+	For command line heros:
+		# adb shell
+		# adb shell mkdir /mnt/sdcard/dload
+		# adb push UPDATE.APP /mnt/sdcard/dload/
+		# adb push UPDATE_CUST.app /mnt/sdcard/dload/
+- Hold Volume+ & Volume- buttons on the phone and while holding them continue with the next step
+- run "adb reboot"
+- Once the firmware update has started, feel free to release the buttons ;-)
+- The phone will automatically reboot after the update - no need to run through the wizard - just continue with the next steps
+- Disable /dload on SD (rename folder while SD is in the phone):
+	# adb shell mv /mnt/sdcard/dload /mnt/sdcard/ics-demo.dload
+- Boot to pink screen mode & replace recovery
+	+ Hold Volume+ & Volume- buttons
+	+ run "adb reboot"
+- Wait for a couple of USB drives to show up on your PC
+- Replace /image/recovery.img
+- Eject mounted USB volumes, just to play it safe
+- Disconnect the USB cable
+- Remove the battery to leave the pink screen mode
+- Insert the battery again
+- Reconnect your USB cable & wait for the charging screen to show
+- Run "adb reboot recovery"
+- Select "wipe data/factory reset"
+- Select "install zip from sdcard"
+- Select "choose zip from sdcard"
+- Select "cm-9-20120911-UNOFFICIAL-u8860.zip" & install it
+
+- Optional (Google Apps):
+	Select "choose zip from sdcard"
+	Select "gapps-ocs-20120429-signed.zip" & install it
+
+- Optional (Huawei RIL files that allow you to use GSM voice):
+	Select "choose zip from sdcard"
+	Select "ril-blob-signed.zip" & install it
+
+- Select "+++++Go Back+++++"
+- Select "reboot system now"
+- Wait for CM9 to boot
+- Done
