@@ -23,6 +23,7 @@ Here is what you will need:
 
 Here is what to do:
 -------------------
+- Connect the phone to your PC (USB)
 - Extract the Huawei ROM to the /dload folder on the SD card
 	The download came with a detailed description
 	For command line heros:
@@ -31,14 +32,31 @@ Here is what to do:
 		# adb push UPDATE.APP /mnt/sdcard/dload/
 		# adb push UPDATE_CUST.app /mnt/sdcard/dload/
 - Hold Volume+ & Volume- buttons on the phone and while holding them continue with the next step
-- run "adb reboot"
+- Run "adb reboot"
 - Once the firmware update has started, feel free to release the buttons ;-)
-- The phone will automatically reboot after the update - no need to run through the wizard - just continue with the next steps
+- The phone will automatically reboot after the update
+- Enable logcat devices (/dev/log/*)
+	+ Fast forward through the setup wizard
+	+ Open the phone app
+	+ Dial *#*#2846579#*#*
+	+ Select "ProjectMenu"
+	+ Select "1. Background setting"
+	+ Select "2. Log setting"
+	+ Select "Log switch"
+	+ Select "LOG on"
+	+ Confirm
+	+ Select "Log level setting"
+	+ Select "VERBOSE"
+	+ Select "Confirm"
+	+ Back
+	+ Select "7. Dump & Log"
+	+ Select everything
+	+ Back
 - Disable /dload on SD (rename folder while SD is in the phone):
 	# adb shell mv /mnt/sdcard/dload /mnt/sdcard/ics-demo.dload
 - Boot to pink screen mode & replace recovery
 	+ Hold Volume+ & Volume- buttons
-	+ run "adb reboot"
+	+ Run "adb reboot"
 - Wait for a couple of USB drives to show up on your PC
 - Replace /image/recovery.img
 - Eject mounted USB volumes, just to play it safe
@@ -54,7 +72,7 @@ Here is what to do:
 
 - Optional (Google Apps):
 	Select "choose zip from sdcard"
-	Select "gapps-ocs-20120429-signed.zip" & install it
+	Select "gapps-ics-20120429-signed.zip" & install it
 
 - Optional (Huawei RIL files that allow you to use GSM voice):
 	Select "choose zip from sdcard"
