@@ -42,3 +42,5 @@ Memory            : Okay - needs testing
 
 Todo:
 - Revisit RIL
+- Mount /sd-ext
+- Check FC app restart
