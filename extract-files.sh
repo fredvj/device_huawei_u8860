@@ -5,12 +5,15 @@ DEVICE=u8860
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 
-while getopts ":nh" options
+while getopts ":mnh" options
 do
   case $options in
     n ) NC=1 ;;
+    m ) MC=1 ;;
     h ) echo "Usage: `basename $0` [OPTIONS] "
-        echo "  -n  No clenup"
+	echo "  -m  Do not use ADB to extract files"
+	echo "      Copy from image mounted on /mnt"
+        echo "  -n  No cleanup"
         echo "  -h  Show this help"
         exit ;;
     * ) ;;
@@ -27,7 +30,22 @@ for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
     if [ ! -d $BASE/$DIR ]; then
         mkdir -p $BASE/$DIR
     fi
-    adb pull /system/$FILE $BASE/$FILE
+
+    if [ "x$MC" != "x1" ];
+    then
+    	adb pull /system/$FILE $BASE/$FILE
+	RC=$?
+    else
+	cp /mnt/$FILE $BASE/$FILE
+	RC=$?
+    fi
+
+#    if [ "x$RC" != "x0" ];
+#    then
+#	echo "$FILE: failed"
+#    else
+#	echo "$FILE: okay"
+#    fi
 done
 
 ./setup-makefiles.sh
