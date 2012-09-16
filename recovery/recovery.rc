@@ -47,8 +47,6 @@ on boot
 	hostname localhost
 	domainname localdomain
 
-	write /sys/class/android_usb/android0/iSerial CM9-U8860
-
 	symlink /sbin/linker /system/bin/linker
 
 	class_start default
@@ -75,6 +73,7 @@ on property:sys.usb.config=adb
 	write /sys/class/android_usb/android0/enable 0
 	write /sys/class/android_usb/android0/idVendor 12d1
 	write /sys/class/android_usb/android0/idProduct 1038
+	write /sys/class/android_usb/android0/iSerial CM9-U8860
 	write /sys/class/android_usb/android0/functions $sys.usb.config
 	write /sys/class/android_usb/android0/enable 1
 	start adbd
