@@ -1,11 +1,13 @@
 #!/bin/bash
 
-PROPS=../../../../vendor/huawei/u8860/proprietary/recovery/
+PROPS=/mnt
 
 echo "    -------------------- rmt_storage files"
 
-for f in libc.so libcutils.so libfotaagent.so liblog.so libm.so libstdc++.so libz.so linker offmode_charge offmode_check rmt_storage strace
-        do cp $PROPS/$f .
+# Removed lib/libfotaagent.so, 20120916 fredvj
+
+for f in lib/libc.so lib/libcutils.so lib/liblog.so lib/libm.so lib/libstdc++.so lib/libz.so bin/linker bin/rmt_storage
+        do cp $PROPS/$f `basename $f`
 done
 
 echo "    -------------------- done."
