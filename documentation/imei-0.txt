@@ -1,0 +1,54 @@
+How-to restore your IMEI - can be found when battery is removed
+
+Source (German):
+http://www.android-hilfe.de/root-hacking-modding-fuer-huawei-honor/264904-losung-imei-0-beim-huawei-honor.html#post3574155
+
+- Boot a stock Huawei ROM
+- Open the phone app and call *#*#2846579#*#*
+- Select "ProjectMenu"
+- Select	-> Background setting
+	 	-> Usb port setting
+		-> Manufacture mode
+		-> Confirm
+- Go back one level
+- Select	-> Background setting
+		-> Qualcomm background open setting
+		-> background open
+		-> type "0"
+		-> Confirm
+- Leave the phone app
+- Open the System settings & select
+		-> Developer options
+		-> USB Debugging
+- Reboot your handset
+- Connect phone to PC (Windows)
+- Download & install DFS: http://cdmatool.com/Demo
+- Start DFS
+- Select "Ports" & "DBAdapter Reserved Interface"
+- Doubleclick it and doubleclick the detected handset
+- Below "Ports" click the "SPC" button and wait for "Unlocked device" to appear in the logs
+- Open the "Programming" tab and click on "Read" for the "IMEI" frame: It will come back empty
+- Enter your correct IMEI
+- Click "Write" & take a look at the log
+- Press the "Open / Close" button that can be found right to the "Ports" button
+- Back on the phone, got to the phone app, dial "*#*#2846579#*#*"
+- Select "ProjectMenu"
+- Select	-> Background setting
+		-> Usb port setting
+		-> Normal mode
+		-> Confirm
+- Select	-> Background setting
+		-> OTP NV filter switch
+		-> OTP NV filter switch open
+		-> Confirm
+- Select	-> Background setting
+		-> Qualcomm background open setting
+		-> background close
+		-> Confirm
+- Reboot your handset
+- Check your IMEI. Go to
+		-> System settings
+		-> About phone
+		-> Status
+		-> IMEI
+- Your IMEI should now be correct
