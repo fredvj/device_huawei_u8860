@@ -1,0 +1,9 @@
+Pink screen mode / Fresh install / ADB:
+Bus 001 Device 037: ID 12d1:1035 Huawei Technologies Co., Ltd. U8120
+USB Mass Storage (UMS):
+Bus 001 Device 047: ID 12d1:1005 Huawei Technologies Co., Ltd. 
+
+Build 919 Kernel
+----------------
+ADB:
+Bus 001 Device 080: ID 12d1:1038 Huawei Technologies Co., Ltd. Ideos (debug mode)
