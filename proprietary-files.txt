@@ -116,9 +116,12 @@ etc/firmware/yamato_pm4.fw
 
 etc/wifi/wpa_supplicant.conf
 
-lib/hw/copybit.msm7k.so
-lib/hw/gralloc.msm7k.so
-lib/hw/hwcomposer.msm7k.so
+# Hardware Abstraction Layer (HAL) libraries
+lib/hw/camera.msm7630_surf.so
+lib/hw/copybit.msm7630_surf.so
+lib/hw/gps.default.so
+lib/hw/gralloc.msm7630_surf.so
+lib/hw/hwcomposer.msm7630_surf.so
 lib/hw/libbcmfm_if.so
 lib/hw/sensors.default.so
 
@@ -158,6 +161,7 @@ usr/keychars/qwerty2.kcm
 
 usr/keylayout/7k_handset.kl
 usr/keylayout/AVRCP.kl
+usr/keylayout/fluid-keypad.kl
 usr/keylayout/Generic.kl
 usr/keylayout/Vendor_045e_Product_028e.kl
 usr/keylayout/Vendor_046d_Product_c216.kl
@@ -170,7 +174,6 @@ usr/keylayout/Vendor_22b8_Product_093d.kl
 usr/keylayout/msm_tma300_ts.kl
 usr/keylayout/qwerty.kl
 usr/keylayout/surf_keypad.kl
-usr/keylayout/touchscreen-keypad.kl
 
 # Wifi
 
@@ -182,7 +185,6 @@ wifi/connectap.sh
 wifi/connectap_4330.sh
 wifi/firmware.bin
 wifi/firmware_apsta.bin
-wifi/firmware_both.bin
 wifi/firmware_test.bin
 wifi/fw_4330_b2.bin
 wifi/fw_4330_b2_test.bin
@@ -191,15 +193,18 @@ wifi/iwlist
 wifi/iwpriv
 wifi/nvram.txt
 wifi/nvram_4330.txt
-wifi/nvram_4330_MSM8255_U8680.txt
-wifi/nvram_4330_MSM8255_U8730.txt
-wifi/nvram_MSM8255_U8800-PRO.txt
-wifi/nvram_MSM8255_U8820.txt
 wifi/udp_server
+wifi/wifi_mt_1.1.sh
+wifi/wifi_mt_1.2.sh
+wifi/wifi_mt_2.1.sh
+wifi/wifi_mt_finish_1.1.sh
+wifi/wifi_mt_finish_1.2.sh
+wifi/wifi_mt_finish_2.1.sh
 
 # Bluetooth
 
-etc/bluetooth/BCM4329.hcd
+etc/bluetooth/BCM4329B1_HW.hcd
+etc/bluetooth/BCM4330B1_002.001.003.0688.0689.hcd
 etc/bluetooth/BCM4330.hcd
 etc/bluetooth/init.bcm.bt.sh
 etc/bluetooth/init.bcm.chip_off.sh
