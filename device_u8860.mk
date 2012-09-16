@@ -65,8 +65,9 @@ PRODUCT_COPY_FILES += \
 # WLAN modules
 
 PRODUCT_COPY_FILES += \
-	device/huawei/u8860/prebuilt/dhd.ko:system/lib/modules/dhd.ko \
-	device/huawei/u8860/prebuilt/dhd_4330.ko:system/lib/modules/dhd_4330.ko
+	device/huawei/u8860/prebuilt/dhd.ko:system/lib/modules/dhd.ko
+
+#	device/huawei/u8860/prebuilt/dhd_4330.ko:system/lib/modules/dhd_4330.ko
 
 # Permissions
 
