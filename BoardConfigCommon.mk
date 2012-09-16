@@ -26,8 +26,12 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 TARGET_BOOTLOADER_BOARD_NAME := u8860
 TARGET_OTA_ASSERT_DEVICE := u8860,U8860,honor,Honor
 
+# Looks like kernel base is recalculated by mkbootimg
+# 0x00208000 resulted in 0x00210000 and left images unbootable
+# 0x00200000 results in 0x00208000 and that is what we want
+
 BOARD_KERNEL_CMDLINE := console=ttyDCC0 androidboot.hardware=huawei androidboot.emmc=true
-BOARD_KERNEL_BASE := 0x00208000
+BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGESIZE := 4096
 
 BOARD_HAS_DOWNLOAD_MODE := true
