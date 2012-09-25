@@ -8,21 +8,23 @@
 
 USB Charging      : Okay
 USB ADB           : Okay
-USB Mass Strorage : Okay - internal / external - needs testing
-Video             : Okay - needs testing
+USB Mass Strorage : USB IDs for Huawei required
+Video             : Okay - Distortion in popup menus - needs testing
 Audio             : Okay - needs testing
 Sensors           : Okay - needs testing
 Screen rotation   : Okay - needs testing
-WLAN              : Okay - needs testing
+WLAN              : No - trying to get it working when compiling from source
 WLAN Hotspot      : No
+GPS               : Okay - needs testing
 GSM               : Yes, but no Data - needs Debugging
 GSM Data          : No
-GSM Voice         : Okay
-GSM SMS           : Okay
+GSM Voice         : Not with B919 baseband
+GSM SMS           : Not with B919 baseband
 Bluetooth         : No
 Camera            : No
 Keyboard          : Okay - needs testing
 Memory            : Okay - needs testing
+Kernel            : Currently compiling from source - WLAN not working
 
 ---
 
@@ -37,6 +39,12 @@ Memory            : Okay - needs testing
 		Added /sbin/ncm.sh to prevent recovery from starting in charge mode
 2012-09-12	Added "testing.txt" with instruction on how to install the developer build
 		See the documentation folder for details
+2012-09-25	Using kernel being build from source
+		WLAN module loads fine, but not working
+		GPS is working, but TTFF is terrible without assist data ;-)
+		A couple of other graphics HALs are now building from source
+		Added missing libs
+		"rild" currently throwing exceptions because it is seeing strange data coming in from the baseband
 
 ---
 
