@@ -1,6 +1,11 @@
+import init.huawei.usb.rc
+
 on early-init
 	# Create mountpoint
 	mkdir /mnt 0775 root system
+
+	# Create Wifi folder present in stock ROM
+	mkdir /wifi 0775 root system
 
 on init
 	# Set the default timezone
@@ -138,6 +143,9 @@ on post-fs
 	chown system sdcard_rw /sys/touch_screen/update_firmware
 	chmod 0775 /data/hwvefs
 
+	# Link Wifi kernel module present in stock ROM
+	symlink /system/lib/module/dhd.ko /wifi/dhd.ko
+
 on post-fs-data
 	# We chown/chmod /data again so because mount is run as root + defaults
 	chown system system /data
@@ -183,6 +191,9 @@ on post-fs-data
 	mkdir /data/misc/dhcp 0775 dhcp dhcp
 	mkdir /data/misc/wifi/load 0775 system system
 	mkdir /data/misc/wifi/bin 0775 system system
+
+	# Provide the access to hostapd.conf only to root and group
+	chmod 0660 /data/hostapd/hostapd.conf
 
 	# Create dalvik-cache, so as to enforce our permissions
 	mkdir /data/dalvik-cache 0771 system system
@@ -368,11 +379,9 @@ service qmuxd /system/bin/qmuxd
 	user root
 	group root
 
-
 service netmgrd /system/bin/netmgrd
 	class main
 	user root
-
 
 on property:ro.use_data_netmgrd=false
 	stop netmgrd
@@ -383,16 +392,31 @@ service wlan_detect /system/bin/logwrapper /system/bin/wlan_detect
 	group root
 	oneshot
 
-service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant -Dwext -ieth0 -W -c/data/misc/wifi/wpa_supplicant.conf
+service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant \
+		-Dwext \
+		-iwlan0 \
+		-c/system/etc/wifi/wpa_supplicant.conf
 	class main
 	socket wpa_eth0 dgram 0660 wifi wifi
 	disabled
 	oneshot
 
+# service hostapd /system/bin/hostapd -dddd /data/hostapd/hostapd.conf
+#	class late_start
+#	user root
+#	group root
+#	oneshot
+#	disabled
+
 service dhcpcd_eth0 /system/bin/dhcpcd -ABKL
 	class main
 	disabled 
 	oneshot
+
+service dhcpcd_wlan0 /system/bin/dhcpcd -ABKL
+        class main
+        disabled
+        oneshot
 
 service dhcpcd_p2p /system/bin/dhcpcd -aABKL
 	class main
@@ -409,9 +433,20 @@ service iprenew_eth0 /system/bin/dhcpcd -n
 	disabled
 	oneshot
 
+service iprenew_wlan0 /system/bin/dhcpcd -n
+        class main
+        disabled
+        oneshot
+
 service iprenew_p2p /system/bin/dhcpcd -n
+	class main
+	disabled
+	oneshot
 
 service iprenew_bnep0 /system/bin/dhcpcd -n
+	class main
+	disabled
+	oneshot
 
 service hciattach /system/bin/sh /system/etc/bluetooth/init.bcm.bt.sh
 	class main
