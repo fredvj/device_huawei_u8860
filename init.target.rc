@@ -11,9 +11,3 @@ on emmc-fs
 service rmt_storage /system/bin/rmt_storage
 	class main
 
-service analyze_svc /system/bin/logwrapper /system/bin/analyze_service
-	class main
-	socket analyze_svc1 stream 0660 root system
-	socket analyze_svc2 stream 0660 root inet
-	oneshot
-
