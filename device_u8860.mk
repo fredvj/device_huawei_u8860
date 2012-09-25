@@ -13,40 +13,54 @@ DEVICE_PACKAGE_OVERLAYS += device/huawei/u8860/overlay
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/huawei/u8860/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
+# ifeq ($(TARGET_PREBUILT_KERNEL),)
+#	LOCAL_KERNEL := device/huawei/u8860/kernel
+# else
+# 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+# endif
+# 
+# PRODUCT_COPY_FILES += \
+#     $(LOCAL_KERNEL):kernel
 
 $(call inherit-product, build/target/product/full_base_telephony.mk)
 
 PRODUCT_PACKAGES += \
 	make-ext4fs \
-	gralloc.msm7x30 \
 	lights.msm7x30 \
-	hwcomposer.default \
 	DSPManager \
 	MusicFX \
-	setup_fs \
-	libOmxCore \
-	libOmxVidEnc \
-	libmm-omxcore \
-	libstagefrighthw \
-	libgenlock \
-	liboverlay \
-	libtilerenderer \
-	libQcomUI
+	setup_fs
 
-#Audio
+# Graphics
+PRODUCT_PACKAGES += \
+        gralloc.msm7x30 \
+        copybit.msm7x30 \
+        hwcomposer.msm7x30 \
+	libgenlock \
+	libQcomUI \
+	libtilerenderer \
+	libmemalloc \
+	liboverlay
+
+# QCOM OMX
+PRODUCT_PACKAGES += \
+	libstagefrighthw \
+        libOmxCore \
+        libOmxVdec \
+        libOmxVenc \
+        libmm-omxcore \
+        libdivxdrmdecrypt
+
+# Audio
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
 	audio.primary.msm7x30 \
 	audio_policy.msm7x30 \
 	libaudioutils
+
+# GPS
+PRODUCT_PACKAGES += \
+	gps.u8860
 
 # Wireless AP
 PRODUCT_PACKAGES += \
@@ -59,13 +73,15 @@ PRODUCT_COPY_FILES += \
 	device/huawei/u8860/vold.fstab:system/etc/vold.fstab \
 	device/huawei/u8860/boot-u8860.rle:root/initlogo.rle \
 	device/huawei/u8860/init.huawei.rc:root/init.huawei.rc \
+	device/huawei/u8860/init.huawei.usb.rc:root/init.huawei.usb.rc \
+	device/huawei/u8860/init.huawei.usb.sh:root/init.huawei.usb.sh \
 	device/huawei/u8860/init.target.rc:root/init.target.rc \
 	device/huawei/u8860/ueventd.huawei.rc:root/ueventd.huawei.rc
 
 # WLAN modules
 
-PRODUCT_COPY_FILES += \
-	device/huawei/u8860/prebuilt/dhd.ko:system/lib/modules/dhd.ko
+# PRODUCT_COPY_FILES += \
+#	device/huawei/u8860/prebuilt/dhd.ko:system/lib/modules/dhd.ko
 
 #	device/huawei/u8860/prebuilt/dhd_4330.ko:system/lib/modules/dhd_4330.ko
 
