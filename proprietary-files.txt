@@ -34,12 +34,21 @@ lib/libdsm.so
 lib/libdss.so
 lib/libgsdi_exp.so
 lib/libgstk_exp.so
+lib/libmm-abl.so
+lib/libmm-color-convertor.so
 lib/libmmgsdilib.so
+lib/libmmitest.so
+lib/libmmjps.so
+lib/libmmmpo.so
+lib/libmmosal.so
+lib/libmmparser_divxdrmlib.so
+lib/libmmparser.so
 lib/libnv.so
 lib/liboem_rapi.so
 lib/liboncrpc.so
 lib/libpbmlib.so
 lib/libqmi.so
+lib/libqmiservices.so
 lib/libqueue.so
 lib/libuim.so
 lib/libwms.so
@@ -48,7 +57,10 @@ lib/libdsi_netctrl.so
 lib/libdsutils.so
 lib/libidl.so
 lib/libnetmgr.so
+lib/libqdi.so
 lib/libqdp.so
+lib/libqc-opt.so
+lib/libqsap_sdk.so
 
 bin/port-bridge
 bin/qmuxd
@@ -98,7 +110,7 @@ bin/charge
 
 # Original DHCP config
 
-etc/dhcpcd/dhcpcd.conf
+# etc/dhcpcd/dhcpcd.conf
 
 # Firmware files
 
@@ -114,40 +126,40 @@ etc/firmware/vidc_720p_vc1_dec_mc.fw
 etc/firmware/yamato_pfp.fw
 etc/firmware/yamato_pm4.fw
 
-etc/wifi/wpa_supplicant.conf
+# etc/wifi/wpa_supplicant.conf
 
 # Hardware Abstraction Layer (HAL) libraries
-lib/hw/camera.msm7630_surf.so
-lib/hw/copybit.msm7630_surf.so
-lib/hw/gps.default.so
-lib/hw/gralloc.msm7630_surf.so
-lib/hw/hwcomposer.msm7630_surf.so
+# lib/hw/camera.msm7630_surf.so
+# lib/hw/copybit.msm7630_surf.so
+# lib/hw/gps.default.so
+# lib/hw/gralloc.msm7630_surf.so
+# lib/hw/hwcomposer.msm7630_surf.so
 lib/hw/libbcmfm_if.so
 lib/hw/sensors.default.so
 
-lib/modules/ansi_cprng.ko
-lib/modules/cls_flow.ko
-lib/modules/cpaccess.ko
-lib/modules/dal_remotetest.ko
-lib/modules/dma_test.ko
-lib/modules/evbug.ko
-lib/modules/gspca_main.ko
-lib/modules/librasdioif.ko
-lib/modules/mtd_erasepart.ko
-lib/modules/mtd_nandecctest.ko
-lib/modules/mtd_oobtest.ko
-lib/modules/mtd_pagetest.ko
-lib/modules/mtd_readtest.ko
-lib/modules/mtd_speedtest.ko
-lib/modules/mtd_stresstest.ko
-lib/modules/mtd_subpagetest.ko
-lib/modules/mtd_torturetest.ko
-lib/modules/qce.ko
-lib/modules/qcedev.ko
-lib/modules/qcrypto.ko
-lib/modules/reset_modem.ko
-lib/modules/sch_dsmark.ko
-lib/modules/scsi_wait_scan.ko
+# lib/modules/ansi_cprng.ko
+# lib/modules/cls_flow.ko
+# lib/modules/cpaccess.ko
+# lib/modules/dal_remotetest.ko
+# lib/modules/dma_test.ko
+# lib/modules/evbug.ko
+# lib/modules/gspca_main.ko
+# lib/modules/librasdioif.ko
+# lib/modules/mtd_erasepart.ko
+# lib/modules/mtd_nandecctest.ko
+# lib/modules/mtd_oobtest.ko
+# lib/modules/mtd_pagetest.ko
+# lib/modules/mtd_readtest.ko
+# lib/modules/mtd_speedtest.ko
+# lib/modules/mtd_stresstest.ko
+# lib/modules/mtd_subpagetest.ko
+# lib/modules/mtd_torturetest.ko
+# lib/modules/qce.ko
+# lib/modules/qcedev.ko
+# lib/modules/qcrypto.ko
+# lib/modules/reset_modem.ko
+# lib/modules/sch_dsmark.ko
+# lib/modules/scsi_wait_scan.ko
 
 # usr/icu/icudt46l.dat
 
@@ -200,6 +212,9 @@ wifi/wifi_mt_2.1.sh
 wifi/wifi_mt_finish_1.1.sh
 wifi/wifi_mt_finish_1.2.sh
 wifi/wifi_mt_finish_2.1.sh
+
+# bin/hostapd
+# bin/hostapd_cli
 
 # Bluetooth
 
