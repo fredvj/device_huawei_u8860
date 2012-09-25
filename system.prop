@@ -13,7 +13,7 @@ ro.cwm.forbid_format=/boot,/cust
 # ro.debuggable=1
 
 # Wireless LAN
-wifi.interface=eth0
+wifi.interface=wlan0
 wifi.debug=true
 wifi.supplicant_scan_interval=15
 
@@ -59,3 +59,4 @@ net.bt.name=CM9-U8860
 ro.teather.denied=false
 ro.rommanager.developerid=cyanogenmod
 ro.setupwizard.enable_bypass=1
+ro.serialno=CM9-U8860
