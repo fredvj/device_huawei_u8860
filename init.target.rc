@@ -8,6 +8,9 @@ on emmc-fs
 
 	mount ext4 /dev/block/mmcblk0p6 /cache nosuid nodev barrier=1
 
+	# Enable virtual MTD
+	write /sys/module/block2mtd/parameters/block2mtd /dev/block/mmcblk0p7
+
 service rmt_storage /system/bin/rmt_storage
 	class main
 
