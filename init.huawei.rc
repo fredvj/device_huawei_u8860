@@ -358,6 +358,10 @@ on property:vold.decrypt=trigger_shutdown_framework
 	class_reset main
 
 service port-bridge /system/bin/port-bridge /dev/smd0 /dev/ttyGS0
+	class late_start
+	user system
+	group system inet
+	disabled
     
 on property:ro.data.large_tcp_window_size=true
 	write /proc/sys/net/ipv4/tcp_adv_win_scale  1
