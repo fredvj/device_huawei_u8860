@@ -452,39 +452,12 @@ service iprenew_bnep0 /system/bin/dhcpcd -n
 	disabled
 	oneshot
 
-service hciattach /system/bin/sh /system/etc/bluetooth/init.bcm.bt.sh
+service hciattach /system/bin/brcm_patchram_plus --enable_hci --enable_lpm --baudrate 3000000 --patchram /system/etc/bluetooth/BCM4329B1_HW.hcd /dev/ttyHS0
 	class main
 	user bluetooth
 	group bluetooth net_bt_admin system
 	disabled 
 	oneshot 
-
-on service-exited-hciattach
-        start chip_power_off
-    
-service chip_power_on /system/bin/sh /system/etc/bluetooth/init.bcm.chip_on.sh
-	user root
-	group system
-	disabled
-	oneshot 
-    
-service chip_power_off /system/bin/sh /system/etc/bluetooth/init.bcm.chip_off.sh
-	user root
-	group system
-	disabled
-	oneshot
-    
-service hci_dev_up /system/bin/hci_dev_state --dev_up
-	user root
-	group bluetooth system
-	disabled 
-	oneshot
-    
-service hci_dev_down /system/bin/hci_dev_state --dev_down
-	user root
-	group bluetooth system
-	disabled 
-	oneshot    
 
 service btld /system/bin/btld
 	user bluetooth
