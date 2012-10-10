@@ -13,14 +13,14 @@ DEVICE_PACKAGE_OVERLAYS += device/huawei/u8860/overlay
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
 
-# ifeq ($(TARGET_PREBUILT_KERNEL),)
-#	LOCAL_KERNEL := device/huawei/u8860/kernel
-# else
-# 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-# endif
-# 
-# PRODUCT_COPY_FILES += \
-#     $(LOCAL_KERNEL):kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+	LOCAL_KERNEL := device/huawei/u8860/prebuilt/kernel
+else
+ 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+ 
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
 
 $(call inherit-product, build/target/product/full_base_telephony.mk)
 
@@ -80,10 +80,14 @@ PRODUCT_COPY_FILES += \
 
 # WLAN modules
 
-# PRODUCT_COPY_FILES += \
-#	device/huawei/u8860/prebuilt/dhd.ko:system/lib/modules/dhd.ko
+PRODUCT_COPY_FILES += \
+	device/huawei/u8860/prebuilt/dhd.ko:system/lib/modules/dhd.ko \
+	device/huawei/u8860/prebuilt/nvram.txt:vendor/firmware/nvram.txt
 
-#	device/huawei/u8860/prebuilt/dhd_4330.ko:system/lib/modules/dhd_4330.ko
+# Bluetooth config
+
+PRODUCT_COPY_FILES += \
+	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
 # Permissions
 
