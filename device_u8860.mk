@@ -71,7 +71,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
 	device/huawei/u8860/vold.fstab:system/etc/vold.fstab \
-	device/huawei/u8860/boot-u8860.rle:root/initlogo.rle \
+	device/huawei/u8860/prebuilt/boot-u8860.rle:root/initlogo.rle \
 	device/huawei/u8860/init.huawei.rc:root/init.huawei.rc \
 	device/huawei/u8860/init.huawei.usb.rc:root/init.huawei.usb.rc \
 	device/huawei/u8860/init.huawei.usb.sh:root/init.huawei.usb.sh \
