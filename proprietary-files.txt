@@ -103,7 +103,7 @@ cdrom/autorun.iso
 
 lib/libaudioalsa.so
 etc/gps.conf
-etc/vold.fstab
+# etc/vold.fstab
 bin/akmd8962
 bin/akmd8975
 bin/charge

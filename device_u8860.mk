@@ -70,7 +70,7 @@ PRODUCT_PACKAGES += \
 # Vold config, boot logo & init scripts
 
 PRODUCT_COPY_FILES += \
-	device/huawei/u8860/vold.fstab:system/etc/vold.fstab \
+	device/huawei/u8860/configuration/vold.fstab:system/etc/vold.fstab \
 	device/huawei/u8860/prebuilt/boot-u8860.rle:root/initlogo.rle \
 	device/huawei/u8860/configuration/init.huawei.rc:root/init.huawei.rc \
 	device/huawei/u8860/configuration/init.huawei.usb.rc:root/init.huawei.usb.rc \
