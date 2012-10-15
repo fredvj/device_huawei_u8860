@@ -212,4 +212,12 @@
 
     <bool name="config_bluetooth_adapter_quick_switch">false</bool>
 
+    <!-- Path to an ISO image to be shared with via USB mass storage.
+         This is intended to allow packaging drivers or tools for installation on a PC. -->
+    <string translatable="false" name="config_isoImagePath">/system/etc/u8860.iso</string>
+
+    <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
+         autodetected from the Configuration. -->
+    <bool name="config_showNavigationBar">true</bool>
+
 </resources>
