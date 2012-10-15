@@ -69,11 +69,11 @@ BOARD_WLAN_DEVICE := bcm4329
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wext
-WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
+WIFI_DRIVER_MODULE_PATH := "/system/wifi/dhd.ko"
 WIFI_DRIVER_MODULE_NAME := "dhd"
-WIFI_DRIVER_MODULE_ARG := "iface_name=wlan0 firmware_path=/vendor/firmware/fw_bcm4329.bin nvram_path=/vendor/firmware/nvram.txt"
-WIFI_DRIVER_FW_PATH_STA := "/vendor/firmware/fw_bcm4329.bin"
-WIFI_DRIVER_FW_PATH_AP := "/vendor/firmware/fw_bcm4329_apsta.bin"
+WIFI_DRIVER_MODULE_ARG := ""
+WIFI_DRIVER_FW_PATH_STA := "/system/wifi/firmware.bin"
+WIFI_DRIVER_FW_PATH_AP := "/system/wifi/firmware_apsta.bin"
 
 # FM radio
 BOARD_HAVE_FM_RADIO := true

@@ -143,9 +143,6 @@ on post-fs
 	chown system sdcard_rw /sys/touch_screen/update_firmware
 	chmod 0775 /data/hwvefs
 
-	# Link Wifi kernel module present in stock ROM
-	symlink /system/lib/module/dhd.ko /wifi/dhd.ko
-
 on post-fs-data
 	# We chown/chmod /data again so because mount is run as root + defaults
 	chown system system /data
@@ -390,19 +387,17 @@ service netmgrd /system/bin/netmgrd
 on property:ro.use_data_netmgrd=false
 	stop netmgrd
 
-service wlan_detect /system/bin/logwrapper /system/bin/wlan_detect
-	class main
-	user root
-	group root
-	oneshot
-
 service wpa_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant \
 		-Dwext \
-		-iwlan0 \
+		-ieth0 \
 		-c/system/etc/wifi/wpa_supplicant.conf
 	class main
 	socket wpa_eth0 dgram 0660 wifi wifi
 	disabled
+	oneshot
+
+service huawei-wifi /system/bin/sh /system/etc/init.huawei.wifi.sh
+	class late_start
 	oneshot
 
 # service hostapd /system/bin/hostapd -dddd /data/hostapd/hostapd.conf
@@ -459,12 +454,6 @@ service hciattach /system/bin/brcm_patchram_plus --enable_hci --enable_lpm --bau
 	disabled 
 	oneshot 
 
-service btld /system/bin/btld
-	user bluetooth
-	group bluetooth net_bt_admin system
-	disabled 
-	oneshot
-
 service compassd /system/bin/compassd
 	disabled
 	oneshot
@@ -476,13 +465,6 @@ service akm8975 /system/bin/akmd8975
 service akm8962 /system/bin/akmd8962
 	disabled
 	oneshot
-
-service callife /system/bin/callife
-	oneshot
-
-service filebackup /system/bin/filebackup
-	class core
-	socket filebackup stream 0600 radio system
 
 service PTTKeyDaemon /system/bin/PTTKeyDaemon 
 	oneshot

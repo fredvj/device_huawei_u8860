@@ -22,12 +22,12 @@ lib/libril-qcril-hook-oem.so
 # We should build from source, but looks like we have yet another
 # RIL with ugly vendor hacks
 
-# bin/rild
-# lib/libril.so
-# lib/libreference-ril.so
+bin/rild
+lib/libril.so
+lib/libreference-ril.so
+lib/libcm.so
 
 lib/libauth.so
-lib/libcm.so
 lib/libdiag.so
 # lib/libdl.so
 lib/libdsm.so
@@ -37,7 +37,7 @@ lib/libgstk_exp.so
 lib/libmm-abl.so
 lib/libmm-color-convertor.so
 lib/libmmgsdilib.so
-lib/libmmitest.so
+# lib/libmmitest.so
 lib/libmmjps.so
 lib/libmmmpo.so
 lib/libmmosal.so
@@ -57,10 +57,10 @@ lib/libdsi_netctrl.so
 lib/libdsutils.so
 lib/libidl.so
 lib/libnetmgr.so
-lib/libqdi.so
+# lib/libqdi.so
 lib/libqdp.so
-lib/libqc-opt.so
-lib/libqsap_sdk.so
+# lib/libqc-opt.so
+# lib/libqsap_sdk.so
 
 bin/port-bridge
 bin/qmuxd
@@ -69,11 +69,11 @@ bin/netmgrd
 bin/rmt_storage
 bin/rmt_oeminfo
 bin/oem_rpc_svc
-bin/callife
-bin/filebackup
-bin/ds_fmc_appd
-bin/wlan_detect
-bin/wl
+# bin/callife
+# bin/filebackup
+# bin/ds_fmc_appd
+# bin/wlan_detect
+# bin/wl
 bin/modempre
 
 # oem_rpc_svc
@@ -89,15 +89,15 @@ lib/libmmjpeg.so
 lib/libmmipl.so
 # lib/libcamera_client.so
 lib/libgemini.so
-lib/libfacelock_jni.so
+# lib/libfacelock_jni.so
 # lib/libfilterfw.so
-lib/libfilterpack_facedetect.so
+# lib/libfilterpack_facedetect.so
 # lib/libfilterpack_imageproc.so
-lib/libflint_engine_jni_api.so
+# lib/libflint_engine_jni_api.so
 
 # USB storage ISO image with drivers
 
-cdrom/autorun.iso
+# cdrom/autorun.iso
 
 # Other libraries and proprietary binaries
 
@@ -106,11 +106,11 @@ etc/gps.conf
 # etc/vold.fstab
 bin/akmd8962
 bin/akmd8975
-bin/charge
+# bin/charge
 
 # Original DHCP config
 
-# etc/dhcpcd/dhcpcd.conf
+etc/dhcpcd/dhcpcd.conf
 
 # Firmware files
 
@@ -126,7 +126,7 @@ etc/firmware/vidc_720p_vc1_dec_mc.fw
 etc/firmware/yamato_pfp.fw
 etc/firmware/yamato_pm4.fw
 
-# etc/wifi/wpa_supplicant.conf
+etc/wifi/wpa_supplicant.conf
 
 # Hardware Abstraction Layer (HAL) libraries
 # lib/hw/camera.msm7630_surf.so
@@ -134,7 +134,7 @@ etc/firmware/yamato_pm4.fw
 # lib/hw/gps.default.so
 # lib/hw/gralloc.msm7630_surf.so
 # lib/hw/hwcomposer.msm7630_surf.so
-lib/hw/libbcmfm_if.so
+# lib/hw/libbcmfm_if.so
 lib/hw/sensors.default.so
 
 # lib/modules/ansi_cprng.ko
@@ -189,42 +189,23 @@ usr/keylayout/surf_keypad.kl
 
 # Wifi
 
-wifi/bcm_loadecho.sh
-wifi/bcm_loadecho_4330.sh
-wifi/bcm_loadipf.sh
-wifi/bcm_loadipf_4330.sh
-wifi/connectap.sh
-wifi/connectap_4330.sh
+wifi/dhd.ko
 wifi/firmware.bin
 wifi/firmware_apsta.bin
-wifi/firmware_test.bin
-wifi/fw_4330_b2.bin
-wifi/fw_4330_b2_test.bin
-wifi/iwconfig
-wifi/iwlist
-wifi/iwpriv
 wifi/nvram.txt
-wifi/nvram_4330.txt
-wifi/udp_server
-wifi/wifi_mt_1.1.sh
-wifi/wifi_mt_1.2.sh
-wifi/wifi_mt_2.1.sh
-wifi/wifi_mt_finish_1.1.sh
-wifi/wifi_mt_finish_1.2.sh
-wifi/wifi_mt_finish_2.1.sh
 
 # bin/hostapd
 # bin/hostapd_cli
 
 # Bluetooth
 
-etc/bluetooth/BCM4329B1_HW.hcd
-etc/bluetooth/BCM4330B1_002.001.003.0688.0689.hcd
-etc/bluetooth/BCM4330.hcd
+# etc/bluetooth/BCM4329B1_HW.hcd
+# etc/bluetooth/BCM4330B1_002.001.003.0688.0689.hcd
+# etc/bluetooth/BCM4330.hcd
 # etc/bluetooth/init.bcm.bt.sh
 # etc/bluetooth/init.bcm.chip_off.sh
 # etc/bluetooth/init.bcm.chip_on.sh
 
 # bin/brcm_patchram_plus
-bin/btld
+# bin/btld
 
