@@ -8,23 +8,23 @@
 
 USB Charging      : Okay
 USB ADB           : Okay
-USB Mass Strorage : USB IDs for Huawei required
+USB Mass Strorage : USB IDs fixed - service missing
 Video             : Okay - Distortion in popup menus - needs testing
 Audio             : Okay - needs testing
 Sensors           : Okay - needs testing
 Screen rotation   : Okay - needs testing
-WLAN              : No - trying to get it working when compiling from source
-WLAN Hotspot      : No
+WLAN              : Okay - needs testing
+WLAN Hotspot      : Okay - needs testing
 GPS               : Okay - needs testing
-GSM               : Yes, but no Data - needs Debugging
-GSM Data          : No
-GSM Voice         : Not with B919 baseband
-GSM SMS           : Not with B919 baseband
+GSM               : Okay - needs testing
+GSM Data          : Okay - needs testing
+GSM Voice         : Okay with Baseband 404020
+GSM SMS           : Okay with Baseband 404020
 Bluetooth         : No
 Camera            : No
 Keyboard          : Okay - needs testing
 Memory            : Okay - needs testing
-Kernel            : Currently compiling from source - WLAN not working
+Kernel            : Using precompiled kernel - Would love to use source
 
 ---
 
@@ -45,10 +45,10 @@ Kernel            : Currently compiling from source - WLAN not working
 		A couple of other graphics HALs are now building from source
 		Added missing libs
 		"rild" currently throwing exceptions because it is seeing strange data coming in from the baseband
+2012-10-17	New build based on GB baseband 404020
 
 ---
 
 Todo:
 - Revisit RIL
 - Mount /sd-ext
-- Check FC app restart
