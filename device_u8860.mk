@@ -16,7 +16,7 @@ $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/huawei/u8860/prebuilt/kernel
 else
- 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
  
 PRODUCT_COPY_FILES += \
@@ -67,6 +67,11 @@ PRODUCT_PACKAGES += \
 	hostapd_cli \
 	hostapd
 
+# USB accessory
+PRODUCT_PACKAGES += \
+        com.android.future.usb.accessory
+
+
 # Vold config, boot logo & init scripts
 
 PRODUCT_COPY_FILES += \
@@ -78,13 +83,19 @@ PRODUCT_COPY_FILES += \
 	device/huawei/u8860/configuration/init.huawei.usb.sh:root/init.huawei.usb.sh \
 	device/huawei/u8860/configuration/init.huawei.wifi.sh:system/etc/init.huawei.wifi.sh \
 	device/huawei/u8860/configuration/init.target.rc:root/init.target.rc \
-	device/huawei/u8860/configuration/ueventd.huawei.rc:root/ueventd.huawei.rc
+	device/huawei/u8860/configuration/ueventd.huawei.rc:root/ueventd.huawei.rc \
+	device/huawei/u8860/configuration/media_profiles.xml:system/etc/media_profiles.xml
 
 # WLAN modules
 
 PRODUCT_COPY_FILES += \
 	device/huawei/u8860/prebuilt/dhd.ko:system/lib/modules/dhd.ko \
 	device/huawei/u8860/prebuilt/nvram.txt:vendor/firmware/nvram.txt
+
+# Camera HAL
+
+PRODUCT_COPY_FILES += \
+	device/huawei/u8860/prebuilt/camera.msm7630_surf.so:system/lib/hw/camera.msm7630_surf.so
 
 # Bluetooth config
 
