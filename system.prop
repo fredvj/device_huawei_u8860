@@ -62,3 +62,10 @@ ro.teather.denied=false
 ro.rommanager.developerid=cyanogenmod
 ro.setupwizard.enable_bypass=1
 ro.serialno=CM9-U8860
+
+# Huawei
+
+ro.confg.hw_appsbootversion=U8860VCM9_APPSBOOT
+ro.confg.hw_appversion=U8860VCM9_KERNEL
+ro.confg.hw_appfsversion=U8860VCM9_SYSIMG
+
