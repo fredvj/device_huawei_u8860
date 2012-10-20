@@ -69,3 +69,5 @@ ro.confg.hw_appsbootversion=U8860VCM9_APPSBOOT
 ro.confg.hw_appversion=U8860VCM9_KERNEL
 ro.confg.hw_appfsversion=U8860VCM9_SYSIMG
 
+ro.camera.hack=msm7630_surf
+

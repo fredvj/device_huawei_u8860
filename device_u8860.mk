@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
 # Camera HAL
 
 PRODUCT_COPY_FILES += \
-	device/huawei/u8860/prebuilt/camera.msm7630_surf.so:system/lib/hw/camera.msm7630_surf.so
+	device/huawei/u8860/prebuilt/camera.msm7630_surf.so:system/lib/hw/camera.msm7x30.so
 
 # Bluetooth config
 
