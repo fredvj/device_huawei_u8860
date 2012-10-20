@@ -82,6 +82,7 @@ PRODUCT_COPY_FILES += \
 	device/huawei/u8860/configuration/init.huawei.usb.rc:root/init.huawei.usb.rc \
 	device/huawei/u8860/configuration/init.huawei.usb.sh:root/init.huawei.usb.sh \
 	device/huawei/u8860/configuration/init.huawei.wifi.sh:system/etc/init.huawei.wifi.sh \
+	device/huawei/u8860/configuration/init.bcm.bt.sh:system/etc/bluetooth/init.bcm.bt.sh \
 	device/huawei/u8860/configuration/init.target.rc:root/init.target.rc \
 	device/huawei/u8860/configuration/ueventd.huawei.rc:root/ueventd.huawei.rc \
 	device/huawei/u8860/configuration/media_profiles.xml:system/etc/media_profiles.xml

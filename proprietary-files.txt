@@ -208,7 +208,7 @@ wifi/nvram.txt
 
 # Bluetooth
 
-# etc/bluetooth/BCM4329B1_HW.hcd
+etc/bluetooth/BCM4329.hcd
 # etc/bluetooth/BCM4330B1_002.001.003.0688.0689.hcd
 # etc/bluetooth/BCM4330.hcd
 # etc/bluetooth/init.bcm.bt.sh
