@@ -5,16 +5,16 @@ DEVICE=u8860
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 
-while getopts ":mnh" options
+while getopts "m:nh" options
 do
   case $options in
     n ) NC=1 ;;
-    m ) MC=1 ;;
+    m ) EXTRACT_DIR="$OPTARG";;
     h ) echo "Usage: `basename $0` [OPTIONS] "
-	echo "  -m  Do not use ADB to extract files"
-	echo "      Copy from image mounted on /mnt"
-        echo "  -n  No cleanup"
-        echo "  -h  Show this help"
+        echo "  -m D    Do not use ADB to extract files"
+        echo "          Copy from directory D instead"
+        echo "  -n      No cleanup"
+        echo "  -h      Show this help"
         exit ;;
     * ) ;;
   esac
@@ -31,13 +31,13 @@ for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
         mkdir -p $BASE/$DIR
     fi
 
-    if [ "x$MC" != "x1" ];
+    if [ "x$EXTRACT_DIR" == "x" ];
     then
     	adb pull /system/$FILE $BASE/$FILE
-	RC=$?
+	    RC=$?
     else
-	cp /mnt/$FILE $BASE/$FILE
-	RC=$?
+	    cp /$EXTRACT_DIR/$FILE $BASE/$FILE
+	    RC=$?
     fi
 
 #    if [ "x$RC" != "x0" ];
