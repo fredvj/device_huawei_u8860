@@ -52,3 +52,11 @@ http://www.android-hilfe.de/root-hacking-modding-fuer-huawei-honor/264904-losung
 		-> Status
 		-> IMEI
 - Your IMEI should now be correct
+
+---
+
+There is a tool that allows you to backup & restore the IMEI:
+
+http://code.google.com/p/pikachukaki/downloads/detail?name=ToolBox5iromV1.0.4.2.apk
+
+What it basically does is creating a backup of partion 5, 10 & 11. It requires root access.
