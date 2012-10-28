@@ -56,6 +56,9 @@ debug.sf.hw=1
 # debug.composition.type=mdp|c2d|dyn; everthing else is GPU
 # Composition bypass
 # ro.sf.compbypass.enable=1
+# See hardware/qcom/display/libgralloc/framebuffer.cpp
+# Page flipping requires at least two framebuffers
+debug.gr.numframebuffers=2
 
 # Bluetooth
 ro.qualcomm.bluetooth.ftp=true
