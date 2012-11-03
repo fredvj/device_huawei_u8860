@@ -79,8 +79,8 @@ ro.confg.hw_appversion=U8860VCM9_KERNEL
 ro.confg.hw_appfsversion=U8860VCM9_SYSIMG
 
 hwui.render_dirty_regions=false  
-# hwui.disable_vsync=true         
-# hwui.print_config=choice
+hwui.disable_vsync=true         
+hwui.print_config=choice
 
 # Camera hack
 ro.camera.hack=msm7630_surf
