@@ -2,6 +2,7 @@
 
 VENDOR=huawei
 DEVICE=u8860
+MP=0
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 
@@ -9,7 +10,8 @@ while getopts "m:nh" options
 do
   case $options in
     n ) NC=1 ;;
-    m ) EXTRACT_DIR="$OPTARG";;
+    m ) MP=1
+        EXTRACT_DIR="$OPTARG";;
     h ) echo "Usage: `basename $0` [OPTIONS] "
         echo "  -m D    Do not use ADB to extract files"
         echo "          Copy from directory D instead"
@@ -31,20 +33,18 @@ for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
         mkdir -p $BASE/$DIR
     fi
 
-    if [ "x$EXTRACT_DIR" == "x" ];
+    if [ "x$MP" = "x0" ];
     then
-    	adb pull /system/$FILE $BASE/$FILE
-	    RC=$?
+	adb pull /system/$FILE $BASE/$FILE
+	RC=$?
     else
-	    cp /$EXTRACT_DIR/$FILE $BASE/$FILE
-	    RC=$?
+	cp $EXTRACT_DIR/$FILE $BASE/$FILE
+	RC=$?
     fi
 
 #    if [ "x$RC" != "x0" ];
 #    then
 #	echo "$FILE: failed"
-#    else
-#	echo "$FILE: okay"
 #    fi
 done
 
