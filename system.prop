@@ -68,7 +68,7 @@ ro.qualcomm.bluetooth.dun=true
 net.bt.name=CM9-U8860
 
 # Others
-ro.teather.denied=false
+ro.tether.denied=false
 ro.rommanager.developerid=cyanogenmod
 ro.setupwizard.enable_bypass=1
 ro.serialno=CM9-U8860
@@ -79,7 +79,7 @@ ro.confg.hw_appversion=U8860VCM9_KERNEL
 ro.confg.hw_appfsversion=U8860VCM9_SYSIMG
 
 hwui.render_dirty_regions=false  
-hwui.disable_vsync=true         
+hwui.disable_vsync=false
 hwui.print_config=choice
 
 # Camera hack
