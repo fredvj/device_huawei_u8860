@@ -8,8 +8,8 @@
 
 USB Charging      : Okay
 USB ADB           : Okay
-USB Mass Strorage : USB IDs fixed - service missing
-Video             : Okay - Distortion in popup menus - needs testing
+USB Mass Strorage : USB IDs fixed - needs testing
+Video             : Okay - needs testing
 Audio             : Okay - needs testing
 Sensors           : Okay - needs testing
 Screen rotation   : Okay - needs testing
@@ -20,8 +20,8 @@ GSM               : Okay - needs testing
 GSM Data          : Okay - needs testing
 GSM Voice         : Okay with Baseband 404020
 GSM SMS           : Okay with Baseband 404020
-Bluetooth         : No
-Camera            : No
+Bluetooth         : Okay - new random MAC after reboot
+Camera            : Okay - hacked HAL
 Keyboard          : Okay - needs testing
 Memory            : Okay - needs testing
 Kernel            : Using precompiled kernel - Would love to use source
@@ -46,9 +46,10 @@ Kernel            : Using precompiled kernel - Would love to use source
 		Added missing libs
 		"rild" currently throwing exceptions because it is seeing strange data coming in from the baseband
 2012-10-17	New build based on GB baseband 404020
+2012-11-06	Most things are working
 
 ---
 
 Todo:
-- Revisit RIL
+- Revisit RIL: Search for prividers
 - Mount /sd-ext
