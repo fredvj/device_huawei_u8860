@@ -4,7 +4,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-$(info $(shell (mkisofs -o $(LOCAL_PATH)/u8860.iso -J -R $(LOCAL_PATH)/iso)))
+$(info $(shell (genisoimage -o $(LOCAL_PATH)/u8860.iso -J -R $(LOCAL_PATH)/iso)))
 
 LOCAL_MODULE := u8860.iso
 LOCAL_MODULE_TAGS := eng
