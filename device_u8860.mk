@@ -1,5 +1,6 @@
 # Small language pack only
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
@@ -21,8 +22,6 @@ endif
  
 PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel
-
-$(call inherit-product, build/target/product/full_base_telephony.mk)
 
 PRODUCT_PACKAGES += \
 	make-ext4fs \
