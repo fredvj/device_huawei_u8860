@@ -67,6 +67,12 @@ ro.bluetooth.remote.autoconnect=true
 ro.qualcomm.bluetooth.dun=true
 net.bt.name=CM9-U8860
 
+# GPS / Location services
+ro.com.google.locationfeatures=1
+ro.ril.def.agps.mode=2
+ro.ril.def.agps.feature=1
+
+
 # Others
 ro.tether.denied=false
 ro.rommanager.developerid=cyanogenmod

@@ -111,7 +111,7 @@ lib/libchromatix_s5k4e1_preview.so
 # Other libraries and proprietary binaries
 
 lib/libaudioalsa.so
-etc/gps.conf
+# etc/gps.conf
 # etc/vold.fstab
 bin/akmd8962
 bin/akmd8975

@@ -2,7 +2,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
 
 # The gps config appropriate for this device
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
+$(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 # proprietary side of the device
 $(call inherit-product-if-exists, vendor/huawei/u8860/u8860-vendor.mk)
@@ -60,7 +60,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-	gps.u8860
+	gps.msm7x30
 
 # Wireless AP
 PRODUCT_PACKAGES += \
