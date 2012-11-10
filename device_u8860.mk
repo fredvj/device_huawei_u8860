@@ -102,6 +102,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
+# Voicemail config for RIL
+
+PRODUCT_COPY_FILES += \
+	device/huawei/u8860/configuration/voicemail-conf.xml:system/etc/voicemail-conf.xml
+
 # Permissions
 
 PRODUCT_COPY_FILES += \
