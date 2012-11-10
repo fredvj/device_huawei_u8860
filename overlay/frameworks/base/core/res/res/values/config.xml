@@ -66,21 +66,31 @@
         <item>250</item>
     </integer-array>
 
-    <!-- Array of output values for button backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-    -->
     <integer-array name="config_autoBrightnessButtonBacklightValues">
         <item>255</item>
         <item>255</item>
-        <item>255</item>
+        <item>0</item>
         <item>0</item>
         <item>0</item>
         <item>0</item>
     </integer-array>
 
+    <integer-array name="config_autoBrightnessKeyboardBacklightValues">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+
+
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">10</integer>
+    <integer name="config_screenBrightnessDim">20</integer>
+
+    <!-- Flag indicating whether we should enable automatic brightness for
+         the button and keyboard backlights. -->
+    <bool name="config_autoBrightnessButtonKeyboard">false</bool>
 
     <!-- XXXXX NOTE THE FOLLOWING RESOURCES USE THE WRONG NAMING CONVENTION.
          Please don't copy them, copy anything else. -->
