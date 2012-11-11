@@ -215,6 +215,6 @@ etc/bluetooth/BCM4329.hcd
 # etc/bluetooth/init.bcm.chip_off.sh
 # etc/bluetooth/init.bcm.chip_on.sh
 
-bin/brcm_patchram_plus
+# bin/brcm_patchram_plus
 # bin/btld
 

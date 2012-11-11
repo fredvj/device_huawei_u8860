@@ -77,11 +77,13 @@ PRODUCT_COPY_FILES += \
 	device/huawei/u8860/configuration/vold.fstab:system/etc/vold.fstab \
 	device/huawei/u8860/prebuilt/boot-u8860.rle:root/initlogo.rle \
 	device/huawei/u8860/prebuilt/u8860.iso:system/etc/u8860.iso \
+	device/huawei/u8860/prebuilt/btld:system/bin/btld \
 	device/huawei/u8860/configuration/init.huawei.rc:root/init.huawei.rc \
 	device/huawei/u8860/configuration/init.huawei.usb.rc:root/init.huawei.usb.rc \
 	device/huawei/u8860/configuration/init.huawei.usb.sh:root/init.huawei.usb.sh \
 	device/huawei/u8860/configuration/init.huawei.wifi.sh:system/etc/init.huawei.wifi.sh \
 	device/huawei/u8860/configuration/init.bcm.bt.sh:system/etc/bluetooth/init.bcm.bt.sh \
+	device/huawei/u8860/configuration/bluetooth.addr:system/etc/bluetooth/bluetooth.addr \
 	device/huawei/u8860/configuration/init.target.rc:root/init.target.rc \
 	device/huawei/u8860/configuration/ueventd.huawei.rc:root/ueventd.huawei.rc \
 	device/huawei/u8860/configuration/media_profiles.xml:system/etc/media_profiles.xml
