@@ -20,7 +20,7 @@ GSM               : Okay - needs testing
 GSM Data          : Okay - needs testing
 GSM Voice         : Okay with Baseband 404020
 GSM SMS           : Okay with Baseband 404020
-Bluetooth         : Okay - new random MAC after reboot
+Bluetooth         : Okay - needs testing
 Camera            : Okay - hacked HAL
 Keyboard          : Okay - needs testing
 Memory            : Okay - needs testing
@@ -47,6 +47,8 @@ Kernel            : Using precompiled kernel - Would love to use source
 		"rild" currently throwing exceptions because it is seeing strange data coming in from the baseband
 2012-10-17	New build based on GB baseband 404020
 2012-11-06	Most things are working
+2012-11-11	Fixed Wifi / GSM location service
+		Fixed random bluetooth address
 
 ---
 
