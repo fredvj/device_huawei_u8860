@@ -1,0 +1,24 @@
+2012-11-13:
+	Network search (Network operators / available networks) is not working
+
+---
+
+D/RILJ    (  352): [0752]> QUERY_AVAILABLE_NETWORKS 
+W/RILJ    (  352): [0752]< QUERY_AVAILABLE_NETWORKS  exception, possible invalid RIL response
+W/RILJ    (  352): java.lang.RuntimeException: RIL_REQUEST_QUERY_AVAILABLE_NETWORKS: invalid response. Got 32 strings, expected multiple of 5
+W/RILJ    (  352): 	at com.android.internal.telephony.QualcommSharedRIL.responseOperatorInfos(QualcommSharedRIL.java:825)
+W/RILJ    (  352): 	at com.android.internal.telephony.QualcommSharedRIL.processSolicited(QualcommSharedRIL.java:458)
+W/RILJ    (  352): 	at com.android.internal.telephony.RIL.processResponse(RIL.java:2158)
+W/RILJ    (  352): 	at com.android.internal.telephony.RIL$RILReceiver.run(RIL.java:588)
+W/RILJ    (  352): 	at java.lang.Thread.run(Thread.java:856)
+
+---
+
+On another phone I am seeing 4 providers:
+- Telekom.de
+- Vodafone.de
+- E-Plus
+- o2 - de
+
+Response seems to get 32 strings, expecting a multiple of 5. Looks like we are getting a multiple of 8 ?!
+

@@ -53,5 +53,5 @@ Kernel            : Using precompiled kernel - Would love to use source
 ---
 
 Todo:
-- Revisit RIL: Search for prividers
+- Revisit RIL: Search for providers / operators
 - Mount /sd-ext
