@@ -22,3 +22,51 @@ On another phone I am seeing 4 providers:
 
 Response seems to get 32 strings, expecting a multiple of 5. Looks like we are getting a multiple of 8 ?!
 
+---
+
+Output with dump:
+
+D/RILJ    (  351): Vodafone.de 3G * 
+D/RILJ    (  351): Vodafone * 
+D/RILJ    (  351): 26202 3G * 
+D/RILJ    (  351): current * 
+D/RILJ    (  351): Vodafone.de 2G * 
+D/RILJ    (  351): Vodafone * 
+D/RILJ    (  351): 26202 2G * 
+D/RILJ    (  351): current * 
+D/RILJ    (  351): E-Plus Mobilfunk 2G * 
+D/RILJ    (  351): E-Plus * 
+D/RILJ    (  351): 26203 2G * 
+D/RILJ    (  351): forbidden * 
+D/RILJ    (  351): O2 (Germany) GmbH & Co. OHG 3G * 
+D/RILJ    (  351): O2 * 
+D/RILJ    (  351): 26207 3G * 
+D/RILJ    (  351): forbidden * 
+D/RILJ    (  351): O2 (Germany) GmbH & Co. OHG 2G * 
+D/RILJ    (  351): O2 * 
+D/RILJ    (  351): 26207 2G * 
+D/RILJ    (  351): forbidden * 
+D/RILJ    (  351): TMO D 2G * 
+D/RILJ    (  351): T-Mobile * 
+D/RILJ    (  351): 26201 2G * 
+D/RILJ    (  351): forbidden * 
+D/RILJ    (  351): TMO D 3G * 
+D/RILJ    (  351): T-Mobile * 
+D/RILJ    (  351): 26201 3G * 
+D/RILJ    (  351): forbidden * 
+D/RILJ    (  351): E-Plus Mobilfunk 3G * 
+D/RILJ    (  351): E-Plus * 
+D/RILJ    (  351): 26203 3G * 
+D/RILJ    (  351): forbidden * 
+W/RILJ    (  351): [0145]< QUERY_AVAILABLE_NETWORKS  exception, possible invalid RIL response
+W/RILJ    (  351): java.lang.RuntimeException: RIL_REQUEST_QUERY_AVAILABLE_NETWORKS: invalid response. Got 32 strings, expected multiple of 5
+W/RILJ    (  351): 	at com.android.internal.telephony.HuaweiHonorRIL.responseOperatorInfos(HuaweiHonorRIL.java:472)
+W/RILJ    (  351): 	at com.android.internal.telephony.QualcommSharedRIL.processSolicited(QualcommSharedRIL.java:458)
+W/RILJ    (  351): 	at com.android.internal.telephony.RIL.processResponse(RIL.java:2158)
+W/RILJ    (  351): 	at com.android.internal.telephony.RIL$RILReceiver.run(RIL.java:588)
+W/RILJ    (  351): 	at java.lang.Thread.run(Thread.java:856)
+
+---
+
+Okay. We are receiving a multiple of 4. 8 entries in total here. Looks like the Huawei baseband is listing 2G & 3G services separately.
+
