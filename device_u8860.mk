@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
         com.android.future.usb.accessory
 
+# Others
+PRODUCT_PACKAGES += \
+	Torch
+
 
 # Vold config, boot logo & init scripts
 
