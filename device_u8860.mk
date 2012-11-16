@@ -72,6 +72,7 @@ PRODUCT_PACKAGES += \
 
 # Others
 PRODUCT_PACKAGES += \
+	Stk \
 	Torch
 
 
