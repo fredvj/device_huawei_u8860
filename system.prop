@@ -80,7 +80,7 @@ ro.ril.def.agps.feature=1
 ro.tether.denied=false
 ro.rommanager.developerid=cyanogenmod
 ro.setupwizard.enable_bypass=1
-ro.serialno=CM9-U8860
+ro.serialno=43727970746F3132
 
 # Huawei
 ro.confg.hw_appsbootversion=U8860VCM9_APPSBOOT
