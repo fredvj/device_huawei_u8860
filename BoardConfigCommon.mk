@@ -34,7 +34,7 @@ TARGET_OTA_ASSERT_DEVICE := u8860,U8860,honor,Honor
 # 0x00208000 resulted in 0x00210000 and left images unbootable
 # 0x00200000 results in 0x00208000 and that is what we want
 
-BOARD_KERNEL_CMDLINE := console=ttyDCC0 androidboot.hardware=huawei androidboot.emmc=true
+BOARD_KERNEL_CMDLINE := console=ttyDCC0 androidboot.hardware=huawei androidboot.emmc=true androidboot.serialno=43727970746F3132
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_PAGESIZE := 4096
 
