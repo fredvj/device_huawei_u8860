@@ -11,6 +11,10 @@ on init
 	# Set the default timezone
 	export TZ Europe/Berlin
 
+	# Mount points
+	export SD_EXT_DIRECTORY /sd-ext
+	export PHONE_STORAGE /mnt/emmc
+
 	# Backward compatibility
 	symlink /system/etc /etc
 	symlink /sys/kernel/debug /d
@@ -20,7 +24,8 @@ on init
 	symlink /system/vendor /vendor
 
 	mkdir /mnt/sdcard 0000 system system
-	mkdir /mnt/sdcard2 0000 system system
+	mkdir /mnt/emmc 0000 system system
+	mkdir /sd-ext 0000 system system
 	mkdir /.cust_backup
 	mkdir /cust 
 	mount vfat /dev/block/mmcblk0p1 /.cust_backup ro wait
