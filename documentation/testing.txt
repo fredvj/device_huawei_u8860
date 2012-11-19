@@ -1,22 +1,19 @@
 Here is what you will need:
 ---------------------------
-- A backup of your existing setup and the knowledge how to restore the device later on
-- Time and, if you are willing to help: Knowledge in all kinds of areas of Android
+- A backup of your existing setup and the knowledge how to restore the device
 - adb & fastboot executables for your platform (on PC)
 	Comes with the Android Platform SDK
 	http://developer.android.com/sdk/index.html
 - FAT formated Micro-SD card (Phone)
 	You know - the bigger the better ;-)
-- DLOAD files for the Cambodia ICS Demo (on SD)
-	http://www.huaweidevice.com/worldwide/downloadCenter.do?method=toDownloadFile&flay=software&softid=NDUwOTg=
-- the CM9 update: cm-9-20120911-UNOFFICIAL-u8860.zip (on SD)
-	http://dl.dropbox.com/u/63461867/u8860/CM9/cm-9-20120911-UNOFFICIAL-u8860.zip
-	MD5: 78fb3cf14829b378d5ca7f9b3811a532
-	SHA256: fdc1a0ddc86ac450de54f1af422d0371947bee4f1f446a9612a3014daac8eb80
+- DLOAD files for Gingerbread Build 886 or 870 (on SD)
+	http://www.huaweidevice.com/worldwide/downloadCenter.do?method=toDownloadFile&flay=software&softid=NDY2NTM=
+- the CM9 update: cm-9-20121117-UNOFFICIAL-u8860.zip (on SD)
+	https://dl.dropbox.com/u/63461867/cm-9-20121117-UNOFFICIAL-u8860.zip
+	MD5: c3745d158fa1cce426721cfe1de74bb4
+	SHA256: c602a566a776ece41827370ae565124177043cd6f6d96cfc56c696fcf24b7c7e
 - the ClockworkMod Recovery image: recovery.img (on PC)
-	http://dl.dropbox.com/u/63461867/u8860/CM9/recovery.img
-- Optional: Updater to replace the RIL files: ril-blob-signed.zip (on SD)
-	http://dl.dropbox.com/u/63461867/u8860/CM9/ril-blob-signed.zip
+	https://dl.dropbox.com/u/63461867/recovery.img
 - Optional: gapps-ics-20120429-signed.zip (on SD)
 	http://www.goo.im/gapps/gapps-ics-20120429-signed.zip or just
 	http://www.goo.im/gapps/
@@ -35,23 +32,6 @@ Here is what to do:
 - Run "adb reboot"
 - Once the firmware update has started, feel free to release the buttons ;-)
 - The phone will automatically reboot after the update
-- Enable logcat devices (/dev/log/*)
-	+ Fast forward through the setup wizard
-	+ Open the phone app
-	+ Dial *#*#2846579#*#*
-	+ Select "ProjectMenu"
-	+ Select "1. Background setting"
-	+ Select "2. Log setting"
-	+ Select "Log switch"
-	+ Select "LOG on"
-	+ Confirm
-	+ Select "Log level setting"
-	+ Select "VERBOSE"
-	+ Select "Confirm"
-	+ Back
-	+ Select "7. Dump & Log"
-	+ Select everything
-	+ Back
 - Disable /dload on SD (rename folder while SD is in the phone):
 	# adb shell mv /mnt/sdcard/dload /mnt/sdcard/ics-demo.dload
 - Boot to pink screen mode & replace recovery
@@ -68,15 +48,11 @@ Here is what to do:
 - Select "wipe data/factory reset"
 - Select "install zip from sdcard"
 - Select "choose zip from sdcard"
-- Select "cm-9-20120911-UNOFFICIAL-u8860.zip" & install it
+- Select "cm-9-20121117-UNOFFICIAL-u8860.zip" & install it
 
 - Optional (Google Apps):
 	Select "choose zip from sdcard"
 	Select "gapps-ics-20120429-signed.zip" & install it
-
-- Optional (Huawei RIL files that allow you to use GSM voice):
-	Select "choose zip from sdcard"
-	Select "ril-blob-signed.zip" & install it
 
 - Select "+++++Go Back+++++"
 - Select "reboot system now"
