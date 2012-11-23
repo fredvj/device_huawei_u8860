@@ -130,7 +130,7 @@ etc/wifi/wpa_supplicant.conf
 # lib/hw/gralloc.msm7630_surf.so
 # lib/hw/hwcomposer.msm7630_surf.so
 # lib/hw/libbcmfm_if.so
-lib/hw/sensors.default.so
+# lib/hw/sensors.default.so
 
 # Keyboard
 
