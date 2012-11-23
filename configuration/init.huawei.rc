@@ -492,19 +492,20 @@ service bugreport /system/bin/dumpstate -d -v -o /sdcard/bugreports/bugreport
 	oneshot
 	keycodes 115 114
 
-# Triggered by projectmenu or setprop
-service applogcat /system/bin/logcat -v time -r 1024 -n 8 -f /sdcard/bugreports/applogcat-log
+# Start with setprop ctl.start systemlogcat
+service systemlogcat /system/bin/logcat -d -f /mnt/sdcard/system.log
 	class core
 	disabled
 	oneshot
 
-# Triggered by projectmenu or setprop
-service kmsglogcat /system/bin/kmsgcat -r 1024 -n 8 -f /sdcard/bugreports/kmsgcat-log
+# Start with setprop ctl.start radiologcat
+service radiologcat /system/bin/logcat -b radio -d -f /mnt/sdcard/radio.log
 	class core
 	disabled
 	oneshot
 
-service modemlogcat /system/bin/diag_mdlog -f /sdcard/diag_logs/Diag.cfg -o /sdcard/diag_logs
+# Start with setprop ctl.start dmesglogcat
+service dmesglogcat /system/bin/dmesg > /mnt/sdcard/dmesg.log
 	class core
 	disabled
 	oneshot
