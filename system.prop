@@ -74,13 +74,16 @@ ro.com.google.networklocation=1
 ro.ril.def.agps.mode=2
 ro.ril.def.agps.feature=1
 
+# Storage
+ro.additionalmounts=/mnt/emmc
+ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # Others
 # sys.checkfs.fat=false
 ro.tether.denied=false
 ro.rommanager.developerid=cyanogenmod
 ro.setupwizard.enable_bypass=1
-ro.serialno=43727970746F3132
+ro.serialno=66726564766A
 
 # Huawei
 ro.confg.hw_appsbootversion=U8860VCM9_APPSBOOT

@@ -14,6 +14,7 @@ on init
 	# Mount points
 	export SD_EXT_DIRECTORY /sd-ext
 	export PHONE_STORAGE /mnt/emmc
+	export SECONDARY_STORAGE /mnt/sdcard
 
 	# Backward compatibility
 	symlink /system/etc /etc
