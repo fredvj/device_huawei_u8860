@@ -160,11 +160,11 @@ usr/keylayout/surf_keypad.kl
 
 # Wifi
 
-wifi/dhd.ko
+# wifi/dhd.ko
 wifi/firmware.bin
 wifi/firmware_apsta.bin
 wifi/nvram.txt
 
 # Bluetooth
 
-etc/bluetooth/BCM4329.hcd
+etc/bluetooth/BCM4329B1_HW.hcd
