@@ -132,7 +132,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 # BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/huawei/u8860/recovery/u8860_recovery_ui.c
-# BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/u8860/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/huawei/u8860/recovery/graphics.c
 # BOARD_RECOVERY_RFS_CHECK :=
 #
 # BOARD_RECOVERY_ALWAYS_WIPES := true
