@@ -10,10 +10,6 @@ $(call inherit-product-if-exists, vendor/huawei/u8860/u8860-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u8860/overlay
 
-# Inherit dalvik parameters
-$(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
-
-
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/huawei/u8860/prebuilt/kernel
 else

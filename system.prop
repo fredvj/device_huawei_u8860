@@ -65,7 +65,7 @@ ro.qualcomm.bluetooth.ftp=true
 ro.bluetooth.request.master=true
 ro.bluetooth.remote.autoconnect=true
 ro.qualcomm.bluetooth.dun=true
-net.bt.name=CM9-U8860
+net.bt.name=CM10-U8860
 ro.bt.bdaddr_path=/system/etc/bluetooth/bluetooth.addr
 
 # GPS / Location services
