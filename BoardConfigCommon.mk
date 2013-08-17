@@ -24,9 +24,10 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a8
-ARCH_ARM_HAVE_TLS_REGISTER := true
+# ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_VARIANT := scorpion
 TARGET_BOARD_PLATFORM := msm7x30
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 TARGET_BOOTLOADER_BOARD_NAME := u8860
@@ -121,6 +122,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_USES_MMCUTILS := true
 
 TARGET_RECOVERY_INITRC := device/huawei/u8860/recovery/recovery.rc
+TARGET_RECOVERY_FSTAB := device/huawei/u8860/configuration/fstab.u8860
 
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/huawei/u8860/releasetools/ota_from_target_files
 

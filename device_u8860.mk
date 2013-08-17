@@ -20,7 +20,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel
 
 PRODUCT_PACKAGES += \
-	make-ext4fs \
 	lights.msm7x30 \
 	DSPManager \
 	MusicFX \
@@ -75,7 +74,7 @@ PRODUCT_PACKAGES += \
 # Vold config, boot logo & init scripts
 
 PRODUCT_COPY_FILES += \
-	device/huawei/u8860/configuration/vold.fstab:system/etc/vold.fstab \
+	device/huawei/u8860/configuration/fstab.u8860:root/fstab.u8860 \
 	device/huawei/u8860/prebuilt/boot-u8860.rle:root/initlogo.rle \
 	device/huawei/u8860/prebuilt/u8860.iso:system/etc/u8860.iso \
 	device/huawei/u8860/prebuilt/btld:system/bin/btld \

@@ -75,8 +75,7 @@ ro.ril.def.agps.mode=2
 ro.ril.def.agps.feature=1
 
 # Storage
-ro.additionalmounts=/mnt/emmc
-ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
+ro.additionalmounts=/storage/sdcard1
 
 # Others
 # sys.checkfs.fat=false
