@@ -8,7 +8,7 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DTARGET7x30 -DTARGET_MSM7x30 -DREFRESH_
 # TARGET_KERNEL_SOURCE := kernel/huawei/u8860
 # TARGET_KERNEL_CONFIG := cyanogenmod_u8860_defconfig
 TARGET_PREBUILT_KERNEL := device/huawei/u8860/prebuilt/kernel
-TARGET_SPECIFIC_HEADER_PATH += device/huawei/u8860/include
+# TARGET_SPECIFIC_HEADER_PATH += device/huawei/u8860/include
 
 TARGET_BOOTANIMATION_PRELOAD := true
 
@@ -27,11 +27,20 @@ TARGET_ARCH_VARIANT_CPU := cortex-a8
 # ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := scorpion
+TARGET_CPU_SMP := false
+# TARGET_CPU_VARIANT := scorpion
+TARGET_CPU_VARIANT := generic
 TARGET_BOARD_PLATFORM := msm7x30
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 TARGET_BOOTLOADER_BOARD_NAME := u8860
 TARGET_OTA_ASSERT_DEVICE := u8860,U8860,honor,Honor
+
+TARGET_USE_SCORPION_BIONIC_OPTIMIZATION := true
+TARGET_USE_SCORPION_PLD_SET := true
+TARGET_SCORPION_BIONIC_PLDOFFS := 6
+TARGET_SCORPION_BIONIC_PLDSIZE := 128
+
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # Looks like kernel base is recalculated by mkbootimg
 # 0x00208000 resulted in 0x00210000 and left images unbootable
@@ -130,6 +139,7 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/huawei/u8860/releasetools/ot
 #
 # BOARD_TOUCH_RECOVERY := true
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_RECOVERY_SWIPE := true
 #
 BOARD_UMS_LUNFILE := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun0/file"
@@ -145,3 +155,11 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun0/
 # BOARD_CUSTOM_GRAPHICS :=
 # BOARD_RECOVERY_RFS_CHECK :=
 # TARGET_RECOVERY_PIXEL_FORMAT := ("RGBX_8888" | "BGRA_8888")
+
+# SELinux
+
+BOARD_SEPOLICY_DIRS := \
+	device/huawei/u8860/sepolicy
+
+BOARD_SEPOLICY_UNION := 
+

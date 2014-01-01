@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The Android Open Source Project
+# Copyright (C) 2013 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,6 +28,8 @@ $(call inherit-product, device/huawei/u8860/device.mk)
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_u8860
 PRODUCT_DEVICE := u8860
-PRODUCT_BRAND := huawei
-PRODUCT_MODEL := u8860
-PRODUCT_MANUFACTURER := Huawei
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := CyanogenMod on Honor
+# Don't restrict vendor folder
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
