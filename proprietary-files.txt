@@ -132,32 +132,6 @@ etc/wifi/wpa_supplicant.conf
 # lib/hw/libbcmfm_if.so
 # lib/hw/sensors.default.so
 
-# Keyboard
-
-usr/idc/qwerty.idc
-usr/idc/qwerty2.idc
-
-usr/keychars/Generic.kcm
-usr/keychars/Virtual.kcm
-usr/keychars/qwerty.kcm
-usr/keychars/qwerty2.kcm
-
-usr/keylayout/7k_handset.kl
-usr/keylayout/AVRCP.kl
-usr/keylayout/fluid-keypad.kl
-usr/keylayout/Generic.kl
-usr/keylayout/Vendor_045e_Product_028e.kl
-usr/keylayout/Vendor_046d_Product_c216.kl
-usr/keylayout/Vendor_046d_Product_c294.kl
-usr/keylayout/Vendor_046d_Product_c299.kl
-usr/keylayout/Vendor_046d_Product_c532.kl
-usr/keylayout/Vendor_054c_Product_0268.kl
-usr/keylayout/Vendor_05ac_Product_0239.kl
-usr/keylayout/Vendor_22b8_Product_093d.kl
-usr/keylayout/msm_tma300_ts.kl
-usr/keylayout/qwerty.kl
-usr/keylayout/surf_keypad.kl
-
 # Wifi
 
 wifi/dhd.ko

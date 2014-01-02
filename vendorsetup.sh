@@ -21,3 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo aosp_u8860-userdebug
+add_lunch_combo aosp_u8860-eng

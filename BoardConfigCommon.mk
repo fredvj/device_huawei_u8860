@@ -161,5 +161,18 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/platform/msm_hsusb/gadget/lun0/
 BOARD_SEPOLICY_DIRS := \
 	device/huawei/u8860/sepolicy
 
-BOARD_SEPOLICY_UNION := 
-
+BOARD_SEPOLICY_UNION := \
+        file_contexts \
+        genfs_contexts \
+        app.te \
+        btmacreader.te \
+        device.te \
+        drmserver.te \
+        init_shell.te \
+        file.te \
+        rild.te \
+        sensors_config.te \
+        shell.te \
+        surfaceflinger.te \
+        system.te \
+        zygote.te
